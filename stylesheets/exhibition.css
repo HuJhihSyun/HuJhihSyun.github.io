@@ -1,0 +1,201 @@
+/* Welcome to Compass. Use this file to write IE specific override styles.
+ * Import this file using the following HTML or equivalent:
+ * <!--[if IE]>
+ *   <link href="/stylesheets/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
+ * <![endif]--> */
+@font-face {
+  font-family: "NokiaPureHead_Light";
+  src: url(../fonts/NokiaPureHeadline_Light.ttf);
+}
+
+@font-face {
+  font-family: "NokiaPureHead_Regular";
+  src: url(../fonts/NokiaPureHeadline_Regular.ttf);
+}
+
+@keyframes move {
+  0% {
+    top: 0vw;
+  }
+  20% {
+    top: -5vw;
+  }
+  40% {
+    top: -10vw;
+  }
+  60% {
+    top: -15vw;
+  }
+  80% {
+    top: -20vw;
+  }
+}
+
+@-webkit-keyframes move {
+  0% {
+    top: 0vw;
+  }
+  20% {
+    top: -5vw;
+  }
+  40% {
+    top: -10vw;
+  }
+  60% {
+    top: -15vw;
+  }
+  80% {
+    top: -20vw;
+  }
+}
+
+.tagMenu {
+  margin-top: 30px;
+}
+
+.tagMenu .container-fluid {
+  width: 85%;
+}
+
+.tagMenu .container-fluid h2 {
+  color: #124191;
+}
+
+.tagMenu .container-fluid p {
+  color: #124191;
+  max-width: 700px;
+}
+
+.tagMenu .container-fluid .pic {
+  position: relative;
+  width: 100%;
+  height: 38vw;
+  background-image: url(../images/exhibition_banner.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+.tagMenu .container-fluid .pic a .tag {
+  position: absolute;
+  top: 37%;
+  width: 11vw;
+  height: 11vw;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+  transition: all 0.2s;
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  -ms-transition: all 0.2s;
+}
+
+.tagMenu .container-fluid .pic a .tag.tag1 {
+  left: 23.3%;
+  background-image: url(../images/experience.png);
+}
+
+.tagMenu .container-fluid .pic a .tag.tag2 {
+  left: 41.3%;
+  background-image: url(../images/operation.png);
+}
+
+.tagMenu .container-fluid .pic a .tag.tag3 {
+  left: 59.4%;
+  background-image: url(../images/networks.png);
+}
+
+.tagMenu .container-fluid .pic a:hover .tag {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.mainList .row .menuBox .picBox:hover .title {
+  top: 10%;
+  transform: translate(0%, 0%);
+  -webkit-transform: translate(0%, 0%);
+  -moz-transform: translate(0%, 0%);
+  -ms-transform: translate(0%, 0%);
+}
+
+.mainList .row .menuBox .picBox:hover .title p {
+  font-size: 16px;
+}
+
+.mainList .row .menuBox .title {
+  left: 10%;
+  top: 5%;
+  transform: translate(0%, 0%);
+  -webkit-transform: translate(0%, 0%);
+  -moz-transform: translate(0%, 0%);
+  -ms-transform: translate(0%, 0%);
+  max-width: 250px;
+}
+
+.mainList h2, .mainList p {
+  margin-left: 15px;
+}
+
+.mainList.experience h2 {
+  color: #124191;
+}
+
+.mainList.experience p {
+  color: #124191;
+  display: inline-block;
+  max-width: 800px;
+}
+
+.mainList.operation {
+  background-color: #001135;
+}
+
+.mainList.operation h2 {
+  color: #fff;
+}
+
+.mainList.operation p {
+  color: #fff;
+  display: inline-block;
+  max-width: 800px;
+}
+
+.mainList.network {
+  background-color: #bec8d2;
+}
+
+.mainList.network h2 {
+  color: #273142;
+}
+
+.mainList.network p {
+  color: #273142;
+  display: inline-block;
+  max-width: 800px;
+}
+
+.explain {
+  background-color: #edf3f5;
+  padding-top: 20px;
+  padding-bottom: 50px;
+}
+
+.explain .container-fluid {
+  width: 82%;
+}
+
+.explain .container-fluid h2 {
+  color: #001135;
+}
+
+.explain .container-fluid p {
+  color: #001135;
+}
+
+.footer {
+  margin-top: 0;
+}
+/*# sourceMappingURL=exhibition.css.map */

@@ -25,24 +25,32 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="stylesheets/owl.carousel.min.css">
     <link rel="stylesheet" type="text/css" href="stylesheets/style.css">
+    <link rel="stylesheet" type="text/css" href="stylesheets/textpage.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
-    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
-    <style type="text/css">
+  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  <![endif]-->
+  <style type="text/css">
+    /* 嵌入字型設定 */
     @font-face {
     font-family: "NokiaPureHead_Light";
     src: url(fonts/NokiaPureHeadline_Light.ttf);}
     @font-face {
     font-family: "NokiaPureHead_Regular";
     src: url(fonts/NokiaPureHeadline_Regular.ttf);}
+
+    /* 引用嵌入字型 */
     .nokia_font_light {
-    font-family: "NokiaPureHead_Light","微軟正黑體"}
+    font-family: "NokiaPureHead_Light","微軟正黑體",Microsoft JhengHei;}
     .nokia_font_regular {
-    font-family: "NokiaPureHead_Regular","微軟正黑體"}
+    font-family: "NokiaPureHead_Regular","微軟正黑體",Microsoft JhengHei;}
+
+    @media only screen and (max-width: 767px) {
+    .goBack .backBtn a .btn {margin-top: 10px;margin-bottom: 10px;}
+    }
     </style>
 </head>
 
@@ -157,184 +165,74 @@
         </div>
     </header>
 
-    <main class="mainList">
+    <main class="textBox">
         <div class="container-fluid">
-            <div class="row">
-                <div class="menuBox col-sm-12">
-                    <a href="overview.html">
-                        <div class="picBox">
-                        <div class="pic" style="background-image: url(images/menu1.jpg);"></div>
-                        <div class="title nokia_font_light"><h2>活動內容<span>Overview</span></h2></div>
-                    </div>
-                    </a>
-                </div>
-                <div class="menuBox col-sm-6">
-                    <a href="agenda.html">
-                        <div class="picBox half">
-                        <div class="pic half" style="background-image: url(images/menu2.jpg);"></div>
-                        <div class="title nokia_font_light"><h2>議程<span>Agenda</span></h2></div>
-                    </div>
-                    </a>
-                </div>
-                <div class="menuBox col-sm-6">
-                    <a href="speakers.html">
-                        <div class="picBox half">
-                        <div class="pic half" style="background-image: url(images/menu3.jpg);"></div>
-                        <div class="title nokia_font_light"><h2>講師<span>Speakers</span></h2></div>
-                    </div>
-                    </a>
-                </div>
-                <div class="menuBox col-sm-6">
-                    <a href="mailto:david@accessus.biz">
-                        <div class="picBox half">
-                        <div class="pic half" style="background-image: url(images/menu4.jpg);"></div>
-                        <div class="title nokia_font_light"><h2>聯絡我們<span>Contact</span></h2></div>
-                    </div>
-                    </a>
-                </div>
-                <div class="menuBox col-sm-6">
-                    <a href="exhibition.html">
-                        <div class="picBox half">
-                        <div class="pic half" style="background-image: url(images/menu5.jpg);"></div>
-                        <div class="title nokia_font_light"><h2>應用展示<span>Exhibition</span></h2></div>
-                    </div>
-                    </a>
-                </div>
-                <!-- <div class="menuBox">
-                    <a href="register.html">
-                        <div class="picBox">
-                        <div class="pic" style="background-image: url(images/menu6.jpg);"></div>
-                        <div class="title nokia_font_light"><p>Sign Up<br>立即報名</p></div>
-                    </div>
-                    </a>
-                </div> -->
+            <div class="title nokia_font_regular">
+                <h2>White Paper / 白皮書</h2>
+            </div>
+            <div class="contextArea">
+                <h3 style="line-height: 32px;">諾基亞首創業界發表 Nokia 5G 成熟度指數
+                    <br>並提供快速實現 5G 轉型的最佳實務供營運商決策參考</h3>
+                <article class="article">
+                    <div class="bdline bdline1"></div>
+                    <p>
+                        <b>諾基亞發表與 Analysys Mason 聯合進行的 Nokia 5G 成熟度指數調查報告，並提供六個布局5G的關鍵成功因素和最佳實務，供營運商參考與應用。根據此一業界第一份 5G 成熟度報告顯示，三分之二的營運商期望 5G 能創造新的收入，七成以上的營運商將提升既有客戶服務列為 5G 的主要目標。同時，在本研究中獲得最高評分的營運商，都已制定可將 5G 效益最大化，並支援新營收模式的策略，例如人工智慧、網路自動化與端到端虛擬化。</b>
+                        </p>
+                    <p>
+                        <b>本研究主要發現：</b><br>
+                        •	2019 至 2020 年第一批 5G 商用服務推出前，營運商將經歷相當陡峭的學習曲線。<br>
+                        •	在本次調查中，5G 策略最常見的目標就是改善客戶體驗、提供可創造新營收來源的靈活度，以及增加企業與 IoT 營收。<br>
+                        •	營運商傾向優先在既有解決方案上建構 5G 服務，不易獲得大量的向上銷售商機。<br>
+                        •	33% 受訪的營運商已將不同垂直市場中的合作夥伴社群串聯起來，但仍有 44% 獨立作業，而 12% 尚未在合作夥伴社群中扮演任何領導角色。
+                    </p>
+                    <p>
+                        儘管全球各國 5G 建設正如火如荼，但 5G 的布局有別於以往，必須與數位策略以及能帶動物聯網 (IoT) 等新興商業模式的趨勢密切結合，才能實現 5G 所承諾的數位化願景。鑑於此時 5G 部署實例不多，營運商對於 5G 的主要成功因素，以及如何最大化其部署的影響力仍缺乏了解，諾基亞與 Analysys Mason 於 2018 年 7 月至 11 月期間 ，收集全球 50 家營運商的調查資料，共同建立了業界第一個結合商業應用與技術成熟度的5G成熟度指數 (5G maturity index)，為業界歸納出六個領域的最佳實務，並提供最佳實務供營運商參考遵循，若營運商能採行報告中的建議，就更有機會在 5G 時代勝出。<br><br>
+                        調查結果發現，除少數例外，大多數營運商的5G思維仍在發展階段 (屬於「謹慎的跟隨者」類型)，這意味著 2019 至 2020 年第一批 5G 商用服務推出前，營運商將經歷相當陡峭的學習曲線。少數走在尖端的營運商已晉身為「均衡型創建者」(七家營運商) 或「技術的推動者」(四家營運商)。<br><br>
+                        整體來說，大多數營運商都已為 5G 服務制定明確的部署時程與策略性願景，也很重視 5G 的商業應用與技術驅動力。在本次調查中，5G 策略最常見的目標就是改善客戶體驗、提供可創造新營收來源的靈活度，以及增加企業與 IoT 營收，這些目標都具有前瞻性與商業價值。
+                    </p>
+                </article>
+                <article class="article">
+                    <div class="bdline bdline2"></div>
+                    <p>
+                        <font color="#124191" style="font-size: 18px;"><b>營運商對 5G 使用案例的開發持保守態度</b></font><br><br>
+                        不過，調查結果也顯示他們對 5G 商用化仍缺乏具體計畫，而且 5G 計畫仍未與內部的數位化策略結合，商業使用案例的優先性也不夠明確。例如，雖然建構靈活的服務平台很重要，但超過 90% 的受訪營運商計畫開發至少四個 5G 使用案例，而願意開發更多使用案例 (八個以上) 的營運商比例相當低 (14%)。第三級與第四級營運商因規模與資源有限，因此投入的使用案例數量較低，這是很合理的結果。不過，願意投入八個以上的第一級與第二級營運商比例也很低 (27%)，顯見營運商對 5G 使用案例仍持保守態度。<br><br>
+                        值得注意的是，調查結果顯示營運商傾向優先在既有解決方案上建構 5G 服務，儘管這是營運商熟悉的部署模式，但因現在的優質客戶願意支付透過 3G/4G 網路提供的進階服務，採用上述模式，反而讓營運商不易獲得大量的向上銷售商機。例如營運商計畫優先發展的使用案例，以智慧城市、智慧家庭、擴增/虛擬實境佔較高比例，只有不到 20% 的受訪者考慮開發以超低延遲通信技術為基礎的使用案例，例如無人機急救服務與智慧運輸解決方案。<br><br>
+                        此外，雖然受訪的營運商知道領導合作夥伴社群的發展是 5G 的關鍵成功因素之一，但他們在這方面的表現仍有顯著差異。33% 受訪的營運商已將不同垂直市場 (產業) 中的合作夥伴社群串聯起來，但仍有 44% 獨立作業，而 12% 尚未在合作夥伴社群中扮演任何領導角色。<br><br>
+                        在本研究中獲得最高評分的營運商－即「均衡型創建者」類型中的營運商－都已制定可將 5G 效益最大化，並支援新營收模式的策略，例如人工智慧、網路自動化與端到端虛擬化。不意外地，「均衡型創建者」與「技術的推動者」這兩類中的所有營運商都來自行動業務發展最發達的地區－已開發的亞太區、北美與西歐。
+                    </p>
+                </article>
+                <article class="article">
+                    <div class="bdline bdline3"></div>
+                    <p>
+                        <font color="#124191" style="font-size: 18px;"><b>營運商在 5G 時代制勝的最佳實務</b></font><br><br>
+                        這份業界首創的研究報告，特別歸納了與 5G 成熟度息息相關的六大關鍵因素，並提供最佳實務供營運商參考遵循。建議營運商可以運用多種策略，讓5G計畫與商業目標及數位轉型歷程結合，進而改善本研究歸納的六大關鍵成功因素，協助其提升 5G 成熟度。<br><br>
+                        <b>•	策略目標：</b>確定 5G 計畫與組織的大多數策略目標緊密結合。5G 計畫的最終目標必須獲得公司最高層的支持與溝通。<br>
+                        <b>•	使用案例：</b>發展各種 5G 服務，並採用靈活的營運模式，以迅速因應非計畫中的使用案例。<br>
+                        <b>•	合作夥伴生態系統規模：</b>建立各種合作關係，藉由合作夥伴的協助提供新 5G 服務，並建立以營運商為中心的廣大社群。<br>
+                        <b>•	商用部署的敏捷性：</b>配合 5G 計畫轉換既有平台 (例如 OSS/BSS)，建立敏捷的數位化架構，以支援各種商業模式與產業，並有效降低推出新服務所需的時間與成本。<br>
+                        <b>•	自動化：</b>以達到最高程度的自動化為前提來做規劃，包括網路與商業流程的自動化，並以端到端自動化為目標制定明確的發展藍圖，讓 5G 應用達到最高效率與最佳回應速度。<br>
+                        <b>•	營運數位化：</b>投資各種可提升 5G 效益的數位技術，例如人工智慧/機器學習、電信雲與 DevOps 等新流程。將這些技術與整體的轉型策略結合，並制定明確目標。
+                        <br><br>
+                        針對跨產業的生態系統合作，諾基亞除了與許多有電信等級網路需求的企業和產業擴大合作，共同發掘高成長和高利潤的商機，推出客製化網路與軟體套件之外，諾基亞貝爾實驗室 (Nokia Bell Labs) 也研發推出了 Future X for industries 策略與架構，期望整合工業物聯網 (IIoT)、邊緣雲支援的強化智慧和先進安全分析，及端到端 5G 網路等技術，加速製造、物流、交通和能源等產業，以及政府和城市的數位轉型計畫。<br><br>
+                        由於 5G 產業並非只是採用新頻譜的創新無線技術，它還包含了跨領域的邊緣雲、自動化、人工智慧、新創的核心功能與內容服務等，需要導入新的方法以建構 5G 網路新架構。面對這麼多跨領域5G新興網路技術、元件和使用案例整合部署的複雜性，為協助營運商簡化其 5G 部署並加速其服務的上市時程，諾基亞以其 Future X  架構為基礎，從預設計、預整合、預驗證三個途徑，幫助營運商在預算緊湊下滿足最高的客戶效能要求，並更快推出客製化服務以贏得競爭優勢。
+                    </p>
+                </article>
             </div>
         </div>
     </main>
 
-    <section class="information">
-        <div class="container-fluid">
-            <div class="textArea">
-                <h2>活動資訊<span>Event Information</span></h2>
-                <h4>Date：2022 年 10 月 13 日 (四) 09:00 – 17:30</h4>
-                <h4>Venue：華山文化創意產業園區 紅磚六合院(西1館) / Huashan Creative Park-W1 Building</h4>
-                <h4>Address：100 台北市中正區八德路一段1號 / No.1, Sec. 1, Bade Rd., Zhongzheng Dist., Taipei City 100</h4>
-                <div class="btnArea">
-                <a href="register.html" title="LOOK MORE">REGISTRATION <i class="fas fa-arrow-right"></i></a>
+    <section class="goBack">
+        <div class="backBtn">
+            <a href="annex/5G 轉型的最佳實務 - Nokia 5G 成熟度指數的主要發現.pdf" target="_blank">
+                <div class="btn">
+                    中文版下載
                 </div>
-            </div> 
-        </div>
-    </section>
-
-    <aside class="counter">
-        <div class="container-fluid">
-            <!-- <h4 class="countdown">Be a<br>INNOVATOR</h4> -->
-            <div class="timeLoader">
-                <div class="timeBar">
-                    <div class="timeBox">
-                        <h2 id="day"></h2>
-                        <h5>days</h5>
-                    </div>
-                    <div class="timeBox">
-                        <h2 id="hour"></h2>
-                        <h5>hours</h5>
-                    </div>
+            </a>
+            <a href="annex/BEST PRACTICES FOR 5G TRANSFORMATION-KEY FINDINGS FROM THE NOKIA 5G MATU....pdf" target="_blank">
+                <div class="btn">
+                    English version download
                 </div>
-                <div class="timeBar">
-                    <div class="timeBox">
-                        <h2 id="minute"></h2>
-                        <h5>minutes</h5>
-                    </div>
-                    <div class="timeBox">
-                        <h2 id="second"></h2>
-                        <h5>seconds</h5>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </aside>
-
-    <section class="sectionSpeaker">
-        <div class="container-fluid">
-            <div class="carousel-inner">
-                <div class="owl-carousel eventCarousel owl-theme">
-                    <div class="item">
-                        <a href="speaker1.html">
-                            <div class="picBar">
-                                <div class="pic" style="background-image: url(images/lawyer/speaker-1.jpg);"></div>
-                            </div>
-                            <h4>Markus Borchert</h4>
-                            <h6>President of Nokia Greater China</h6>
-                        </a>
-                    </div>
-                    <div class="item">
-                        <a href="speaker2.html">
-                            <div class="picBar">
-                                <div class="pic" style="background-image: url(images/lawyer/speaker-2.jpg);"></div>
-                            </div>
-                            <h4>Leslie Shannon</h4>
-                            <h6>Head of Ecosystem and Trend Scouting, Nokia</h6>
-                        </a>
-                    </div>
-                    <div class="item">
-                        <a href="speaker3.html">
-                            <div class="picBar">
-                                <div class="pic" style="background-image: url(images/lawyer/speaker-3.jpg);"></div>
-                            </div>
-                            <h4>Susanna Patja</h4>
-                            <h6>Head of Cloud & Network Services Business Group, Greater China Market, Nokia</h6>
-                        </a>
-                    </div>
-                    <div class="item">
-                        <a href="speaker4.html">
-                            <div class="picBar">
-                                <div class="pic" style="background-image: url(images/lawyer/speaker-4.jpg);"></div>
-                            </div>
-                            <h4>Kothandaraman, Vimalkumar</h4>
-                            <h6>Head of APAC FN BC Adv Presales & Solution</h6>
-                        </a>
-                    </div>
-                    <div class="item">
-                        <a href="speaker5.html">
-                            <div class="picBar">
-                                <div class="pic" style="background-image: url(images/lawyer/speaker-5.jpg);"></div>
-                            </div>
-                            <h4>Kent Wong</h4>
-                            <h6>Vice President and Head of IP/Optical Networks Regional Business Center Asia Pacific, Nokia
-                                Networks</h6>
-                        </a>
-                    </div>
-                    <div class="item">
-                        <a href="speaker6.html">
-                            <div class="picBar">
-                                <div class="pic" style="background-image: url(images/lawyer/speaker-6.jpg);"></div>
-                            </div>
-                            <h4>Ragheed Al-dabbagh</h4>
-                            <h6>Head of Optical Networks Product Management, Architecture & Consulting Engineering
-                                Nokia - APJ, India, Greater China</h6>
-                        </a>
-                    </div>
-                    <div class="item">
-                        <a href="speaker7.html">
-                            <div class="picBar">
-                                <div class="pic" style="background-image: url(images/lawyer/speaker-7.jpg);"></div>
-                            </div>
-                            <h4>Harri Holma</h4>
-                            <h6>Technology Leadership Officer Advisor, Nokia Bell Labs</h6>
-                        </a>
-                    </div>
-                    <div class="item">
-                        <a href="speaker8.html">
-                            <div class="picBar">
-                                <div class="pic" style="background-image: url(images/lawyer/speaker-9.jpg);"></div>
-                            </div>
-                            <h4>Jason Liu</h4>
-                            <h6>Vice President, Greater China Market, Nokia<br>
-                                President, Nokia Solutions & Networks Taiwan</h6>
-                        </a>
-                    </div>
-                </div>
-            </div>
+            </a>
         </div>
     </section>
 
@@ -388,30 +286,18 @@
             autoplayTimeout: 5000,
             autoplayHoverPause: false,
         });
-        $('.owl-carousel.eventCarousel').owlCarousel({
-            nav: true,
-            items: 4,
-            loop: true,
-            margin: 0,
-            autoplay: true,
-            slideTransition: 'linear',
-            autoplayTimeout: 6000,
-            autoplaySpeed: 6000,
-            autoplayHoverPause: false,
-            responsive:{
-                0:{
-                    items:1
-                },
-                480:{
-                    items:2
-                },
-                768:{
-                    items:3
-                },
-                992:{
-                    items:4
-                }
-            }
+    </script>
+    <script>
+        var lineEffect = gsap.timeline();
+        lineEffect.from(".bdline1", 1, {width:0})
+            .from(".bdline2", 1, {width:0})
+            .from(".bdline3", 1, {width:0})
+        ScrollTrigger.create({
+            animation: lineEffect,
+            trigger: ".textBox",
+            start: "top 40%",
+            end:"bottom 50%",
+            toggleActions: "restart none none none",
         });
     </script>
 </body>

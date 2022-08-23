@@ -1,0 +1,161 @@
+/* Welcome to Compass. Use this file to write IE specific override styles.
+ * Import this file using the following HTML or equivalent:
+ * <!--[if IE]>
+ *   <link href="/stylesheets/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
+ * <![endif]--> */
+@font-face {
+  font-family: "NokiaPureHead_Light";
+  src: url(../fonts/NokiaPureHeadline_Light.ttf);
+}
+
+@font-face {
+  font-family: "NokiaPureHead_Regular";
+  src: url(../fonts/NokiaPureHeadline_Regular.ttf);
+}
+
+@keyframes move {
+  0% {
+    top: 0vw;
+  }
+  20% {
+    top: -5vw;
+  }
+  40% {
+    top: -10vw;
+  }
+  60% {
+    top: -15vw;
+  }
+  80% {
+    top: -20vw;
+  }
+}
+
+@-webkit-keyframes move {
+  0% {
+    top: 0vw;
+  }
+  20% {
+    top: -5vw;
+  }
+  40% {
+    top: -10vw;
+  }
+  60% {
+    top: -15vw;
+  }
+  80% {
+    top: -20vw;
+  }
+}
+
+.textBox {
+  padding-top: 50px;
+  padding-bottom: 80px;
+  position: relative;
+  overflow: hidden;
+}
+
+.textBox .container-fluid {
+  width: 60%;
+}
+
+@media only screen and (max-width: 1279px) {
+  .textBox .container-fluid {
+    width: 80%;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .textBox .container-fluid {
+    width: 90%;
+  }
+}
+
+.textBox .container-fluid .title {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #124191;
+}
+
+.textBox .container-fluid .title h2 {
+  font-weight: bold;
+}
+
+@media only screen and (max-width: 767px) {
+  .textBox .container-fluid .title h2 {
+    font-size: 28px;
+  }
+}
+
+.textBox .container-fluid .contextArea h2 {
+  color: #124191;
+  margin-top: 0;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.textBox .container-fluid .contextArea h3 {
+  margin-top: 0;
+  color: #124191;
+  font-weight: bold;
+}
+
+.textBox .container-fluid .contextArea p {
+  margin-top: 30px;
+}
+
+.textBox .container-fluid .article {
+  position: relative;
+  margin-top: 50px;
+  padding-top: 30px;
+}
+
+.textBox .container-fluid .article .bdline {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 1px;
+  background-color: #bec8d2;
+}
+
+.goBack {
+  width: 100%;
+  background-color: #f5f5f5;
+  color: #124191;
+}
+
+.goBack .backBtn {
+  width: 60%;
+  margin: auto;
+  text-align: center;
+}
+
+.goBack .backBtn a .btn {
+  padding: 10px 20px;
+  margin: 10px;
+  margin-top: 30px;
+  margin-bottom: 50px;
+  border: solid 1px #124191;
+  color: #124191;
+  transition: all 0.2s;
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  -ms-transition: all 0.2s;
+}
+
+.goBack .backBtn a:hover, .goBack .backBtn a:focus {
+  text-decoration: none;
+}
+
+.goBack .backBtn a:hover .btn, .goBack .backBtn a:focus .btn {
+  background-color: #124191;
+  color: #fff;
+}
+
+.footer {
+  margin-top: 0;
+}
+/*# sourceMappingURL=textpage.css.map */

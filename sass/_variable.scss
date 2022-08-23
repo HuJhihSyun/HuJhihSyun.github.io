@@ -1,0 +1,115 @@
+$blue:#124191;
+$rgblue:#0065ed;
+$blueblack:#001135;
+$lightblue:#00c9ff;
+$red:#ff3154;
+$yellow:#fffb00;
+$orange:#ff9910;
+$green:#4bdd33;
+$gray1:#edf3f5;
+$gray2:#bec8d2;
+$gray3:#98a2ae;
+$gray4:#4d5766;
+$gray5:#273142;
+
+@font-face {
+    font-family: "NokiaPureHead_Light";
+    src: url(../fonts/NokiaPureHeadline_Light.ttf);}
+@font-face {
+    font-family: "NokiaPureHead_Regular";
+    src: url(../fonts/NokiaPureHeadline_Regular.ttf);}
+
+@mixin shadow($x, $y, $b, $a) {
+    box-shadow: $x $y $b rgba(#000, $a);
+}
+
+@mixin translate($x, $y) {
+    transform: translate($x, $y);
+    -webkit-transform: translate($x, $y);
+    -moz-transform: translate($x, $y);
+    -ms-transform: translate($x, $y);
+}
+
+@mixin scale($z) {
+    transform: scale($z);
+    -webkit-transform: scale($z);
+    -moz-transform: scale($z);
+    -ms-transform: scale($z);
+}
+
+@mixin transition($s) {
+    transition: all $s;
+    -webkit-transition: all $s;
+    -moz-transition: all $s;
+    -o-transition: all $s;
+    -ms-transition: all $s;
+}
+
+@mixin flex {
+    display: flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+}
+
+@mixin jcc {
+    justify-content: center;
+    -webkit-box-pack: center;
+    -moz-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+}
+
+@mixin aic {
+    align-items: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+}
+
+@mixin jcsb {
+    justify-content: space-between;
+    -webkit-box-pack: justify;
+    -moz-box-pack: justify;
+    -ms-flex-pack: justify;
+    -webkit-justify-content: space-between;
+}
+
+@mixin row {
+    flex-direction: row;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+}
+
+@mixin column {
+    flex-direction: column;
+    -webkit-box-direction: normal;
+    -webkit-box-orient: vertical;
+    -moz-box-direction: normal;
+    -moz-box-orient: vertical;
+}
+
+@keyframes move{
+	0%  { top: 0vw; }
+	20% { top: -5vw; }
+	40% { top: -10vw; }
+	60% { top: -15vw; }
+	80% { top: -20vw; }
+}
+	
+@-webkit-keyframes move {
+	0%  { top: 0vw; }
+	20% { top: -5vw; }
+	40% { top: -10vw; }
+	60% { top: -15vw; }
+	80% { top: -20vw; }
+}
+@-moz-keyframes move {
+	0%  { top: 0vw; }
+	20% { top: -5vw; }
+	40% { top: -10vw; }
+	60% { top: -15vw; }
+	80% { top: -20vw; }
+}

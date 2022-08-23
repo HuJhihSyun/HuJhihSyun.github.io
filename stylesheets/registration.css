@@ -1,0 +1,353 @@
+/* Welcome to Compass. Use this file to write IE specific override styles.
+ * Import this file using the following HTML or equivalent:
+ * <!--[if IE]>
+ *   <link href="/stylesheets/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
+ * <![endif]--> */
+@font-face {
+  font-family: "NokiaPureHead_Light";
+  src: url(../fonts/NokiaPureHeadline_Light.ttf);
+}
+
+@font-face {
+  font-family: "NokiaPureHead_Regular";
+  src: url(../fonts/NokiaPureHeadline_Regular.ttf);
+}
+
+@keyframes move {
+  0% {
+    top: 0vw;
+  }
+  20% {
+    top: -5vw;
+  }
+  40% {
+    top: -10vw;
+  }
+  60% {
+    top: -15vw;
+  }
+  80% {
+    top: -20vw;
+  }
+}
+
+@-webkit-keyframes move {
+  0% {
+    top: 0vw;
+  }
+  20% {
+    top: -5vw;
+  }
+  40% {
+    top: -10vw;
+  }
+  60% {
+    top: -15vw;
+  }
+  80% {
+    top: -20vw;
+  }
+}
+
+.registration {
+  margin-top: 50px;
+  padding-bottom: 80px;
+  position: relative;
+  overflow: hidden;
+}
+
+.registration .container-fluid {
+  width: 70%;
+}
+
+@media only screen and (max-width: 1279px) {
+  .registration .container-fluid {
+    width: 80%;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .registration .container-fluid {
+    width: 90%;
+  }
+}
+
+.registration .container-fluid .title {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #124191;
+  font-weight: bold;
+}
+
+.registration .container-fluid .regisPad .form-group {
+  margin-top: 50px;
+  display: flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  justify-content: space-between;
+  -webkit-box-pack: justify;
+  -moz-box-pack: justify;
+  -ms-flex-pack: justify;
+  -webkit-justify-content: space-between;
+  align-items: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  width: 100%;
+}
+
+@media only screen and (max-width: 767px) {
+  .registration .container-fluid .regisPad .form-group {
+    -ms-flex-direction: column;
+        flex-direction: column;
+    -webkit-box-direction: normal;
+    -webkit-box-orient: vertical;
+  }
+}
+
+.registration .container-fluid .regisPad .form-group label {
+  white-space: nowrap;
+  margin-right: 5px;
+  color: #001135;
+}
+
+.registration .container-fluid .regisPad .form-group label sup {
+  color: #0065ed;
+}
+
+@media only screen and (max-width: 767px) {
+  .registration .container-fluid .regisPad .form-group span {
+    display: none;
+  }
+}
+
+.registration .container-fluid .regisPad .form-group .form-control {
+  position: relative;
+  display: inline-block;
+  background-color: transparent;
+  border-radius: 0;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #bec8d2;
+  transition: all 0.2s;
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  -ms-transition: all 0.2s;
+}
+
+@media only screen and (max-width: 767px) {
+  .registration .container-fluid .regisPad .form-group .form-control {
+    text-align: center;
+  }
+}
+
+.registration .container-fluid .regisPad .form-group .form-control:hover {
+  border-color: #98a2ae;
+}
+
+.registration .container-fluid .regisPad .form-group .form-control:focus {
+  border-color: #124191;
+}
+
+@media only screen and (max-width: 767px) {
+  .registration .container-fluid .regisPad .form-group font {
+    display: none;
+  }
+}
+
+.registration .container-fluid .regisPad .form-group .inputGroup {
+  position: relative;
+  width: 100%;
+}
+
+.registration .container-fluid .regisPad .form-group .inputGroup.quater {
+  margin-left: 10px;
+}
+
+@media only screen and (max-width: 767px) {
+  .registration .container-fluid .regisPad .form-group .inputGroup.quater {
+    margin-left: 0;
+  }
+}
+
+.registration .container-fluid .regisPad .form-group .inputGroup.half {
+  width: 50%;
+}
+
+@media only screen and (max-width: 767px) {
+  .registration .container-fluid .regisPad .form-group .inputGroup.half {
+    width: 100%;
+  }
+}
+
+.registration .container-fluid .regisPad .form-group .inputGroup label {
+  padding: 6px 12px;
+  margin-right: 0.5%;
+  margin-left: 0.5%;
+  width: 100%;
+  text-align: left;
+  border: solid 1px #ccc;
+  border-radius: 5px;
+  cursor: pointer;
+  position: relative;
+  z-index: 2;
+  transition: all 0.2s;
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  -ms-transition: all 0.2s;
+  overflow: hidden;
+}
+
+@media only screen and (max-width: 767px) {
+  .registration .container-fluid .regisPad .form-group .inputGroup label {
+    width: 100%;
+    margin-right: 0;
+    margin-left: 0;
+  }
+}
+
+.registration .container-fluid .regisPad .form-group .inputGroup input {
+  width: 32px;
+  height: 32px;
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+  z-index: 2;
+  position: absolute;
+  right: 30px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  cursor: pointer;
+  visibility: hidden;
+}
+
+.registration .container-fluid .regisPad .form-group .inputGroup input:hover ~ label {
+  color: #273142;
+  border: solid 1px #edf3f5;
+  background-color: #edf3f5;
+  transition: all 0.2s;
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  -ms-transition: all 0.2s;
+}
+
+.registration .container-fluid .regisPad .form-group .inputGroup input:checked ~ label {
+  color: #fff;
+  border: solid 1px #0065ed;
+  background-color: #0065ed;
+  transition: all 0.2s;
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  -ms-transition: all 0.2s;
+}
+
+.registration .container-fluid .regisPad .form-group.submit {
+  display: flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  justify-content: center;
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  align-items: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+}
+
+.registration .container-fluid .regisPad .form-group.submit .submitBtn {
+  padding: 10px 50px;
+  background-color: #0065ed;
+  outline: none;
+  border: none;
+  color: #fff;
+  border-radius: 5px;
+}
+
+@media only screen and (max-width: 767px) {
+  .registration .container-fluid .regisPad .form-group.submit .submitBtn {
+    width: 100%;
+  }
+}
+
+.registration .container-fluid .regisPad .form-group.submit .submitBtn:hover {
+  background-color: #124191;
+}
+
+.registration .container-fluid .regisPad .form-group.submit .submitBtn:focus, .registration .container-fluid .regisPad .form-group.submit .submitBtn:active {
+  background-color: #273142;
+}
+
+.registration .container-fluid .regisPad .barSpace {
+  height: 30px;
+}
+
+@media only screen and (max-width: 767px) {
+  .registration .container-fluid .regisPad .barSpace {
+    height: 100px;
+  }
+}
+
+.registration .container-fluid .regisPad .conclude p {
+  color: #273142;
+}
+
+.registration .container-fluid .regisPad .explain {
+  margin-top: 50px;
+}
+
+.registration .container-fluid .regisPad .explain ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.registration .container-fluid .regisPad .explain ul li {
+  color: #98a2ae;
+  margin-bottom: 10px;
+}
+
+@-webkit-keyframes charge {
+  0% {
+    transform: translate(0%, 0%);
+    -webkit-transform: translate(0%, 0%);
+    -moz-transform: translate(0%, 0%);
+    -ms-transform: translate(0%, 0%);
+  }
+  100% {
+    transform: translate(2%, 0%);
+    -webkit-transform: translate(2%, 0%);
+    -moz-transform: translate(2%, 0%);
+    -ms-transform: translate(2%, 0%);
+  }
+}
+
+@keyframes charge {
+  0% {
+    transform: translate(0%, 0%);
+    -webkit-transform: translate(0%, 0%);
+    -moz-transform: translate(0%, 0%);
+    -ms-transform: translate(0%, 0%);
+  }
+  100% {
+    transform: translate(2%, 0%);
+    -webkit-transform: translate(2%, 0%);
+    -moz-transform: translate(2%, 0%);
+    -ms-transform: translate(2%, 0%);
+  }
+}
+
+.footer {
+  margin-top: 0;
+}
+/*# sourceMappingURL=registration.css.map */

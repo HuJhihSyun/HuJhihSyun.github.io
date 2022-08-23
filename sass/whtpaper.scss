@@ -1,0 +1,132 @@
+/* Welcome to Compass. Use this file to write IE specific override styles.
+ * Import this file using the following HTML or equivalent:
+ * <!--[if IE]>
+ *   <link href="/stylesheets/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
+ * <![endif]--> */
+@import './variable';
+
+// whtpaper
+.section-whtpaper {
+	position: relative;
+	overflow: hidden;
+	padding-top: 50px;
+	padding-bottom: 80px;
+	.container-fluid {
+		width: 80%;
+		a {
+			.whtcover {
+				margin-top: 30px;
+				.box {
+					width: 100%;height: 50vw;
+					margin: auto;
+					position: relative;
+					background-color: $gray5;
+					box-shadow: 2px 2px 5px rgba(#000,.2);
+					overflow: hidden;
+					@include flex;
+					@include column;
+					@media only screen and (max-width: 992px) {
+						width: 37.5vw;height: 54vw;
+					}
+					@media only screen and (max-width: 767px) {
+						width: 100%;height: 110vw;
+					}
+					.top {
+						position: absolute;
+						left: 0;top: 0;
+						width: 100%;height: 50vw;
+						@include transition(.7s);
+						background-repeat: no-repeat;
+		                background-position: center center;
+		                background-size: cover;
+		                @media only screen and (max-width: 992px) {
+						width: 37.5vw;height: 54vw;
+						}
+						@media only screen and (max-width: 767px) {
+							width: 100%;height: 110vw;
+						}
+						&:after {
+							content: '';
+							position: absolute;
+							width: 100%;height: 100%;
+							top: 0;left: 0;
+							background-color: #000;
+							opacity: 0;
+							@include transition(.7s);
+						}
+						&:before {
+							content: 'Read more';
+							position: absolute;
+							color: #fff;
+							font-size: 16px;
+							font-weight: bold;
+							top: 50%;left: 50%;
+							@include translate(-50%,-50%);
+							@include transition(.7s);
+							opacity: 0;
+							z-index: 1;
+							@media only screen and (max-width: 1100px) {display: none;}
+						}
+					}
+					.bottom {
+						position: absolute;
+						width: 100%;height: 60px;
+						left: 0;bottom: -60px;
+						background-color: $gray1;
+						@include transition(.4s);
+						.text {
+							@include flex;
+							@include jcc;
+							@include aic;
+							@include column;
+							h4 {
+								display: block;
+								width: 90%;
+								margin: auto;
+								font-weight: bold;
+								font-size: 16px;
+								color: $blue;
+								padding: 10px 0px 2px 0px;
+							}
+							p {
+								display: block;
+								color: $gray5;
+								width: 90%;
+								margin: auto;
+								padding: 0px 0px 20px 0px;
+							}
+							@media only screen and (min-width:450px) and (max-width: 767px) {
+								flex:1;
+							}
+						}
+					}
+				}
+			}
+			&:hover {
+				.whtcover {
+					.box {
+						.top {
+							transform: scale(1.1);
+							-webkit-transform: scale(1.1);
+							-moz-transform: scale(1.1);
+							-ms-transform: scale(1.1);
+							&:after {
+								opacity: .3;
+							}
+							&:before {
+								opacity: 1;
+							}
+						}
+						.bottom {
+							bottom: 0;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+.footer {
+	margin-top: 0;
+}

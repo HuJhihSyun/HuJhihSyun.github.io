@@ -1,0 +1,115 @@
+/* Welcome to Compass. Use this file to write IE specific override styles.
+ * Import this file using the following HTML or equivalent:
+ * <!--[if IE]>
+ *   <link href="/stylesheets/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
+ * <![endif]--> */
+@import './variable';
+
+// tagMenu
+.tagMenu {
+	margin-top: 30px;
+	.container-fluid {
+		width: 85%;
+		h2 {color: $blue;}
+		p {
+			color: $blue;
+			max-width: 700px;
+		}
+		.pic {
+			position: relative;
+			width: 100%;height: 38vw;
+			background-image: url(../images/exhibition_banner.jpg);
+			background-repeat: no-repeat;
+	        background-position: center center;
+	        background-size: cover;
+	        a {
+	        	.tag {
+		        	position: absolute;
+		        	top: 37%;
+		        	width: 11vw;height: 11vw;
+					background-repeat: no-repeat;
+		        	background-position: center center;
+		        	background-size: cover;
+		        	transform: scale(0.9);
+		        	@include transition(.2s);
+		        	&.tag1 {left: 23.3%;background-image: url(../images/experience.png);}
+		        	&.tag2 {left: 41.3%;background-image: url(../images/operation.png);}
+		        	&.tag3 {left: 59.4%;background-image: url(../images/networks.png);}
+		        }
+		        &:hover {
+		        	.tag {
+		        		transform: scale(1);
+		        	}
+		        }
+	        }
+		}
+	}
+}
+
+// main
+.mainList {
+	.row {
+		.menuBox {
+			.picBox {
+				&:hover {
+					.title {
+						top: 10%;
+						@include translate(0%,0%);
+						p{font-size: 16px;}
+					}
+				}
+			}
+			.title {
+				left: 10%;top: 5%;
+				@include translate(0%,0%);
+				max-width: 250px;
+			}
+		}
+	}
+
+	h2,p {margin-left: 15px;}
+
+	&.experience {
+		h2 {color: $blue;}
+		p {
+			color: $blue;
+			display: inline-block;
+			max-width: 800px;
+		}
+	}
+
+	&.operation {
+		background-color: $blueblack;
+		h2 {color: #fff;}
+		p {
+			color: #fff;
+			display: inline-block;
+			max-width: 800px;
+		}
+	}
+
+	&.network {
+		background-color: $gray2;
+		h2 {color: $gray5;}
+		p {
+			color: $gray5;
+			display: inline-block;
+			max-width: 800px;
+		}
+	}
+}
+
+.explain {
+	background-color: $gray1;
+	padding-top: 20px;
+	padding-bottom: 50px;
+	.container-fluid {
+		width: 82%;
+		h2 {color: $blueblack;}
+		p {color: $blueblack;}
+	}
+}
+
+.footer {
+	margin-top: 0;
+}
