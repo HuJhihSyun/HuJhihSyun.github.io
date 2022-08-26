@@ -4,12 +4,6 @@
 
 $(document).ready(function(){
 
-    //fly background
-    for (i=0;i<5;i++){
-        $('#vBoard').append('<li class="vline">');
-    }
-    TweenMax.staggerTo(".vline", 0.5, {opacity:1, height:"100vh"}, 0.1);
-
     // date counter
     var now = new Date().getTime();
     var step1 = new Date("Oct 13, 2022 09:00:00").getTime();
