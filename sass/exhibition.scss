@@ -60,53 +60,77 @@
 				}
 			}
 			.title {
-				left: 10%;top: 5%;
+				left: 5%;top: 5%;
 				@include translate(0%,0%);
-				max-width: 250px;
+				max-width: 300px;
 			}
 		}
 	}
 
-	h2,p {margin-left: 15px;}
-
-	&.experience {
-		h2 {color: $blue;}
+	.titleBar {
+		position: relative;
+		h2 {
+			margin-left: 15px;
+			padding-bottom: 15px;
+		}
 		p {
-			color: $blue;
-			display: inline-block;
-			max-width: 800px;
+			margin-left: 15px;
+			padding-bottom: 15px;
+		}
+		.bdline {
+			position: absolute;
+			width: 100%;
+			height: 1px;
+			left: 0;bottom: 0;
+			background-color: $gray2;
 		}
 	}
 
-	&.operation {
+	&.NIFNBGBooth {
+		background-color: $blue;
+		.titleBar {
+			h2 {color: #fff;}
+			p {
+				color: #fff;
+			}
+		}
+	}
+
+	&.NIOPBGBooth {
+		.titleBar {
+			h2 {color: $blue;}
+			p {
+				color: $blue;
+			}
+		}
+	}
+
+	&.CNSBGBooth {
+		.titleBar {
+			h2 {color: $blue;}
+			p {
+				color: $blue;
+			}
+		}
+	}
+
+	&.NIIPBGBooth {
 		background-color: $blueblack;
-		h2 {color: #fff;}
-		p {
-			color: #fff;
-			display: inline-block;
-			max-width: 800px;
+		.titleBar {
+			h2 {color: #fff;}
+			p {
+				color: #fff;
+			}
 		}
 	}
 
-	&.network {
-		background-color: $gray2;
-		h2 {color: $gray5;}
-		p {
-			color: $gray5;
-			display: inline-block;
-			max-width: 800px;
+	&.MNBGBooth {
+		.titleBar {
+			h2 {color: $blue;}
+			p {
+				color: $blue;
+			}
 		}
-	}
-}
-
-.explain {
-	background-color: $gray1;
-	padding-top: 20px;
-	padding-bottom: 50px;
-	.container-fluid {
-		width: 82%;
-		h2 {color: $blueblack;}
-		p {color: $blueblack;}
 	}
 }
 

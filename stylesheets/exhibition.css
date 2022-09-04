@@ -126,73 +126,84 @@
 }
 
 .mainList .row .menuBox .title {
-  left: 10%;
+  left: 5%;
   top: 5%;
   transform: translate(0%, 0%);
   -webkit-transform: translate(0%, 0%);
   -moz-transform: translate(0%, 0%);
   -ms-transform: translate(0%, 0%);
-  max-width: 250px;
+  max-width: 300px;
 }
 
-.mainList h2, .mainList p {
+.mainList .titleBar {
+  position: relative;
+}
+
+.mainList .titleBar h2 {
   margin-left: 15px;
+  padding-bottom: 15px;
 }
 
-.mainList.experience h2 {
-  color: #124191;
+.mainList .titleBar p {
+  margin-left: 15px;
+  padding-bottom: 15px;
 }
 
-.mainList.experience p {
-  color: #124191;
-  display: inline-block;
-  max-width: 800px;
-}
-
-.mainList.operation {
-  background-color: #001135;
-}
-
-.mainList.operation h2 {
-  color: #fff;
-}
-
-.mainList.operation p {
-  color: #fff;
-  display: inline-block;
-  max-width: 800px;
-}
-
-.mainList.network {
+.mainList .titleBar .bdline {
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  left: 0;
+  bottom: 0;
   background-color: #bec8d2;
 }
 
-.mainList.network h2 {
-  color: #273142;
+.mainList.NIFNBGBooth {
+  background-color: #124191;
 }
 
-.mainList.network p {
-  color: #273142;
-  display: inline-block;
-  max-width: 800px;
+.mainList.NIFNBGBooth .titleBar h2 {
+  color: #fff;
 }
 
-.explain {
-  background-color: #edf3f5;
-  padding-top: 20px;
-  padding-bottom: 50px;
+.mainList.NIFNBGBooth .titleBar p {
+  color: #fff;
 }
 
-.explain .container-fluid {
-  width: 82%;
+.mainList.NIOPBGBooth .titleBar h2 {
+  color: #124191;
 }
 
-.explain .container-fluid h2 {
-  color: #001135;
+.mainList.NIOPBGBooth .titleBar p {
+  color: #124191;
 }
 
-.explain .container-fluid p {
-  color: #001135;
+.mainList.CNSBGBooth .titleBar h2 {
+  color: #124191;
+}
+
+.mainList.CNSBGBooth .titleBar p {
+  color: #124191;
+}
+
+.mainList.NIIPBGBooth {
+  background-color: #001135;
+}
+
+.mainList.NIIPBGBooth .titleBar h2 {
+  color: #fff;
+}
+
+.mainList.NIIPBGBooth .titleBar p {
+  color: #fff;
+}
+
+.mainList.MNBGBooth .titleBar h2 {
+  color: #124191;
+}
+
+.mainList.MNBGBooth .titleBar p {
+  color: #124191;
 }
 
 .footer {
