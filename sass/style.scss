@@ -107,8 +107,6 @@ body {
 						@include transition(.2s);
 					}
 					@media only screen and (max-width: 991px) {
-						font-size: 12px;
-						letter-spacing: -0.5px;
 						li {
 							padding: 20px 5px;
 						}

@@ -231,10 +231,6 @@ body {
 }
 
 @media only screen and (max-width: 991px) {
-  .navBar .contain .menu ul a {
-    font-size: 12px;
-    letter-spacing: -0.5px;
-  }
   .navBar .contain .menu ul a li {
     padding: 20px 5px;
   }

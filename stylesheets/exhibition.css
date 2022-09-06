@@ -113,6 +113,124 @@
           transform: scale(1);
 }
 
+.exhibitionArea {
+  margin-top: 50px;
+  margin-bottom: 80px;
+}
+
+.exhibitionArea .container-fluid {
+  width: 70%;
+}
+
+@media only screen and (max-width: 1279px) {
+  .exhibitionArea .container-fluid {
+    width: 80%;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .exhibitionArea .container-fluid {
+    width: 90%;
+  }
+}
+
+.exhibitionArea .container-fluid .exhibitionBar .titleBar {
+  position: relative;
+}
+
+.exhibitionArea .container-fluid .exhibitionBar .titleBar h2 {
+  padding-bottom: 10px;
+  color: #124191;
+}
+
+.exhibitionArea .container-fluid .exhibitionBar .titleBar .bdline {
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  left: 0;
+  bottom: 0;
+  background-color: #bec8d2;
+}
+
+.exhibitionArea .container-fluid .exhibitionBar .picBox {
+  position: relative;
+  width: 100%;
+  height: 10vw;
+  overflow: hidden;
+  transition: all 0.2s;
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  -ms-transition: all 0.2s;
+}
+
+@media only screen and (max-width: 767px) {
+  .exhibitionArea .container-fluid .exhibitionBar .picBox {
+    height: 15vw;
+  }
+}
+
+.exhibitionArea .container-fluid .exhibitionBar .picBox .pic {
+  position: absolute;
+  width: 100%;
+  height: 24vw;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  transition: all 0.2s;
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  -ms-transition: all 0.2s;
+}
+
+@media only screen and (max-width: 767px) {
+  .exhibitionArea .container-fluid .exhibitionBar .picBox .pic {
+    height: 15vw;
+  }
+}
+
+.exhibitionArea .container-fluid .exhibitionBar .exhibitionList {
+  list-style-type: none;
+  margin-top: 10px;
+  padding-left: 0;
+}
+
+.exhibitionArea .container-fluid .exhibitionBar .exhibitionList li {
+  position: relative;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #bec8d2;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+}
+
+.exhibitionArea .container-fluid .exhibitionBar .exhibitionList li:hover {
+  background-color: #edf3f5;
+}
+
+.exhibitionArea .container-fluid .exhibitionBar .exhibitionList li:hover:before {
+  width: 100%;
+}
+
+.exhibitionArea .container-fluid .exhibitionBar .exhibitionList li:before {
+  position: absolute;
+  content: '';
+  width: 0;
+  height: 1px;
+  background-color: #0065ed;
+  left: 0;
+  bottom: 0;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+}
+
 .mainList .row .menuBox .picBox:hover .title {
   top: 10%;
   transform: translate(0%, 0%);
