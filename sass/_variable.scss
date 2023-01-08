@@ -1,49 +1,20 @@
-$blue:#124191;
-$rgblue:#0065ed;
-$blueblack:#001135;
-$lightblue:#00c9ff;
-$red:#ff3154;
-$yellow:#fffb00;
-$orange:#ff9910;
-$green:#4bdd33;
-$gray1:#edf3f5;
-$gray2:#bec8d2;
-$gray3:#98a2ae;
-$gray4:#4d5766;
-$gray5:#273142;
-
-@font-face {
-    font-family: "NokiaPureHead_Light";
-    src: url(../fonts/NokiaPureHeadline_Light.ttf);}
-@font-face {
-    font-family: "NokiaPureHead_Regular";
-    src: url(../fonts/NokiaPureHeadline_Regular.ttf);}
-
-@mixin shadow($x, $y, $b, $a) {
-    box-shadow: $x $y $b rgba(#000, $a);
-}
-
-@mixin translate($x, $y) {
-    transform: translate($x, $y);
-    -webkit-transform: translate($x, $y);
-    -moz-transform: translate($x, $y);
-    -ms-transform: translate($x, $y);
-}
-
-@mixin scale($z) {
-    transform: scale($z);
-    -webkit-transform: scale($z);
-    -moz-transform: scale($z);
-    -ms-transform: scale($z);
-}
-
-@mixin transition($s) {
-    transition: all $s;
-    -webkit-transition: all $s;
-    -moz-transition: all $s;
-    -o-transition: all $s;
-    -ms-transition: all $s;
-}
+$navy:#004A96;
+$blue:#21A0D2;
+$dark:#333333;
+$gray:#646569;
+$yellow:#fffbe1;
+$pink:#ffeeee;
+$water:#ADE1F0;
+$orange:#F39500;
+$dark-brown:#af6638;
+$light-brown:#eac5a7;
+$dark-lake: #92eadb;
+$light-lake: #cafdff;
+$grass: #deffe4;
+$green:#65AC1E;
+$jungle: #1b6d5d;
+$red: #de4f43;
+$brown: #b98c5b;
 
 @mixin flex {
     display: flex;
@@ -60,6 +31,13 @@ $gray5:#273142;
     -webkit-justify-content: center;
 }
 
+@mixin jcsb {
+    justify-content: space-between;
+    -webkit-box-pack: justify;
+    -moz-box-pack: justify;
+    -ms-flex-pack: justify;
+}
+
 @mixin aic {
     align-items: center;
     -webkit-box-align: center;
@@ -67,12 +45,28 @@ $gray5:#273142;
     -ms-flex-align: center;
 }
 
-@mixin jcsb {
-    justify-content: space-between;
-    -webkit-box-pack: justify;
-    -moz-box-pack: justify;
-    -ms-flex-pack: justify;
-    -webkit-justify-content: space-between;
+@mixin background($w, $h, $i, $z:cover) {
+	width: $w;
+	height: $h;
+	background-image: $i;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: $z;
+}
+
+@mixin translate($x, $y) {
+    transform: translate($x, $y);
+    -webkit-transform: translate($x, $y);
+    -moz-transform: translate($x, $y);
+    -ms-transform: translate($x, $y);
+}
+
+@mixin transition($x) {
+    transition: all $x;
+    -webkit-transition: all $x;
+    -moz-transition: all $x;
+    -o-transition: all $x;
+    -ms-transition: all $x;
 }
 
 @mixin row {
@@ -91,25 +85,89 @@ $gray5:#273142;
     -moz-box-orient: vertical;
 }
 
-@keyframes move{
-	0%  { top: 0vw; }
-	20% { top: -5vw; }
-	40% { top: -10vw; }
-	60% { top: -15vw; }
-	80% { top: -20vw; }
+@mixin shadow($x, $y, $b, $a) {
+    box-shadow: $x $y $b rgba(#000, $a);
 }
-	
-@-webkit-keyframes move {
-	0%  { top: 0vw; }
-	20% { top: -5vw; }
-	40% { top: -10vw; }
-	60% { top: -15vw; }
-	80% { top: -20vw; }
+
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+TC:700,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@500;700;900&display=swap');
+
+
+@keyframes updown {
+	0% {@include translate(0%, -0.5%)};
+	100% {@include translate(0%, 0.5%)};
 }
-@-moz-keyframes move {
-	0%  { top: 0vw; }
-	20% { top: -5vw; }
-	40% { top: -10vw; }
-	60% { top: -15vw; }
-	80% { top: -20vw; }
+@keyframes swing {
+	0% {@include translate(5%, 0%)};
+	100% {@include translate(-5%, 0%)};
+}
+@keyframes planeFly {
+	0% {@include translate(0%, 0%)};
+    20% {@include translate(100%, 0%)};
+    40% {@include translate(200%, 30%)};
+    60% {@include translate(0%, 0%)};
+    80% {@include translate(-100%, 60%)};
+	100% {@include translate(-200%, 0%)};
+}
+@keyframes planeFly2 {
+	0% {@include translate(0%, 0%)};
+    20% {@include translate(200%, 0%)};
+    40% {@include translate(150%, 50%)};
+    60% {@include translate(100%, 0%)};
+    80% {@include translate(200%, 50%)};
+	100% {@include translate(0%, 0%)};
+}
+@keyframes swipe {
+	0% {@include translate(6%, 0%);opacity: 0;};
+	25% {@include translate(3%, 0%);opacity: 1;};
+	50% {@include translate(0%, 0%);opacity: 1;};
+	75% {@include translate(-3%, 0%);opacity: 1;};
+	100% {@include translate(-6%, 0%);opacity: 0;};
+}
+@keyframes shake {
+    0% {transform: rotate(0deg);}
+    25% {transform: rotate(-5deg);}
+    50% {transform: rotate(0deg);}
+    75% {transform: rotate(5deg);}
+    100% {transform: rotate(0deg);}
+}
+@keyframes zoom {
+    0% {transform: scale(1);}
+    100% {transform: scale(1.05);}
+}
+@keyframes spark {
+    0% {width: 10px;height: 10px;}
+    50% {width: 20px;height: 20px;}
+	100% {width: 10px;height: 10px;}
+}
+@keyframes spark-bd {
+    0% {width: 20px;height: 20px;}
+    50% {width: 30px;height: 30px;}
+	100% {width: 20px;height: 20px;}
+}
+@keyframes nextYear {
+    0% {background-color: opacity;}
+    100% {background-color: $orange;}
+}
+@keyframes nextYearSpan {
+    0% {color: $orange;}
+    100% {color: #fff;}
+}
+@keyframes fadeIn {
+    0% {opacity: 1;}
+    30% {opacity: 1;}
+	60% {opacity: 0;}
+	100% {opacity: 0;}
+}
+@keyframes boomFadeLg {
+    0% {opacity: 1;transform: scale(1);}
+	100% {opacity: 0;transform: scale(1.5);}
+}
+@keyframes btnHighlight {
+    0% {background-color: $jungle;color: #fff;}
+	100% {background-color: #fff;color: $jungle;}
+}
+@keyframes bottleRotate {
+    0% {transform: translate(-50%,-50%) rotate(-5deg);}
+	100% {transform: translate(-50%,-50%) rotate(5deg);}
 }

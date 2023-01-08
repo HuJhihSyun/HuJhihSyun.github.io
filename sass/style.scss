@@ -3,860 +3,1792 @@
  * <!--[if IE]>
  *   <link href="/stylesheets/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
  * <![endif]--> */
-@import './variable';
+@import './_variable.scss';
 
 html,
 body {
     width: 100%;
     height: 100%;
+	margin: 0;padding: 0;
     box-sizing: border-box;
-    font-family:'NokiaPureHead_Regular','微軟正黑體';
     overflow-scrolling: touch;
+	// font-family: "sans-serif","Noto Serif TC", "微軟正黑體", ;
+	font-family: "微軟正黑體";
+	font-weight: 500;
     -webkit-overflow-scrolling: touch;
 }
 
-body {
-    overflow-x: hidden;
-}
+body {overflow-x: hidden;}
 
-#vBoard {
-	position: fixed;
-	width: 100%;height: 100%;
-	padding: 0;margin: 0;
-	left: 0;top: 0;
-	display: flex;
-	flex-wrap:wrap;
-	z-index: -1;
-	li {
-		border-right: 1px solid $gray1;
-		list-style-type: none;
-		box-sizing: border-box;
-		opacity: 0;
-		pointer-events: none;
-	}
-	li.vline {
-		height: 0;
-		flex:calc(100vw/6);
-	}
-}
-
-.navBar {
-	position: relative;
-	width: 100%;
-	background-color: #fff;
+.headerCover {
 	@include flex;
+	@include jcc;
 	@include aic;
-	z-index: 90;
-	@media only screen and (max-width: 767px) {
-		position: fixed;
-		height: 50px;
-		padding-top: 10px;
-		padding-bottom: 10px;
-		box-shadow: 0px 3px 5px rgba(#000,.3);
+	@include column;
+	background-color: $green;
+	width: 100%;height: 100%;
+	position: fixed;
+	z-index: 500;
+	.crabLogo {
+		width: 17vw;
+		height: 6vw;
+		.basfLogoEffect {
+			opacity: 0;
+		}
 	}
-	.contain {
-		@include flex;
-		@include jcsb;
-		width: 80%;height: 100%;
-		margin: auto;
+	.progressBar {
+		position: relative;
+		margin-top: 20px;
+		width: 20vw;
+		height: 3px;
+		border-radius: 5px;
+		background-color: rgba(#fff,.2);
+		overflow: hidden;
+		.progressValue {
+			position: absolute;
+			background-color: #fff;
+			width: 0;height: 3px;
+		}
+	}
+	@media only screen and (min-width: 768px) and (max-width: 1279px) {
+		.crabLogo {
+			width: 20vw;height: 20vw;
+		}
+		.progressBar {
+			width: 40vw;
+		}
+	}
+	@media only screen and (max-width: 767px) {
+		.crabLogo {
+			width: 30vw;height: 30vw;
+		}
+		.progressBar {
+			width: 50vw;
+		}
+	}
+}
+
+.progressBar {
+	position: fixed;
+	top: 0;left: 0;
+	width: 100%;
+	height: 4px;
+	background-color: $gray;
+	overflow: hidden;
+	z-index: 50;
+	.progressValue {
+		position: absolute;
+		left: 0;top: 50%;
+		@include translate(0, -50%);
+		width: 100%;
+		height: 5px;
+		background-color: $green;
+	}
+}
+
+.mainTitle {
+	text-align: center;
+	.title {
+		h1 {
+			display: inline-block;
+			color: #fff;
+			background-color: $green;
+			font-weight: 900;
+			text-align: center;
+			padding: 7px 20px 10px;
+			margin-bottom: 5px;
+			margin-top: 5px;
+			letter-spacing: 2px;
+			text-shadow: 0px 0px 10px rgba($jungle,.8);
+			@media only screen and (max-width: 767px) {
+				font-size: 28px;
+			}
+		}
+		h2 {
+			display: inline-block;
+			color: #fff;
+			background-color: $green;
+			font-weight: 900;
+			text-align: center;
+			padding: 7px 20px 10px;
+			margin-top: 5px;
+			margin-bottom: 5px;
+			text-shadow: 0px 0px 10px rgba($jungle,.8);
+			@media only screen and (max-width: 767px) {
+				font-size: 20px;
+			}
+		}
+	}
+}
+
+.first-article {
+	position: relative;
+	background:linear-gradient($dark-lake,$light-lake);
+	padding-top: 50px;
+	padding-bottom: 70px;
+	width: 100%;
+	overflow: hidden;
+	.container-fluid {
+		width: 60%;
 		@media only screen and (max-width: 1279px) {
+			width: 80%;
+		}
+		@media only screen and (max-width: 767px) {
 			width: 90%;
 		}
-		.brand {
-			display: inline-block;
-			@include flex;
-			@include aic;
-			.logoPic {
-				width: 5.25vw;
-				height: 1.5vw;
-				background-image: url(../images/logo.png);
-				background-repeat: no-repeat;
-				background-size: contain;
-				background-position: center center;
+		.articleText {
+			margin-top: 50px;
+			text-align: center;
+			@media only screen and (max-width: 767px) {
+				margin-top: 50px;
+			}
+			h3 {
+				font-weight: bold;
+				line-height: 1.5;
+				letter-spacing: 1px;
+				text-align: center;
+				color: $jungle;
+				display: inline-block;
+				br {
+					display: block;
+					@media only screen and (max-width: 767px) {
+						display: none;
+					}
+				}
+			}
+			p {
+				font-weight: bold;
+				text-align: center;
+				font-size: 20px;
+				color: $jungle;
+				margin-top: 20px;
+				.runNum {
+					display: inline-block;
+					padding: 2px 10px;
+					font-size: 32px;
+					color: $green;
+					font-weight: 900;
+					small {
+						font-size: 18px;
+						font-weight: bold;
+						margin-left: 2px;
+					}
+					@media only screen and (max-width: 767px) {
+						display: block;
+						font-size: 10vw;
+						line-height: 1;
+					}
+				}
 				@media only screen and (max-width: 1279px) {
-					width: 7vw;height: 2vw;
+					width: 60%;
+					margin: auto;
 				}
 				@media only screen and (max-width: 767px) {
-					width: 14vw;height: 4vw;
-				}
-				@media only screen and (max-width: 499px) {
-					width: 21vw;height: 6vw;
+					width: 100%;
+					font-size: 18px;
 				}
 			}
-		}
-		.menu {
-			@include flex;
-			@include aic;
-			overflow: hidden;
-			@media only screen and (max-width: 767px) {
-				display: none;
+			h4 {
+				text-align: center;
+				#riceSum {
+					font-weight: bold;
+					font-size: 84px;
+					font-weight: 900;
+					color: $green;
+					line-height: 1;
+					@media only screen and (max-width: 767px) {
+						font-size: 10vw;
+					}
+				}
+				.ton {
+					font-weight: bold;
+					font-size: 24px;
+					color: $green;
+				}
 			}
-			ul {
-				list-style-type: none;
-				padding: 0;margin: 0;
-				a {
-					color: #000;
-					text-decoration: none;
-					&:hover {
-						color: $rgblue;
-					}
-					li {
-						display: inline-block;
-						padding: 20px 10px;
-						background-color: rgba(#fff,0);
-						@include transition(.2s);
-					}
-					@media only screen and (max-width: 991px) {
-						li {
-							padding: 20px 5px;
-						}
+			.riceGroup {
+				margin-top: 20px;
+				overflow: hidden;
+				@include flex;
+				@include jcc;
+				@include aic;
+				@media only screen and (max-width: 767px) {
+					margin-top: 50px;
+				}
+				.riceGroupImg {
+					position: relative;
+					background-image: url(../images/paddy.svg);
+					background-position: center center;
+					background-size: contain;
+					background-repeat: no-repeat;
+					width: 44vw;height: 20vw;
+					@media only screen and (max-width: 767px) {
+						width: 66vw;
+						height: 30vw;
 					}
 				}
 			}
-		}
-		.burger {
-			display: none;
-			position: relative;
-			width: 50px;
-			cursor: pointer;
-
-			.iconBar {
-				position: absolute;
-				display: inline-block;
-				width: 30px;height: 2px;
-				background-color: $blue;
-				left: 50%;top: 50%;
-				@include translate(-50%,-50%);
-				&:nth-child(1) {top: 35%;}
-				&:nth-child(2) {opacity: 0;}
-				&:nth-child(3) {top: 65%;}
-				@include transition(.2s);
+			h5 {
+				text-align: center;
 			}
-			@media only screen and (max-width: 767px) {
-				display: inline-block;
-			}
-
-			&.x-shape {
-                    .iconBar {
-                        &:nth-child(1) {
-                            transform: translate(-50%, 180%) rotate(-45deg);
-                            -webkit-transform: translate(-50%, 180%) rotate(-45deg);
-                            -moz-transform: translate(-50%, 180%) rotate(-45deg);
-                            -ms-transform: translate(-50%, 180%) rotate(-45deg);
-                        }
-                        &:nth-child(2) {
-                            opacity: 0;
-                        }
-                        &:nth-child(3) {
-                            transform: translate(-50%, -280%) rotate(45deg);
-                            -webkit-transform: translate(-50%, -280%) rotate(45deg);
-                            -moz-transform: translate(-50%, -280%) rotate(45deg);
-                            -ms-transform: translate(-50%, -280%) rotate(45deg);
-                        }
-                    }
-                }
 		}
 	}
 }
 
-.sidebar {
-	position: fixed;
-	z-index: 100;
-	width: 0%;height: 100%;
-	left: 100%;top: 50px;
-	@include flex;
-	@include column;
-	@include transition(.2s);
-	background-image: url(../images/sidebg.jpg);
-	background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
-    &:after {
-    	content: '';
-    	position: absolute;
-    	width: 100%;height: 100%;
-    	left: 0;top: 0;
-    	background-color: $blueblack;
-    	opacity: .8;
-    	z-index: 110;
-    }
-	.menu-aside {
-		position: relative;
-		z-index: 120;
-		ul {
-			list-style-type: none;
-			padding: 0;margin: 0;
-			a {
-				li {
-					color: #fff;
-					padding: 15px 30px;
-					font-size: 16px;
-					border-bottom: dotted 1px #fff;
-					display: none;
-					i {margin-right: 10px;}
-				}
-				&:hover {
-					text-decoration: none;
-					li {
-						background-color: rgba(#fff,.2);
-					}
-				}
-			}
-		}
-	}
-	&.in {
-		width: 100%;
-		left: 0;
-		.menu-aside {
-			li {display: block;}
-		}
-	}
-}
-
-.carouselBanner {
+.bad-weather {
+	position: relative;
+	background-color: $light-lake;
+	height: 100vh;
+	padding-top: 100px;
+	width: 100%;
+	overflow: hidden;
 	@media only screen and (max-width: 767px) {
 		padding-top: 50px;
 	}
-    .carousel-inner {
-        .owl-carousel {
-            position: relative;
-            .item {
-                .slide {
-                    position: relative;
-					width: 100%;
-					height: 35vw;
-					background-repeat: no-repeat;
-					background-position: 50% 50%;
-					background-size: cover;
+	@media screen and (orientation: landscape) and (max-width: 1023px) {
+		padding-top: 10px;
+	}
+	p {
+		font-weight: bold;
+		text-align: center;
+		font-size: 24px;
+		line-height: 1.5;
+		letter-spacing: 1px;
+		color: #fff;
+		margin-top: 100px;
+		@media only screen and (max-width: 767px) {
+			width: 90%;
+			margin: auto;
+			margin-top: 15vh;
+			font-size: 18px;
+		}
+		@media screen and (orientation: landscape) and (max-width: 1023px) {
+			margin-top: 0;
+		}
+		@media screen and (orientation: landscape) and (max-width: 767px) {
+			margin-top: 0;
+		}
+		.runNum {
+			display: inline-block;
+			padding: 3px 7px 7px;
+			margin-left: 5px;
+			font-size: 36px;
+			color: #fff;
+			line-height: 1;
+			background-color: $green;
+			font-weight: 900;
+			small {
+				font-weight: bold;
+				margin-left: 2px;
+			}
+			@media only screen and (max-width: 767px) {
+				// display: block;
+				font-size: 8vw;
+				line-height: 1;
+				margin-top: 20px;
+			}
+			@media screen and (orientation: landscape) and (max-width: 767px) {
+				font-size: 4vw;
+				margin-top: 10px;
+			}
+		}
+	}
+	h5 {
+		position: absolute;
+		left: 50%;bottom: 10px;
+		@include translate(-50%,0);
+		color: #fff;
+	}
+	br.brLine {
+		@media only screen and (max-width: 767px) {
+			display: none;
+		}
+	}
+	.darkGrass {
+		position: absolute;
+		left: 0;bottom: 0;
+		@include background(100vw, 13vw, url(../images/darkGrass.svg), cover);
+		@media only screen and (min-width: 768px) and (max-width: 1279px) {
+			width: 100%;
+			height: 26vw;
+		}
+		@media only screen and (max-width: 767px) {
+			width: 100%;
+			height: 39vw;
+			bottom: -5px;
+		}
+		@media screen and (orientation: landscape) and (max-width: 1023px) {
+			height: 13vw;
+		}
+		@media screen and (orientation: landscape) and (max-width: 767px) {
+			height: 13vw;
+		}
+	}
+	.flash1 {
+		position: absolute;
+		z-index: 1;
+		left: 0%;top: 0%;
+		@include background(34vw, 20vw, url(../images/flash1.svg), contain);
+		@media only screen and (max-width: 767px) {
+			width: 51vw;height: 30vw;
+		}
+		@media screen and (orientation: landscape) and (max-width: 767px) {
+			width: 34vw;height: 20vw;
+			opacity: 0.3;
+		}
+	}
+	.flash2 {
+		position: absolute;
+		z-index: 1;
+		right: 0%;top: 0%;
+		@include background(34vw, 20vw, url(../images/flash2.svg), contain);
+		@media only screen and (max-width: 767px) {
+			width: 51vw;height: 30vw;
+		}
+		@media screen and (orientation: landscape) and (max-width: 767px) {
+			width: 34vw;height: 20vw;
+			opacity: 0.3;
+		}
+	}
+	.cloud-day-1 {
+		position: absolute;
+		z-index: -1;
+		right: 0%;top: 0%;
+		@include background(33vw, 7.5vw, url(../images/purpleCloud1.svg), contain);
+		@media only screen and (max-width: 767px) {
+			width: 66vw;
+			height: 15vw;
+		}
+	}
+	.cloud-day-2 {
+		position: absolute;
+		z-index: -1;
+		left: 50%;top: 50%;
+		@include translate(-50%,-50%);
+		@include background(100vw, 42vw, url(../images/purpleCloud2.svg), contain);
+		@media only screen and (max-width: 767px) {
+			width: 100vw;
+			height: 42vw;
+		}
+	}
+	.sun {
+		position: absolute;
+		left: 50%;top: 70%;
+		z-index: -1;
+		@include translate(-50%,-50%);
+		@include background(35vw, 28vw, url(../images/deadGrass.svg), contain);
+		@media only screen and (max-width: 1279px) {
+			top: 70%;
+			width: 70vw;
+			height: 56vw;
+		}
+		@media only screen and (max-width: 767px) {
+			top: 70%;
+			width: 70vw;
+			height: 56vw;
+		}
+		@media screen and (orientation: landscape) and (max-width: 1023px) {
+			width: 35vw;height: 28vw;
+		}
+		@media screen and (orientation: landscape) and (max-width: 767px) {
+			width: 35vw;height: 28vw;
+		}
+	}
+}
+
+.grow-story {
+	width: 100%;
+	height: 100vh;
+	overflow: hidden;
+	.scene {
+		width: 100%;
+		height: 100vh;
+		&.seaScene {
+			position: relative;
+			border: none;
+			overflow: hidden;
+			.sceneCover {
+				position: absolute;
+				left: 0;top: 0;
+				width: 100%;height: 100%;
+				background-color: #7a6d7c;
+			}
+			.textContent {
+				position: relative;
+				margin-top: 7vh;
+				@include flex;
+				@include jcc;
+				@include aic;
+				@include column;
+				z-index: 50;
+				@media screen and (orientation: landscape) and (max-width: 1023px) {
+					margin-top: 15px;
+				}
+				@media screen and (orientation: landscape) and (max-width: 767px) {
+					margin-top: 15px;
+				}
+				.yearBar {
+					width: 50%;
+					z-index: 500;
 					@media only screen and (max-width: 1279px) {
-						height: 50vw;
+						width: 80%;
 					}
 					@media only screen and (max-width: 767px) {
-						height: 70vw;
+						width: 90%;
 					}
-					@media only screen and (max-width: 499px) {
-						height: 80vw;
-					}
-					&:after {
-						content: '';
-						position: absolute;
-						left: 0;top: 0;
-						width: 100%;height: 100%;
-						background: linear-gradient(90deg, rgba(#000,1), rgba(#000,0));
-						z-index: 10;
-					}
-
-					.container-fluid {
+					.progressBaro {
 						position: relative;
-						width: 60%;
-						height: 100%;
+						width: 100%;
+						height: 10px;
 						margin: auto;
-						@media only screen and (max-width: 991px) {
-							width: 80%;
+						border-radius: 10px;
+				
+						.progressContent {
+							position: absolute;
+							height: 10px;
+							top: 0;
+							left: 0;
+							border-radius: 10px;
+							@media only screen and (max-width: 767px) {
+								width: 30%;
+							}
+							.loadCrab {
+								position: absolute;
+								right: 0;top: 50%;
+								@include background(6vw, 3.3vw, url(../images/farmerHead.svg), contain);
+								@include translate(30%, -50%);
+								@media only screen and (max-width: 1279px) {
+									width: 8vw;height: 4.4vw;
+								}
+								@media only screen and (max-width: 767px) {
+									width: 18vw;height: 9.9vw;
+								}
+								@media screen and (orientation: landscape) and (max-width: 767px) {
+									width: 8vw;height: 4.4vw;
+								}
+								.dialogue {
+									position: absolute;
+									right: 0;top: 0;
+									@include translate(120%,-50%);
+									background-color: $green;
+									line-height: 1.5;
+									color: #fff;
+									min-width: 180px;
+									padding: 10px 20px;
+									border-radius: 10px;
+									@include shadow(2px,2px,5px,.2);
+									&:before {
+										position: absolute;
+										content: '';
+										left: 0;bottom: 0;
+										@include translate(-55%, 0%);
+										width: 0;
+										height: 0;
+										border-style: solid;
+										border-width: 0 0 30px 30px;
+										border-color: transparent transparent $green transparent;
+									}
+									@media screen and (orientation: landscape) and (max-width: 1023px) {
+										display: none;
+									}
+								}
+							}
+						}
+					}
+					.numberBar {
+						@include flex;
+						@include jcsb;
+						@include aic;
+						margin-top: 30px;
+						@media screen and (orientation: landscape) and (max-width: 767px) {
+							margin-top: 15px;
+						}
+						.number {
+							font-weight: bold;
+							color: $light-brown;
+							font-size: 18px;
+							a {
+								position: relative;
+								display: inline-block;
+								padding: 4px 15px 7px;
+								border-radius: 50px;
+								line-height: 1;
+								text-decoration: none;
+								color: $jungle;
+								background-color: #fff;
+								font-size: 18px;
+								letter-spacing: 1px;
+								cursor: initial;
+								@include shadow(2px,2px,5px,.2);
+								@include transition(.2s);
+								@media only screen and (max-width: 1279px) {
+									letter-spacing: -2px;
+								}
+								@media only screen and (max-width: 767px) {
+									font-size: 14px;
+								}
+								.beforePic {
+									position: absolute;
+									left: 0;top: 50%;
+									@include translate(-100%,-60%);
+									background-position: center center;
+									background-size: contain;
+									background-repeat: no-repeat;
+									@media only screen and (max-width: 767px) {
+										display: none;
+									}
+								}
+								&:hover {
+									color: #fff;
+									background-color: $jungle;
+								}
+							}
+						}
+					}
+				}
+				.textArea {
+					position: relative;
+					width: 100vw;
+					margin-top: 7vh;
+					@include flex;
+					z-index: 20;
+					@media screen and (orientation: landscape) and (max-width: 1023px) {
+						margin-top: 0;
+					}
+					@media screen and (orientation: landscape) and (max-width: 767px) {
+						margin-top: 0;
+					}
+					.textContentArticle {
+						width: 100vw;
+						min-width: 100vw;
+						position: relative;
+						font-weight: bold;
+						text-align: center;
+						font-size: 20px;
+						letter-spacing: 1px;
+						line-height: 1.5;
+						color: $jungle;
+						margin: 0;
+						z-index: 20;
+						.noticeText {
+							background-color: $red;
+							color: #fff;
+							white-space: nowrap;
+							padding: 3px 10px;
+							border-radius: 5px;
+						}
+						@media only screen and (min-width: 768px) and (max-width: 1279px) {
+							margin-top: 100px;
 						}
 						@media only screen and (max-width: 767px) {
-							width: 90%;
+							font-size: 16px;
+							padding: 0 30px;
+							margin: auto;
+							margin-top: 20px;
+							line-height: 2;
+							br {
+								display: none;
+							}
 						}
-						.content {
+						@media screen and (orientation: landscape) and (max-width: 1023px) {
+							margin-top: 30px;
+							font-size: 16px;
+							padding-left: 7vw;
+							padding-right: 7vw;
+							br {display: none;}
+						}
+					}
+				}
+			}
+			.sessionBox {
+				position: absolute;
+				cursor: pointer;
+				border-radius: 50%;
+				background-color: rgba(#fff,.7);
+				z-index: 0;
+				border: 5px solid rgba($red,.8);
+				box-shadow: 0px 0px 5px rgba($red,1);
+				@media only screen and (max-width: 767px) {
+					border: 3px solid rgba($red,.8);
+				}
+				&:after {
+					position: absolute;
+					content: '';
+					width: 100%;
+					height: 100%;
+					border-radius: 50%;
+					border: 1px solid $red;
+					animation: boomFadeLg 1s infinite both;
+					@media only screen and (max-width: 767px) {
+						animation: none;
+					}
+				}
+				.hoverWord {
+					position: absolute;
+					bottom: -50%;left: 50%;
+					@include translate(-50%,0%);
+					color: #fff;
+					background-color: $red;
+					padding: 2px 5px;
+					border-radius: 5px;
+					font-weight: bold;
+					white-space: nowrap;
+					font-size: 14px;
+					@media only screen and (max-width: 767px) {
+						bottom: -100%;
+					}
+				}
+			}
+			.grassStep {
+				position: absolute;
+				left: 50%;bottom: 17%;
+				@include translate(-50%,0%);
+				z-index: 50;
+				@media screen and (orientation: landscape) and (max-width: 1023px) {
+					bottom: 8%;
+				}
+				@media screen and (orientation: landscape) and (max-width: 767px) {
+					bottom: 17%;
+				}
+				&.grassStep1 {
+					@include background(24vw, 15vw, url(../images/grassStep1.svg), contain);
+					@media only screen and (max-width: 1279px) {
+						width: 36vw;height: 22.5vw;
+					}
+					@media only screen and (max-width: 767px) {
+						width: 48vw;height: 30vw;
+					}
+					@media screen and (orientation: landscape) and (max-width: 1023px) {
+						width: 24vw;height: 15vw;
+					}
+					@media screen and (orientation: landscape) and (max-width: 767px) {
+						width: 24vw;height: 15vw;
+					}
+					.sessionBox {
+						right: 0;bottom: 0;
+						width: 4vw;height: 4vw;
+						@media only screen and (max-width: 1279px) {
+							width: 8vw;height: 8vw;
+						}
+						@media only screen and (max-width: 767px) {
+							width: 10vw;height: 10vw;
+						}
+						@media screen and (orientation: landscape) and (max-width: 1023px) {
+							width: 7vw;height: 7vw;
+						}
+						@media screen and (orientation: landscape) and (max-width: 767px) {
+							width: 7vw;height: 7vw;
+						}
+						.seed {
 							position: absolute;
-							top: 50%;right: 0;
-							text-align: right;
-							@include translate(-35px, -50%);
+							top: 50%;left: 50%;
+							@include translate(-50%,-50%);
+							@include background(2vw, 2vw, url(../images/seed.svg), contain);
+							@media only screen and (max-width: 1279px) {
+								width: 3vw;height: 3vw;
+							}
+							@media only screen and (max-width: 767px) {
+								width: 5vw;height: 5vw;
+							}
+							@media screen and (orientation: landscape) and (max-width: 1023px) {
+								width: 3vw;height: 3vw;
+							}
+							@media screen and (orientation: landscape) and (max-width: 767px) {
+								width: 3vw;height: 3vw;
+							}
+						}
+					}
+				}
+				&.grassStep2 {
+					@include background(25vw, 20vw, url(../images/grassStep2.svg), contain);
+					@media only screen and (max-width: 1279px) {
+						width: 37.5vw;height: 30vw;
+					}
+					@media only screen and (max-width: 767px) {
+						width: 50vw;height: 40vw;
+					}
+					@media screen and (orientation: landscape) and (max-width: 1023px) {
+						width: 25vw;height: 20vw;
+					}
+					@media screen and (orientation: landscape) and (max-width: 767px) {
+						width: 25vw;height: 20vw;
+					}
+					.sessionBox {
+						width: 4vw;height: 4vw;
+						@media only screen and (max-width: 1279px) {
+							width: 6vw;height: 6vw;
+						}
+						@media only screen and (max-width: 767px) {
+							width: 10vw;height: 10vw;
+						}
+						@media screen and (orientation: landscape) and (max-width: 1023px) {
+							width: 6vw;height: 6vw;
+						}
+						@media screen and (orientation: landscape) and (max-width: 767px) {
+							width: 6vw;height: 6vw;
+						}
+						&.weed1Box {
+							left: 10%;bottom: 5%;
+							.weed1 {
+								position: absolute;
+								bottom: 0;right: -50%;
+								@include background(6.5vw, 10vw, url(../images/weed1.svg), contain);
+								@media only screen and (max-width: 1279px) {
+									width: 9.75vw;height: 15vw;
+								}
+								@media only screen and (max-width: 767px) {
+									width: 13vw;height: 20vw;
+								}
+								@media screen and (orientation: landscape) and (max-width: 1023px) {
+									width: 9.75vw;height: 15vw;
+								}
+								@media screen and (orientation: landscape) and (max-width: 767px) {
+									width: 9.75vw;height: 15vw;
+								}
+							}
+						}
+						&.weed2Box {
+							left: 45%;bottom: 20%;
+							.weed2 {
+								position: absolute;
+								bottom: 0;right: -50%;
+								@include background(7vw, 8vw, url(../images/weed2.svg), contain);
+								@media only screen and (max-width: 1279px) {
+									width: 10.5vw;height: 12vw;
+								}
+								@media only screen and (max-width: 767px) {
+									width: 14vw;height: 16vw;
+								}
+								@media screen and (orientation: landscape) and (max-width: 1023px) {
+									width: 10.5vw;height: 12vw;
+								}
+								@media screen and (orientation: landscape) and (max-width: 767px) {
+									width: 10.5vw;height: 12vw;
+								}
+							}
+						}
+						&.weed3Box {
+							right: 5%;;bottom: 0;
+							.weed3 {
+								position: absolute;
+								bottom: 0;left: -50%;
+								@include background(6vw, 8vw, url(../images/weed3.svg), contain);
+								@media only screen and (max-width: 1279px) {
+									width: 12vw;height: 16vw;
+								}
+								@media only screen and (max-width: 767px) {
+									width: 18vw;height: 24vw;
+								}
+								@media screen and (orientation: landscape) and (max-width: 1023px) {
+									width: 12vw;height: 16vw;
+								}
+								@media screen and (orientation: landscape) and (max-width: 767px) {
+									width: 12vw;height: 16vw;
+								}
+							}
+						}
+					}
+				}
+				&.grassStep3 {
+					@include background(24vw, 22vw, url(../images/grassStep3.svg), contain);
+					@media only screen and (max-width: 1279px) {
+						width: 36vw;height: 33vw;
+					}
+					@media only screen and (max-width: 767px) {
+						width: 48vw;height: 44vw;
+					}
+					@media screen and (orientation: landscape) and (max-width: 1023px) {
+						width: 24vw;height: 22vw;
+					}
+					@media screen and (orientation: landscape) and (max-width: 767px) {
+						width: 24vw;height: 22vw;
+					}
+					.sessionBox {
+						width: 4vw;height: 4vw;
+						@media only screen and (max-width: 1279px) {
+							width: 6vw;height: 6vw;
+						}
+						@media only screen and (max-width: 767px) {
+							width: 10vw;height: 10vw;
+						}
+						@media screen and (orientation: landscape) and (max-width: 1023px) {
+							width: 6vw;height: 6vw;
+						}
+						@media screen and (orientation: landscape) and (max-width: 767px) {
+							width: 6vw;height: 6vw;
+						}
+						&.bug1Box {
+							left: 10%;top: 10%;
+							.bug1 {
+								position: absolute;
+								top: 50%;left: 50%;
+								@include translate(-50%,-50%);
+								@include background(2vw, 2.4vw, url(../images/bug1.svg), contain);
+								@media only screen and (max-width: 1279px) {
+									width: 4vw;height: 4.8vw;
+								}
+							}
+						}
+						&.bug2Box {
+							left: 30%;top: 40%;
+							.bug2 {
+								position: absolute;
+								top: 50%;left: 50%;
+								@include translate(-50%,-50%);
+								@include background(2vw, 3vw, url(../images/bug2.svg), contain);
+								@media only screen and (max-width: 1279px) {
+									width: 4vw;height: 6vw;
+								}
+							}
+						}
+						&.bug3Box {
+							left: 60%;top: 60%;
+							.bug3 {
+								position: absolute;
+								top: 50%;left: 50%;
+								@include translate(-50%,-50%);
+								@include background(2vw, 4vw, url(../images/bug3.svg), contain);
+								@media only screen and (max-width: 1279px) {
+									width: 4vw;height: 8vw;
+								}
+							}
+						}
+						&.bug4Box {
+							right: 10%;top: 20%;
+							.bug4 {
+								position: absolute;
+								top: 50%;left: 50%;
+								@include translate(-50%,-50%);
+								@include background(2vw, 2vw, url(../images/bug4.svg), contain);
+								@media only screen and (max-width: 1279px) {
+									width: 4vw;height: 4vw;
+								}
+							}
+						}
+					}
+				}
+				&.grassStep4 {
+					@include background(24vw, 22vw, url(../images/grassStep4.svg), contain);
+					@media only screen and (max-width: 1279px) {
+						width: 36vw;height: 33vw;
+					}
+					@media only screen and (max-width: 767px) {
+						width: 48vw;height: 44vw;
+					}
+					@media screen and (orientation: landscape) and (max-width: 1023px) {
+						width: 24vw;height: 22vw;
+					}
+					@media screen and (orientation: landscape) and (max-width: 767px) {
+						width: 24vw;height: 22vw;
+					}
+					.sessionBox {
+						right: 0;top: 30%;
+						width: 10vw;height: 10vw;
+						@media only screen and (max-width: 1279px) {
+							width: 15vw;height: 15vw;
+						}
+						@media only screen and (max-width: 767px) {
+							width: 20vw;height: 20vw;
+						}
+						@media screen and (orientation: landscape) and (max-width: 1023px) {
+							width: 10vw;height: 10vw;
+						}
+						@media screen and (orientation: landscape) and (max-width: 767px) {
+							width: 10vw;height: 10vw;
+						}
+						.grove {
+							position: absolute;
+							top: 50%;left: 50%;
+							@include translate(-50%,-50%);
+							@include background(16vw, 20vw, url(../images/grassStep4_a.svg), contain);
+							@media only screen and (max-width: 1279px) {
+								width: 24vw;height: 30vw;
+							}
+							@media only screen and (max-width: 767px) {
+								width: 32vw;height: 40vw;
+							}
+							@media screen and (orientation: landscape) and (max-width: 1023px) {
+								width: 16vw;height: 20vw;
+							}
+							@media screen and (orientation: landscape) and (max-width: 767px) {
+								width: 16vw;height: 20vw;
+							}
+						}
+					}
+				}
+				&.grassStep5 {
+					@include background(26vw, 22vw, url(../images/grassStep5.svg), contain);
+					@media only screen and (max-width: 1279px) {
+						width: 39vw;height: 33vw;
+					}
+					@media only screen and (max-width: 767px) {
+						width: 52vw;height: 44vw;
+					}
+					@media screen and (orientation: landscape) and (max-width: 1023px) {
+						width: 26vw;height: 22vw;
+					}
+					@media screen and (orientation: landscape) and (max-width: 767px) {
+						width: 26vw;height: 22vw;
+					}
+					.sessionBox {
+						left: 0;top: 20%;
+						width: 10vw;height: 10vw;
+						@media only screen and (max-width: 1279px) {
+							width: 15vw;height: 15vw;
+						}
+						@media only screen and (max-width: 767px) {
+							width: 20vw;height: 20vw;
+						}
+						@media screen and (orientation: landscape) and (max-width: 1023px) {
+							width: 10vw;height: 10vw;
+						}
+						@media screen and (orientation: landscape) and (max-width: 767px) {
+							width: 10vw;height: 10vw;
+						}
+						.grove {
+							position: absolute;
+							top: 50%;left: 50%;
+							@include translate(-50%,-50%);
+							@include background(18vw, 20vw, url(../images/grassStep5_a.svg), contain);
+							@media only screen and (max-width: 1279px) {
+								width: 27vw;height: 30vw;
+							}
+							@media only screen and (max-width: 767px) {
+								width: 36vw;height: 40vw;
+							}
+							@media screen and (orientation: landscape) and (max-width: 1023px) {
+								width: 18vw;height: 20vw;
+							}
+							@media screen and (orientation: landscape) and (max-width: 767px) {
+								width: 18vw;height: 20vw;
+							}
+						}
+					}
+				}
+			}
+			.calendar {
+				position: absolute;
+				right: 10%;top: 50%;
+				@include translate(0%,-50%);
+				width: 9vw;height: 15vw;
+				background-repeat: no-repeat;
+				background-size: contain;
+				z-index: 100;
+				@media only screen and (max-width: 1279px) {
+					top: 60%;
+					width: 13.5vw;height: 22.5vw;
+				}
+				@media only screen and (max-width: 767px) {
+					width: 18vw;height: 30vw;
+					right: 5%;top: 60%;
+				}
+				@media screen and (orientation: landscape) and (max-width: 1023px) {
+					width: 9vw;height: 15vw;
+				}
+				@media screen and (orientation: landscape) and (max-width: 767px) {
+					width: 9vw;height: 15vw;
+				}
+				&.calendar1 {
+					background-image: url(../images/calendar1.svg);
+				}
+				&.calendar2 {
+					background-image: url(../images/calendar2.svg);
+				}
+				&.calendar3 {
+					background-image: url(../images/calendar3.svg);
+				}
+				&.calendar3-1 {
+					background-image: url(../images/calendar3-1.svg);
+				}
+				&.calendar4 {
+					background-image: url(../images/calendar4.svg);
+				}
+				&.calendar5 {
+					background-image: url(../images/calendar5.svg);
+				}
+			}
+			.cloud-date-1 {
+				position: absolute;
+				z-index: 1;
+				right: 0%;top: 0%;
+				@include background(33vw, 7.5vw, url(../images/purpleCloud1.svg), contain);
+				@media only screen and (max-width: 767px) {
+					width: 66vw;
+					height: 15vw;
+				}
+			}
+			.cloud-date-2 {
+				position: absolute;
+				z-index: 1;
+				left: 50%;top: 50%;
+				@include translate(-50%,-50%);
+				@include background(100vw, 42vw, url(../images/purpleCloud2.svg), contain);
+				@media only screen and (max-width: 767px) {
+					width: 100vw;
+					height: 42vw;
+				}
+			}
+			.ground {
+				position: absolute;
+				left: 0;bottom: 0;
+				width: 100vw;height: 10vw;
+				background-color: #7c4811;
+				z-index: 30;
+				@media only screen and (max-width: 1279px) {
+					height: 25vw;
+				}
+				@media only screen and (max-width: 767px) {
+					height: 30vw;
+				}
+				@media screen and (orientation: landscape) and (max-width: 1023px) {
+					height: 10vw;
+				}
+				@media screen and (orientation: landscape) and (max-width: 767px) {
+					height: 10vw;
+				}
+				.groundMud {
+					position: absolute;
+					left: 50%;top: 50%;
+					@include translate(-50%,-90%);
+					@include background(60vw, 10vw, url(../images/groundMud.svg), cover);
+					@media only screen and (max-width: 1279px) {
+						width: 90vw;height: 15vw;
+						@include translate(-50%,-110%);
+					}
+					@media only screen and (max-width: 767px) {
+						width: 120vw;height: 20vw;
+						@include translate(-50%,-110%);
+					}
+					@media screen and (orientation: landscape) and (max-width: 1023px) {
+						width: 60vw;height: 10vw;
+						@include translate(-50%,-70%);
+					}
+					@media screen and (orientation: landscape) and (max-width: 767px) {
+						width: 60vw;height: 10vw;
+						@include translate(-50%,-70%);
+					}
+				}
+			}
+			.wave {
+				position: absolute;
+				left: 0;bottom: 0;
+				width: 100vw;height: 25vw;
+				background:linear-gradient(rgba($dark-lake,0),$dark-lake);
+				z-index: 30;
+				@media only screen and (min-width: 768px) and (max-width: 1279px) {
+					width: 100%;
+					height: 70vw;
+				}
+				@media only screen and (max-width: 767px) {
+					width: 100%;
+					height: 105vw;
+				}
+				@media screen and (orientation: landscape) and (max-width: 1023px) {
+					height: 50vh;
+				}
+				
+				.flowCover {
+					position: absolute;
+					width: 100%;height: 100%;
+					left: 0;top: 0;
+					z-index: 0;
+					overflow: hidden;
+					[class^="flow"] {height: 5px;
+						background-color: rgba(#fff,.5);
+						border-radius: 50%;
+						animation: flowFloat 10s infinite;
+						@media only screen and (max-width: 767px) {
+							animation: none;
+						}
+					}
+					@for $i from 1 through 50 {
+						.flow#{$i} {
+							$size:random(100)+50;
+							position: absolute;
+							left: random()*100%;
+							top: random()*100%;
+							animation-delay: $i*-0.2s;
+							width: #{$size}px;
+						}
+					}
+					@keyframes flowFloat {
+						0% {opacity: 0;@include translate(-500%, 0%)}
+						50% {opacity: 1;@include translate(0%, 0%)}
+						100% {opacity: 0;@include translate(500%, 0%)}
+					}
+					@media only screen and (max-width: 767px) {
+						display: none;
+					}
+				}
+			}
+			.leftFlower {
+				position: absolute;
+				left: 0;bottom: 0;
+				@include background(40vw, 20vw, url(../images/leftFlower.svg), contain);
+				z-index: 50;
+				@media only screen and (max-width: 767px) {
+					width: 60vw;height: 30vw;
+				}
+				@media screen and (orientation: landscape) and (max-width: 767px) {
+					width: 40vw;height: 20vw;
+				}
+				.butterfly {
+					position: absolute;
+					left: 50%;top: 0;
+					@include translate(-50%,-50%);
+					@include background(5vw, 5vw, url(../images/butterfly.svg), contain);
+				}
+			}
+			.rightFlower {
+				position: absolute;
+				right: 0;bottom: 0;
+				@include background(30vw, 20vw, url(../images/rightFlower.svg), contain);
+				z-index: 50;
+				@media only screen and (max-width: 767px) {
+					width: 45vw;height: 30vw;
+				}
+				@media screen and (orientation: landscape) and (max-width: 767px) {
+					width: 30vw;height: 20vw;
+				}
+				.butterfly2 {
+					position: absolute;
+					right: 70%;bottom: 20%;
+					transform: rotate(90deg);
+					@include background(5vw, 5vw, url(../images/butterfly.svg), contain);
+				}
+			}
+			.growCloud1 {
+				position: absolute;
+				left: 0;top: 20%;
+				@include background(67.5vw, 15vw, url(../images/growCloud1.svg), cover);
+				z-index: 0;
+				@media only screen and (max-width: 767px) {
+					width: 90vw;
+					height: 20vw;
+				}
+			}
+			.growCloud2 {
+				position: absolute;
+				right: 0;top: 5%;
+				@include background(55vw, 10vw, url(../images/growCloud2.svg), cover);
+				z-index: 0;
+				@media only screen and (max-width: 767px) {
+					width: 55vw;
+					height: 10vw;
+				}
+			}
+			.cloud1 {
+				position: absolute;
+				left: 5%;top: 10%;
+				@include background(16vw, 4vw, url(../images/cloud1.svg), contain);
+				animation: swipe 5s .5s linear infinite alternate both;
+				z-index: 2;
+				@media only screen and (max-width: 767px) {
+					display: none;
+				}
+			}
+			.cloud2 {
+				position: absolute;
+				left: 70%;top: 30%;
+				@include background(15vw, 5.2vw, url(../images/cloud2.svg), contain);
+				animation: swipe 3s 1s linear infinite alternate-reverse both;
+				z-index: 2;
+				@media only screen and (max-width: 767px) {
+					// display: block;
+					// left: 30%;
+					// width: 45vw;height: 10.8vw;
+					display: none;
+				}
+			}
+			.cloud3 {
+				position: absolute;
+				left: 40%;top: 10%;
+				@include background(12.7vw, 1.5vw, url(../images/cloud3.svg), contain);
+				animation: swipe 6s .5s linear infinite alternate both;
+				z-index: 2;
+				@media only screen and (max-width: 767px) {
+					display: none;
+				}
+			}
+			.cloud4 {
+				position: absolute;
+				left: 55%;top: 3%;
+				@include background(12vw, 3vw, url(../images/cloud4.svg), contain);
+				animation: swipe 4s linear infinite alternate-reverse both;
+				z-index: 2;
+				@media only screen and (max-width: 767px) {
+					display: none;
+				}
+			}
+			.light {
+				position: absolute;
+				left: 30%;top: 20%;
+				border-radius: 50%;
+				@include translate(-50%, -50%);
+				width: 7vw;
+				height: 7vw;
+				background:linear-gradient(#ffffe0,#fffdff);
+				z-index: 1;
+				@media only screen and (max-width: 1279px) {
+					width: 10vw;height: 10vw;
+				}
+				@media only screen and (max-width: 767px) {
+					width: 14vw;height: 14vw;
+					top: 30%;
+				}
+				&:before {
+					position: absolute;
+					content: '';
+					border-radius: 50%;
+					top: 50%;left: 50%;
+					@include translate(-50%,-50%);
+					width: 9vw;
+					height: 9vw;
+					background:linear-gradient(#ffffff,#d2ffad);
+					opacity: 0.2;
+					@media only screen and (max-width: 1279px) {
+						width: 12vw;height: 12vw;
+					}
+					@media only screen and (max-width: 767px) {
+						width: 18vw;height: 18vw;
+					}
+				}
+				&:after {
+					position: absolute;
+					content: '';
+					border-radius: 50%;
+					top: 50%;left: 50%;
+					@include translate(-50%,-50%);
+					width: 11vw;
+					height: 11vw;
+					background:linear-gradient(#ffffff,#d2ffad);
+					opacity: 0.2;
+					@media only screen and (max-width: 1279px) {
+						width: 16vw;height: 16vw;
+					}
+					@media only screen and (max-width: 767px) {
+						width: 22vw;height: 22vw;
+					}
+				}
+			}
+			.rainCover {
+				position: absolute;
+				width: 100%;height: 100%;
+				left: 0;top: 0;
+				z-index: 1;
+				overflow: hidden;
+				[class^="rain"] {
+					width: 1px;
+					background-color: #fff;
+					animation: rainFloat linear 3s infinite;
+					@media only screen and (max-width: 767px) {
+						animation: none;
+					}
+				}
+				@for $i from 1 through 50 {
+					.rain#{$i} {
+						$size:random(10)+10;
+						position: absolute;
+						left: random()*100%;
+						top: random()*100%;
+						animation-delay: $i*-0.2s;
+						height: #{$size}px;
+					}
+				}
+				@keyframes rainFloat {
+					0% {opacity: 0;height: 0;@include translate(0,0);}
+					50% {opacity: 1;height: 20px;}
+					100% {opacity: 0;height: 40px;@include translate(0,100%);}
+				}
+				@media only screen and (max-width: 767px) {
+					display: none;
+				}
+			}
+		}
+	}
+}
+
+.equipment {
+	position: relative;
+	padding-top: 150px;
+	padding-bottom: 50px;
+	width: 100%;
+	overflow: hidden;
+	background-color: $yellow;
+	@media only screen and (max-width: 767px) {
+		padding-top: 70px;
+		padding-bottom: 0;
+	}
+	.container-fluid {
+		width: 60%;
+		text-align: center;
+		@media only screen and (max-width: 1279px) {
+			width: 80%;
+		}
+		@media only screen and (max-width: 767px) {
+			width: 90%;
+		}
+		.introSec {
+			margin-top: 50px;
+            .introBar {
+                @include flex;
+                @include jcc;
+				margin-bottom: 50px;
+                @media only screen and (max-width: 767px) {
+                    @include aic;
+					@include column;
+                }
+
+                .introPic {
+					.pic {
+						position: relative;
+						@media only screen and (max-width: 767px) {
+							width: 30vw;height: 60vw;
+						}
+						.picBefore {
+							width: 20vw;
+							height: 40vw;
+							background-repeat: no-repeat;
+							background-size: contain;
+							background-position: center bottom;
+							z-index: 1;
+							@media only screen and (max-width: 767px) {
+								width: 30vw;height: 60vw;
+								position: absolute;
+								left: 50%;top: 50%;
+								@include translate(-50%,-50%);
+							}
+							@media screen and (orientation: landscape) and (max-width: 767px) {
+								width: 20vw;height: 40vw;
+							}
+						} 
+						.picAfter {
+							position: absolute;
+							left: 50%;top: 50%;
+							@include translate(-50%,-50%);
+							width: 20vw;
+							height: 40vw;
+							background-repeat: no-repeat;
+							background-size: contain;
+							background-position: center bottom;
+							opacity: 0;
+							z-index: 1;
+							@media only screen and (max-width: 767px) {
+								width: 30vw;height: 60vw;
+							}
+							@media screen and (orientation: landscape) and (max-width: 767px) {
+								width: 20vw;height: 40vw;
+							}
+						}
+						.backLight {
+							position: absolute;
+							left: 50%;top: 50%;
+							@include translate(-50%,-50%);
+							@include background(50vw, 40vw, url(../images/backLight.svg), contain);
+							z-index: 0;
+							@media only screen and (max-width: 767px) {
+								width: 75vw;height: 60vw;
+							}
+						}
+
+						@media only screen and (max-width: 767px) {
+							width: 60vw;
+							height: 48vw;
+							background-position: left bottom;
+						}
+					}
+                }
+
+                .introText {
+					max-width: 420px;
+					margin-left: 4vw;
+					text-align: left;
+					overflow: hidden;
+					@media only screen and (max-width: 767px) {
+						margin-left: 0vw;
+						max-width: none;
+						width: 100%;
+					}
+                    h3 {
+                        font-size: 24px;
+                        font-weight: bold;
+						letter-spacing: 1px;
+						line-height: 1.5;
+                        color: $green;
+						display: inline-block;
+                        @media only screen and (max-width: 767px) {
+                            font-size: 20px;
+                            line-height: 28px;
+							text-align: center;
+							display: block;
+							margin-top: 50px;
+                        }
+                    }
+					.textArea {
+						position: relative;
+						width: 100%;
+						@include flex;
+						z-index: 20;
+						@media screen and (orientation: landscape) and (max-width: 1023px) {
+							margin-top: 0;
+						}
+						@media screen and (orientation: landscape) and (max-width: 767px) {
+							margin-top: 0;
+						}
+						.textContentWord {
+							width: 100%;
+							min-width: 100%;
+							position: relative;
+							font-weight: bold;
+							font-size: 18px;
+							letter-spacing: 1px;
+							line-height: 1.5;
+							color: $jungle;
+							margin: 0;
 							z-index: 20;
-							h1 {
-								color: #fff;
-								font-size: 3.5vw;
-								line-height: 5vw;
-								@include flex;
-								@include jcc;
-								@include aic;
-								p {
-									height: 5vw;
-									width: 100%;
-									margin: 0;
-									margin-right: 10px;
-								}
-								.font-box {
-									overflow: hidden;
-									position: relative;
-									height: 5vw;
-									min-width: 13.2vw;
-									.inner {
-										text-align: left;
-										display: inline-block;
-										color: #fff;
-										position: relative;
-										white-space: nowrap;
-										top: 0;left: 0;
-										-webkit-animation:move 5s 1s infinite;
-										-moz-animation:move 5s 1s infinite;
-										-ms-animation:move 5s 1s infinite;
-										-o-animation:move 5s 1s infinite;
-										animation:move 5s 1s infinite;
-									}
-								}
+							@media only screen and (min-width: 768px) and (max-width: 1279px) {
+								margin-top: 100px;
 							}
-							p.context {
-								color: #fff;
-								width: 60%;
-								margin-left: auto;
-							}
-							.btnArea {
-								margin-top: 30px;
-								a {
-									display: inline-block;
-									padding: 12px 30px;
-									background-color: $rgblue;
-									text-decoration: none;
-									color: #fff;
-									letter-spacing: 1px;
-									border-radius: 5px;
-									font-size: 12px;
-									@include transition(.2s);
-									&:hover {
-										background-color: $blue;
-										padding: 17px 35px;
-									}
-								}
-							}
-	
-							@media only screen and (max-width: 1079px) {
-								p.context {
+							@media only screen and (max-width: 767px) {
+								font-size: 16px;
+								padding: 0 30px;
+								margin: auto;
+								margin-top: 20px;
+								line-height: 2;
+								br {
 									display: none;
 								}
 							}
-	
+							@media screen and (orientation: landscape) and (max-width: 1023px) {
+								margin-top: 30px;
+								font-size: 16px;
+								padding-left: 7vw;
+								padding-right: 7vw;
+								br {display: none;}
+							}
+						}
+					}
+					// p {
+					// 	font-size: 18px;
+					// 	color: $jungle;
+					// 	letter-spacing: 1px;
+					// 	line-height: 1.5;
+					// 	br {
+					// 		@media only screen and (max-width: 767px) {
+					// 			display: none;
+					// 		}
+					// 	}
+					// }
+					.introDetail {
+						position: relative;
+						margin-top: 50px;
+						padding: 20px;
+						width: 25vw;height: 20vw;
+						@include flex;
+						@include jcc;
+						@include aic;
+						z-index: 1;
+						@media only screen and (max-width: 767px) {
+							width: 75vw;height: 60vw;
+						}
+						.circle {
+							position: absolute;
+							left: 0;top: 0;
+							position: relative;
+							background-color: #fff;
+							border: 10px solid $green;
+							border-radius: 50%;
+							width: 20vw;height: 20vw;
+							z-index: 1;
 							@media only screen and (max-width: 767px) {
-								@include translate(-5%, -50%);
-								h1 {
-									font-size: 5vw;
-									line-height: 5vw;
-									p {
-										height: 5vw;
-										width: 100%;
-										margin: 0;
-										margin-right: 10px;
-									}
-									.font-box {
-										height: 5vw;
-										min-width: 19vw;
-										.inner {
-											text-align: left;
-											color: #fff;
-											white-space: nowrap;
-											top: 0;left: 0;
-											-webkit-animation:move 5s 1s infinite;
-											-moz-animation:move 5s 1s infinite;
-											-ms-animation:move 5s 1s infinite;
-											-o-animation:move 5s 1s infinite;
-											animation:move 5s 1s infinite;
-										}
-									}
-								}
+								width: 60vw;height: 60vw;
+							}
+						}
+						.before {
+							position: absolute;
+							content: '';
+							left: 10%;top: 0%;
+							width: 0;
+							height: 0;
+							border-style: solid;
+							border-width: 10vw 10vw 0 0;
+							border-color: $green transparent transparent transparent;
+							z-index: 0;
+							@media only screen and (max-width: 767px) {
+								border-width: 30vw 30vw 0 0;
+							}
+						}
+						.protectSet {
+							position: absolute;
+							@include background(10vw, 10vw, url(../images/protectSet.png), contain);
+							z-index: 2;
+							@media only screen and (max-width: 767px) {
+								width: 30vw;height: 30vw;
+							}
+						}
+					}
+					.productDetail {
+						margin-top: 20px;
+						margin-bottom: 20px;
+						.product {
+							@include background(20vw, 20vw, url(../images/protection.png), contain);
+							@media only screen and (max-width: 767px) {
+								width: 100%;height: 50vw;
 							}
 						}
 					}
                 }
             }
         }
-		.owl-dots {
-			position: absolute;
-			left: 50%;bottom: 5%;
-			@include translate(-50%, -50%);
-                .owl-dot {
-					position: relative;
-                    width: 2vw;
-					margin: .3vw;
-                    height: 5px;
-                    background-color: transparent;
-                    border: 1px solid #fff;
-                    outline: none;
-					&:hover {
-                        background-color: #fff;
-                    }
-                    &.active {
-						background-color: #fff;
-						&:hover {
-							background-color: #fff;
-						}
-                    }
-                }
-			@media only screen and (max-width: 767px) {
-				display: none;
-			}
-		}
-		.owl-nav {
-			.owl-prev,.owl-next {
-				position: absolute;
-				top: 50%;
-				@include translate(0,-50%);
-				@include transition(.2s);
-				@media only screen and (max-width: 767px) {
-					display: none;
-				}
-				span {
-					display: inline-block;
-					position: relative;
-					font-size: 2.5vw;
-					color: #fff;
-					line-height: 0.7;
-					@include transition(.2s);
-					@media only screen and (max-width: 1279px) {
-						font-size: 5vw;
-					}
-				}
-				&:hover {
-					span {
-						font-size: 3.5vw;
-						@media only screen and (max-width: 1279px) {
-							font-size: 6vw;
-						}
-					}
-				}
-			}
-			.owl-prev {
-				left: 1%;
-				@media only screen and (max-width: 1279px) {
-					left: 2%;
-				}
-			}
-			.owl-next {
-				right: 1%;
-				@media only screen and (max-width: 1279px) {
-					right: 2%;
-				}
-			}
-		}
-    }
-}
-
-.mainList {
-	padding-top: 90px;
-	padding-bottom: 120px;
-	position: relative;
-	overflow: hidden;
-	.container-fluid {
-		width: 70%;
-		padding: 0;
-		@media only screen and (max-width: 1279px) {
-			width: 80%;
-		}
-		@media only screen and (max-width: 767px) {
-			width: 90%;
-		}
 	}
-	.row {
-		margin: 0;padding: 0;
-		.menuBox {
-			margin-top: 30px;
-			.picBox {
-				position: relative;
-				width: 100%;height: 24vw;
-				overflow: hidden;
-				@include transition(.2s);
-				@media only screen and (max-width: 767px) {
-					height: 36vw;
-				}
-				&.half {
-					height: 18vw;
-					@media only screen and (max-width: 767px) {
-						height: 36vw;
-					}
-				}
-				&.quater {
-					height: 14vw;
-					@media only screen and (max-width: 767px) {
-						height: 36vw;
-					}
-				}
-				&:hover {
-					box-shadow: 10px 10px 10px rgba(#000,.2);
-					.pic {transform: scale(1.2);}
-					.title {
-						top: 50%;
-						@include translate(0%,-50%);
-						&:before {
-							width: 100%;
-						}
-					}
-				}
-				.pic {
-					position: absolute;
-					width: 100%;height: 24vw;
-					background-repeat: no-repeat;
-					background-position: center center;
-					background-size: cover;
-					@include transition(.2s);
-					@media only screen and (max-width: 767px) {
-						height: 36vw;
-					}
-					&.half {
-						height: 18vw;
-						@media only screen and (max-width: 767px) {
-							height: 36vw;
-						}
-					}
-					&.quater {
-						height: 14vw;
-						@media only screen and (max-width: 767px) {
-							height: 36vw;
-						}
-					}
-				}
-			}
-			.title {
-				position: absolute;
-				left: 25px;top: 5%;
-				color: #fff;
-				z-index: 20;
-				@include transition(.2s);
-				&:before {
-					position: absolute;
-					content: '';
-					left: 0;bottom: 0;
-					width: 0%;
-					height: 1px;
-					background-color: #fff;
-					@include transition(.5s);
-					box-shadow: 2px 2px 2px rgba(#000,.5);
-				}
-				h2 {
-					font-weight: bold;
-					margin-top: 5px;
-					letter-spacing: 1px;
-					text-shadow: 2px 2px 2px rgba(#000,.5);
-					span {
-						margin-left: 0.5vw;
-						font-size: 20px;
-					}
-				}
-				h4 {
-					font-weight: bold;
-					margin-top: 5px;
-					letter-spacing: 1px;
-					text-shadow: 2px 2px 2px rgba(#000,.5);
-				}
-			}
-		}
-	}
-	@keyframes charge {
-		0% {
-			@include translate(0%,0%);
-		}
-		100% {
-			@include translate(2%,0%);
-		}
-	}
-}
-
-.information {
-	position: relative;
-	width: 100%;
-	padding: 100px 0;
-	background-image: url(../images/air-interface.jpeg);
-	background-position: center center;
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-attachment: fixed;
-	@include flex;
-	@include aic;
-	&:after {
+	&:before {
 		position: absolute;
 		content: '';
-		width: 100%;height: 100%;
 		left: 0;top: 0;
-		background: linear-gradient(90deg,rgba(#000,0.5),rgba(#000,0));
+		@include translate(0,-2%);
+		@include background(100%, 5vw, url(../images/green-curtain.svg), contain);
 	}
-	@media only screen and (max-width: 767px) {
-		background-attachment: initial;
-		&:after {
-			background: linear-gradient(90deg,rgba(#000,0.8),rgba(#000,0.3));
-		}
-	}
-	.container-fluid {
+}
+
+.story-end {
+	width: 100%;
+	height: 100vh;
+	overflow: hidden;
+	.scene {
+		width: 100%;
+		height: 100vh;
 		position: relative;
-		padding: 0;
-		width: 70%;
-		@include flex;
-		@include aic;
-		z-index: 10;
-		@media only screen and (max-width: 1279px) {
-			width: 80%;
-		}
-		@media only screen and (max-width: 767px) {
-			width: 90%;
-		}
-		.textArea {
-			h2 {
-				color: #fff;
-				font-weight: bold;
-				span {
-					font-size: 20px;
-					margin-left: 0.5vw;
+		background-color: $yellow;
+		border: none;
+		padding-top: 20px;
+		overflow: hidden;
+		h1 {
+			position: relative;
+			font-weight: bold;
+			text-align: center;
+			color: $green;
+			z-index: 40;
+			@media only screen and (min-width: 768px) and (max-width: 1279px) {
+				font-size: 48px;
+				line-height: 1.5;
+				margin: auto;
+			}
+			@media only screen and (max-width: 767px) {
+				font-size: 36px;
+				line-height: 1.5;
+				margin: auto;
+				br {
+					display: none;
 				}
 			}
-			h4 {
-				color: #fff;
-				border-bottom: 1px solid rgba(#fff,.5);
-				padding-bottom: 20px;
-				padding-top: 20px;
-				text-shadow: 2px 2px 2px rgba(#000,.5);
-			}
-			.btnArea {
-				margin-top: 30px;
-				a {
-					display: inline-block;
-					padding: 12px 30px;
-					background-color: #fff;
-					text-decoration: none;
-					color: #000;
-					letter-spacing: 1px;
-					border-radius: 5px;
-					font-size: 12px;
-					@include transition(.2s);
-					&:hover {
-						background-color: #fff;
-						padding: 17px 35px;
-					}
+			br {
+				display: none;
+				@media only screen and (max-width: 767px) {
+					display: block;
 				}
+				@media screen and (orientation: landscape) and (max-width: 767px) {
+					display: none;
+				}
+			}
+		}
+		.cloud-day-3 {
+			position: absolute;
+			z-index: 1;
+			right: 0%;top: 0%;
+			@include background(33vw, 7.5vw, url(../images/blueCloud1.svg), contain);
+			@media only screen and (max-width: 767px) {
+				width: 66vw;
+				height: 15vw;
+			}
+		}
+		.cloud-day-4 {
+			position: absolute;
+			z-index: 1;
+			left: 50%;top: 50%;
+			@include translate(-50%,-50%);
+			@include background(100vw, 42vw, url(../images/blueCloud2.svg), contain);
+			@media only screen and (max-width: 767px) {
+				width: 100vw;
+				height: 42vw;
+			}
+		}
+		.endGrass {
+			position: absolute;
+			left: 50%;bottom: 0;
+			@include translate(-50%, 0%);
+			@include background(100vw, 35vw, url(../images/endGrass.svg), cover);
+			background-position: center top;
+			z-index: 40;
+			@media only screen and (min-width: 768px) and (max-width: 1279px) {
+			}
+			@media only screen and (max-width: 767px) {
+				width: 100%;
+				height: 40vw;
+			}
+			@media screen and (orientation: landscape) and (max-width: 767px) {
+				width: 100vw;height: 40vw;
+			}
+		}
+		.bigCloud {
+			position: absolute;
+			left: 0;top: 0;
+			@include background(75vw, 30vw, url(../images/bigCloud.svg), cover);
+			z-index: 30;
+			@media only screen and (min-width: 768px) and (max-width: 1279px) {
+				width: 100%;
+				height: 50vh;
+			}
+			@media only screen and (max-width: 767px) {
+				width: 100%;
+				height: 50vh;
+			}
+		}
+		.sunlight {
+			position: absolute;
+			right: 20%;top: 20%;
+			border-radius: 50%;
+			@include translate(-50%, -50%);
+			width: 7vw;
+			height: 7vw;
+			background:linear-gradient(#ffffe0,#fffdff);
+			z-index: 1;
+			@media only screen and (max-width: 1279px) {
+				width: 14vw;height: 14vw;
+				top: 10%;
+			}
+			&:before {
+				position: absolute;
+				content: '';
+				border-radius: 50%;
+				top: 50%;left: 50%;
+				@include translate(-50%,-50%);
+				width: 9vw;
+				height: 9vw;
+				background:linear-gradient(#ffffff,#d2ffad);
+				opacity: 0.2;
+				@media only screen and (max-width: 1279px) {
+					width: 18vw;height: 18vw;
+				}
+			}
+			&:after {
+				position: absolute;
+				content: '';
+				border-radius: 50%;
+				top: 50%;left: 50%;
+				@include translate(-50%,-50%);
+				width: 11vw;
+				height: 11vw;
+				background:linear-gradient(#ffffff,#d2ffad);
+				opacity: 0.2;
+				@media only screen and (max-width: 1279px) {
+					width: 22vw;height: 22vw;
+				}
+			}
+		}
+		.calendarer {
+			position: absolute;
+			right: 10%;top: 20%;
+			@include translate(0%,-50%);
+			z-index: 50;
+			width: 9vw;height: 15vw;
+			background-repeat: no-repeat;
+			background-size: contain;
+			@media only screen and (max-width: 1279px) {
+				width: 18vw;height: 30vw;
+				right: auto;left: 50%;top: 50%;
+				@include translate(-50%,-50%);
+			}
+			@media only screen and (max-width: 767px) {
+				width: 36vw;height: 60vw;
+			}
+			@media screen and (orientation: landscape) and (max-width: 1023px) {
+				width: 18vw;height: 30vw;
+				right: 0;top: 50%;left: auto;
+			}
+			@media screen and (orientation: landscape) and (max-width: 767px) {
+				width: 18vw;height: 30vw;
+				right: 0;top: 50%;left: auto;
+			}
+			&.calendarer5 {
+				background-image: url(../images/calendar5.svg);
+			}
+			&.calendarer6 {
+				background-image: url(../images/calendar6.svg);
 			}
 		}
 	}
 }
 
-.counter {
-	// background-color: $gray1;
-	margin-top: 50px;
-	padding: 10px;
-	@media only screen and (max-width: 991px) {
-		margin-right: 0;
+.contactUs {
+	@include flex;
+	@include jcc;
+	@include aic;
+	@include column;
+	background-color: $yellow;
+	padding-bottom: 50px;
+	.logo {
+		@include background(10vw, 5vw, url(../images/greenLogo.svg), contain);
+		@media only screen and (max-width: 767px) {
+			width: 30vw;height: 15vw;
+		}
 	}
-	@media only screen and (max-width: 767px) {
-		padding: 0;
-		overflow: hidden;
+	.award {
+		@include background(20vw, 30vw, url(../images/award.svg), contain);
+		@media only screen and (max-width: 767px) {
+			width: 40vw;height: 60vw;
+		}
 	}
-	.container-fluid {
-		width: 70%;
-		margin: auto;
+	h1 {
+		font-weight: bold;
+		color: $green;
+		@media only screen and (max-width: 767px) {
+			font-size: 28px;
+		}
+	}
+	.contactBox {
+		margin-top: 50px;
 		@include flex;
 		@include jcc;
 		@include aic;
-		@media only screen and (max-width: 1279px) {
-			width: 80%;
-		}
-		@media only screen and (max-width: 767px) {
-			width: 90%;
-			// @include column;
-		}
-		// h4.countdown {
-		// 	color: #000;
-		// 	font-weight: bold;
-		// 	line-height: 1.5;
-		// 	margin: 0;
-		// 	margin-right: 5vw;
-		// 	@media only screen and (max-width: 991px) {
-		// 		display: none;
-		// 	}
-		// }
-		.timeLoader {
-			@include flex;
-			@include aic;
-			// @media only screen and (max-width: 767px) {
-			// 	@include column;
-			// }
-			.timeBar {
-				@include flex;
-				@include jcc;
-				@include aic;
-				.timeBox {
-					@include flex;
-					@include jcc;
-					@include aic;
-					@include column;
-					padding: 0 2vw;
-					// width: 5vw;
-					// height: 5vw;
-					@include transition(.2s);
-					@media only screen and (max-width: 767px) {
-						padding: 0 3vw;
-					}
-					h2 {
-						font-weight: bold;
-						color: $blue;
-						font-size: 5vw;
-						margin: 0;
-						margin-bottom: 5px;
-						text-align: center;
-					}
-					h5 {
-						font-weight: bold;
-						color: #000;
-						text-align: center;
-						margin: 0;
-					}
-					@media only screen and (max-width: 1279px) {
-						// width: 7vw;
-						// height: 7vw;
-					}
-					@media only screen and (max-width: 767px) {
-						// min-width: 50vw;
-						// min-height: 50vw;
-						// border: 1px solid $gray5;
-						h2 {
-							font-size: 10vw;
-						}
-					}
-				}
+		@include column;
+		.plane {
+			@include background(5vw, 4vw, url(../images/paperPlain.svg), contain);
+			@media only screen and (max-width: 767px) {
+				width: 15vw;height: 12vw;
 			}
 		}
-	}
-}
-
-.sectionSpeaker {
-	padding-top: 100px;
-	// margin-top: 50px;
-	padding-bottom: 20px;
-	position: relative;
-	.container-fluid {
-		width: 70%;
-		margin: auto;
-		@media only screen and (max-width: 1279px) {
-			width: 80%;
+		h3 {
+			color: $jungle;
+			font-weight: bold;
 		}
-		@media only screen and (max-width: 767px) {
-			width: 90%;
-		}
-		.carousel-inner {
-			.eventCarousel {
-				@include flex;
-				@include jcc;
-				@include aic;
-				.item {
-					padding: 10px;
-					a {
-						text-decoration: none;
-						.picBar {
-							position: relative;
-							width: 100%;
-							height: 16vw;
-							overflow: hidden;
-							@media only screen and (max-width: 991px) {
-								height: 20vw;
-							}
-							@media only screen and (max-width: 767px) {
-								height: 40vw;
-							}
-							@media only screen and (max-width: 479px) {
-								height: 60vw;
-							}
-							a.moreBtn {
-								position: absolute;
-								top: 50%;left: 50%;
-								width: 50px;height: 50px;
-								background-color: rgba($blue,.7);
-								border-radius: 50%;
-								font-size: 20px;
-								line-height: 50px;
-								text-align: center;
-								color: #fff;
-								z-index: 20;
-								display: none;
-								@include transition(.2s);
-								&:hover {
-									background-color: rgba($blue,.9);
-								}
-							}
-							.pic {
-								position: relative;
-								width: 100%;
-								height: 16vw;
-								background-position: center center;
-								background-repeat: no-repeat;
-								background-size: cover;
-								@include transition(.5s);
-								z-index: 5;
-								@media only screen and (max-width: 991px) {
-									height: 20vw;
-								}
-								@media only screen and (max-width: 767px) {
-									height: 40vw;
-								}
-								@media only screen and (max-width: 479px) {
-									height: 60vw;
-								}
-							}
-						}
-						h4 {
-							position: relative;
-							margin-top: 15px;
-							color: $gray5;
-							margin-bottom: 5px;
-							padding-bottom: 5px;
-							font-weight: bold;
-							@include transition(.2s);
-							&:before {
-								position: absolute;
-								content: '';
-								width: 100%;height: 1px;
-								background-color: $gray2;
-								left: 0;bottom: 0;
-							}
-							&:after {
-								position: absolute;
-								content: '';
-								width: 0%;height: 1px;
-								background-color: $rgblue;
-								left: 0;bottom: 0;
-								@include transition(.5s);
-							}
-							@media only screen and (max-width: 767px) {
-								text-align: center;
-							}
-						}
-						h5 {
-							color: $gray5;
-							margin-top: 0;
-							line-height: 20px;
-							@include transition(.2s);
-							@media only screen and (max-width: 767px) {
-								text-align: center;
-							}
-						}
-						h6 {
-							color: $gray5;
-							font-weight: bold;
-							font-size: 14px;
-							margin: 0;
-							line-height: 20px;
-							@include transition(.2s);
-							@media only screen and (max-width: 767px) {
-								text-align: center;
-							}
-						}
-						&:hover {
-							h4 {
-								color: $rgblue;
-								padding-bottom: 5px;
-								&:after {
-									width: 100%;
-								}
-							}
-							h6 {
-								color: $blue;
-							}
-							.picBar {
-								.pic {
-									transform: scale(1.2);
-								}
-								a.moreBtn {
-									display: block;
-								}
-							}
-						}
+		.buttonArea {
+			@include flex;
+			@include jcc;
+			@include aic;
+			@include row;
+			.shareBtn {
+				display: inline-block;
+				margin: 20px;
+				@include transition(.1s);
+				@media only screen and (max-width: 767px) {
+					margin: 10px;
+				}
+				i {
+					font-size: 4vw;
+					color: $jungle;
+					@include transition(.2s);
+					@media only screen and (max-width: 767px) {
+						font-size: 8vw;
 					}
 				}
-				.owl-nav,.owl-dots {
-					display: none;
+				&:hover {
+					i {
+						color: darken($jungle,5%);
+						transform: scale(0.9);
+					}
+				}
+				&:active {
+					transform: scale(0.8);
 				}
 			}
 		}
@@ -864,118 +1796,47 @@ body {
 }
 
 .footer {
-	margin-top: 50px;
-	.top {
-		width: 100%;
-		padding-top: 10px;
-		padding-bottom: 10px;
-		background-color: $gray1;
-		.pic {
-			width: 80%;
-			margin: auto;
-			@include flex;
-			@include aic;
-			p {
-				@media only screen and (max-width: 520px) {display: none;}
-			}
-			img {
-				@media only screen and (max-width: 420px) {
-					width: 100%;
-				}
-			}
+	width: 100%;
+	overflow: hidden;
+	background-color: $green;
+	.container-fluid {
+		.copyright {
+			padding: 20px 0;
+			text-align: center;
+			small {color: #fff;}
 		}
 	}
-	.bottom {
-			width: 100%;
-			padding-top: 15px;
-			padding-bottom: 15px;
-			background-color: $blueblack;
-			@include flex;
-			@include aic;
-			.container-fluid {
-				width: 80%;
-				margin: auto;
-				.footerBar {
-					@include flex;
-					@include jcsb;
-					@include aic;
-					@include row;
-					@media only screen and (max-width: 767px) {
-						@include column;
-						p {text-align: center;}
-					}
-					p {
-						margin: 15px 0;
-						color: #fff;
-						a {
-							color: #fff;
-							&:hover {
-								text-decoration: none;
-								color: $lightblue;
-							}
-						}
-						br {
-							display: none;
-							@media only screen and (max-width: 767px) {
-								display: block;
-							}
-						}
-						&.left {
-							margin-right: auto;
-						}
-					}
-					.footLogo {
-						width: 5.25vw;
-						height: 1.5vw;
-						background-image: url(../images/logo-wht.png);
-						background-repeat: no-repeat;
-						background-size: contain;
-						background-position: center center;
-						@media only screen and (max-width: 1279px) {
-							width: 7vw;height: 2vw;
-						}
-						@media only screen and (max-width: 767px) {
-							width: 14vw;height: 4vw;
-						}
-					}
-					ul {
-						@include flex;
-						@include jcc;
-						@include aic;
-						@include row;
-						padding-left: 0;
-						a {
-							text-decoration: none;
-							&:hover {
-								li {
-									background-color: #fff;
-									border: 1px solid #fff;
-									i {color: $blueblack;}
-								}
-							}
-							li {
-								@include flex;
-								@include jcc;
-								@include aic;
-								margin: 10px;
-								margin-right: 0;
-								margin-bottom: 5px;
-								font-size: 12px;
-								width: 30px;height: 30px;
-								border-radius: 50%;
-								border: 1px solid rgba(#fff,.5);
-								@include transition(.2s);
-								i {
-									color: #fff;
-								}
-							}
-						}
-					}
-				}
-				hr {
-					margin: 0;
-					border-top: 1px solid rgba(#fff,.2);
-				}
-			}
-		}
+}
+
+.musicBtn {
+	position: absolute;
+	@include flex;
+	@include jcc;
+	@include aic;
+	right: 10px;top: 10px;
+	z-index: 100;
+	background-color: rgba($jungle, .7);
+	color: #fff;
+	border: none;
+	outline: none;
+	border-radius: 50%;
+	font-size: 1vw;
+	padding: 10px;
+	width: 2.5vw;
+	height: 2.5vw;
+	@include transition(.2s);
+	&:hover {
+		background-color: rgba($jungle, 1);
+	}
+	&:active {
+		background-color: darken($jungle, 10%);
+	}
+	@media only screen and (max-width: 1279px) {
+		width: 4vw;height: 4vw;
+		font-size: 2vw;
+	}
+	@media only screen and (max-width: 767px) {
+		width: 7vw;height: 7vw;
+		font-size: 3vw;
+	}
 }
