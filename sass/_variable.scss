@@ -1,9 +1,9 @@
 $navy:#004A96;
 $blue:#21A0D2;
-$dark:#333333;
-$gray:#646569;
-$yellow:#fffbe1;
-$pink:#ffeeee;
+$dark:#030303;
+$gray:#222222;
+$mainText:#dbc5a4;
+$subText:#878176;
 $water:#ADE1F0;
 $orange:#F39500;
 $dark-brown:#af6638;
@@ -89,8 +89,7 @@ $brown: #b98c5b;
     box-shadow: $x $y $b rgba(#000, $a);
 }
 
-@import url('https://fonts.googleapis.com/css?family=Noto+Sans+TC:700,900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Moon+Dance&family=Noto+Sans+TC:wght@300&family=Noto+Serif+TC&family=Playfair+Display:wght@400;700&display=swap');
 
 
 @keyframes updown {
@@ -100,22 +99,6 @@ $brown: #b98c5b;
 @keyframes swing {
 	0% {@include translate(5%, 0%)};
 	100% {@include translate(-5%, 0%)};
-}
-@keyframes planeFly {
-	0% {@include translate(0%, 0%)};
-    20% {@include translate(100%, 0%)};
-    40% {@include translate(200%, 30%)};
-    60% {@include translate(0%, 0%)};
-    80% {@include translate(-100%, 60%)};
-	100% {@include translate(-200%, 0%)};
-}
-@keyframes planeFly2 {
-	0% {@include translate(0%, 0%)};
-    20% {@include translate(200%, 0%)};
-    40% {@include translate(150%, 50%)};
-    60% {@include translate(100%, 0%)};
-    80% {@include translate(200%, 50%)};
-	100% {@include translate(0%, 0%)};
 }
 @keyframes swipe {
 	0% {@include translate(6%, 0%);opacity: 0;};
@@ -145,14 +128,6 @@ $brown: #b98c5b;
     50% {width: 30px;height: 30px;}
 	100% {width: 20px;height: 20px;}
 }
-@keyframes nextYear {
-    0% {background-color: opacity;}
-    100% {background-color: $orange;}
-}
-@keyframes nextYearSpan {
-    0% {color: $orange;}
-    100% {color: #fff;}
-}
 @keyframes fadeIn {
     0% {opacity: 1;}
     30% {opacity: 1;}
@@ -163,11 +138,7 @@ $brown: #b98c5b;
     0% {opacity: 1;transform: scale(1);}
 	100% {opacity: 0;transform: scale(1.5);}
 }
-@keyframes btnHighlight {
-    0% {background-color: $jungle;color: #fff;}
-	100% {background-color: #fff;color: $jungle;}
-}
-@keyframes bottleRotate {
-    0% {transform: translate(-50%,-50%) rotate(-5deg);}
-	100% {transform: translate(-50%,-50%) rotate(5deg);}
+@keyframes backgroundMove {
+    0% {background-position: 50% 20%;}
+	100% {background-position: 50% 50%;}
 }

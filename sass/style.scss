@@ -12,8 +12,7 @@ body {
 	margin: 0;padding: 0;
     box-sizing: border-box;
     overflow-scrolling: touch;
-	// font-family: "sans-serif","Noto Serif TC", "微軟正黑體", ;
-	font-family: "微軟正黑體";
+	font-family: "Playfair Display","Noto Serif TC", "微軟正黑體";
 	font-weight: 500;
     -webkit-overflow-scrolling: touch;
 }
@@ -25,28 +24,33 @@ body {overflow-x: hidden;}
 	@include jcc;
 	@include aic;
 	@include column;
-	background-color: $green;
-	width: 100%;height: 100%;
+	background-color: #fff;
 	position: fixed;
-	z-index: 500;
-	.crabLogo {
-		width: 17vw;
-		height: 6vw;
-		.basfLogoEffect {
+	left: 0;top: 0;
+	z-index: 100;
+	width: 100%;height: 100%;
+	.quote {
+		font-size: 28px;
+		color: $mainText;
+		margin-bottom: 10px;
+		.char {
+			display: inline-block;
+			letter-spacing: 2px;
+			font-family: 'Moon Dance';
 			opacity: 0;
 		}
 	}
-	.progressBar {
+	.loadingBar {
 		position: relative;
 		margin-top: 20px;
-		width: 20vw;
-		height: 3px;
+		width: 100vw;
+		height: 1px;
 		border-radius: 5px;
-		background-color: rgba(#fff,.2);
+		background-color: rgba(#000,.1);
 		overflow: hidden;
-		.progressValue {
+		.loadingValue {
 			position: absolute;
-			background-color: #fff;
+			background-color: $mainText;
 			width: 0;height: 3px;
 		}
 	}
@@ -70,19 +74,71 @@ body {overflow-x: hidden;}
 
 .progressBar {
 	position: fixed;
-	top: 0;left: 0;
+	bottom: 0;left: 0;
 	width: 100%;
-	height: 4px;
-	background-color: $gray;
+	height: 3px;
+	background-color: rgba(#fff, .2);
 	overflow: hidden;
 	z-index: 50;
 	.progressValue {
 		position: absolute;
 		left: 0;top: 50%;
 		@include translate(0, -50%);
-		width: 100%;
+		width: 0%;
 		height: 5px;
-		background-color: $green;
+		background-color: $mainText;
+	}
+}
+
+.banner {
+	position: relative;
+	width: 100%;
+	@include flex;
+	@include jcc;
+	@include aic;
+	background-color: #030303;
+	.bannerInfo {
+		width: 50%;
+		.infoText {
+			width: 80%;
+			margin: auto;
+			.infoList {
+				margin-bottom: 20px;
+				font-size: 1.2vw;
+				color: $subText;
+				white-space: nowrap;
+			}
+		}
+	}
+	.bannerPic {
+		width: 50%;height: 100vh;
+		background-image: url(../images/syun.png);
+		-webkit-filter: grayscale(100%);
+		background-position: center center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		// animation: backgroundMove 10s;
+	}
+	.bannerTitle {
+		position: absolute;
+		left: 50%;top: 50%;
+		overflow: hidden;
+		border-bottom: 1px solid #fff;
+		@include translate(-50%, -50%);
+		.titleText {
+			font-size: 5vw;
+			color: #fff;
+			font-family: 'Playfair Display';
+		}
+	}
+	.decorationText {
+		position: absolute;
+		left: 0;bottom: 0;
+		color: $mainText;
+		opacity: 0.1;
+		font-size: 10vw;
+		font-weight: bold;
+		white-space: nowrap;
 	}
 }
 
@@ -91,31 +147,15 @@ body {overflow-x: hidden;}
 	.title {
 		h1 {
 			display: inline-block;
-			color: #fff;
-			background-color: $green;
+			color: $mainText;
 			font-weight: 900;
 			text-align: center;
 			padding: 7px 20px 10px;
 			margin-bottom: 5px;
 			margin-top: 5px;
 			letter-spacing: 2px;
-			text-shadow: 0px 0px 10px rgba($jungle,.8);
 			@media only screen and (max-width: 767px) {
 				font-size: 28px;
-			}
-		}
-		h2 {
-			display: inline-block;
-			color: #fff;
-			background-color: $green;
-			font-weight: 900;
-			text-align: center;
-			padding: 7px 20px 10px;
-			margin-top: 5px;
-			margin-bottom: 5px;
-			text-shadow: 0px 0px 10px rgba($jungle,.8);
-			@media only screen and (max-width: 767px) {
-				font-size: 20px;
 			}
 		}
 	}
@@ -123,7 +163,7 @@ body {overflow-x: hidden;}
 
 .first-article {
 	position: relative;
-	background:linear-gradient($dark-lake,$light-lake);
+	background:linear-gradient($dark,$gray);
 	padding-top: 50px;
 	padding-bottom: 70px;
 	width: 100%;
@@ -136,100 +176,89 @@ body {overflow-x: hidden;}
 		@media only screen and (max-width: 767px) {
 			width: 90%;
 		}
-		.articleText {
-			margin-top: 50px;
-			text-align: center;
-			@media only screen and (max-width: 767px) {
-				margin-top: 50px;
-			}
-			h3 {
-				font-weight: bold;
-				line-height: 1.5;
-				letter-spacing: 1px;
+		.articleSection {
+			@include flex;
+			@include jcc;
+			@include aic;
+			.articleText {
+				margin: 0 3vw;
 				text-align: center;
-				color: $jungle;
-				display: inline-block;
-				br {
-					display: block;
-					@media only screen and (max-width: 767px) {
-						display: none;
-					}
-				}
-			}
-			p {
-				font-weight: bold;
-				text-align: center;
-				font-size: 20px;
-				color: $jungle;
-				margin-top: 20px;
-				.runNum {
-					display: inline-block;
-					padding: 2px 10px;
-					font-size: 32px;
-					color: $green;
-					font-weight: 900;
-					small {
-						font-size: 18px;
-						font-weight: bold;
-						margin-left: 2px;
-					}
-					@media only screen and (max-width: 767px) {
-						display: block;
-						font-size: 10vw;
-						line-height: 1;
-					}
-				}
-				@media only screen and (max-width: 1279px) {
-					width: 60%;
-					margin: auto;
-				}
-				@media only screen and (max-width: 767px) {
-					width: 100%;
-					font-size: 18px;
-				}
-			}
-			h4 {
-				text-align: center;
-				#riceSum {
-					font-weight: bold;
-					font-size: 84px;
-					font-weight: 900;
-					color: $green;
-					line-height: 1;
-					@media only screen and (max-width: 767px) {
-						font-size: 10vw;
-					}
-				}
-				.ton {
-					font-weight: bold;
-					font-size: 24px;
-					color: $green;
-				}
-			}
-			.riceGroup {
-				margin-top: 20px;
-				overflow: hidden;
-				@include flex;
-				@include jcc;
-				@include aic;
 				@media only screen and (max-width: 767px) {
 					margin-top: 50px;
 				}
-				.riceGroupImg {
-					position: relative;
-					background-image: url(../images/paddy.svg);
-					background-position: center center;
-					background-size: contain;
-					background-repeat: no-repeat;
-					width: 44vw;height: 20vw;
+				p {
+					font-weight: bold;
+					text-align: center;
+					font-size: 20px;
+					color: $subText;
+					margin-top: 20px;
+					.runNum {
+						display: inline-block;
+						padding: 2px 10px;
+						font-size: 32px;
+						color: $green;
+						font-weight: 900;
+						small {
+							font-size: 18px;
+							font-weight: bold;
+							margin-left: 2px;
+						}
+						@media only screen and (max-width: 767px) {
+							display: block;
+							font-size: 10vw;
+							line-height: 1;
+						}
+					}
+					@media only screen and (max-width: 1279px) {
+						width: 60%;
+						margin: auto;
+					}
 					@media only screen and (max-width: 767px) {
-						width: 66vw;
-						height: 30vw;
+						width: 100%;
+						font-size: 18px;
+					}
+				}
+				h4 {
+					text-align: center;
+					.dataProp {
+						font-weight: bold;
+						font-size: 84px;
+						font-weight: 900;
+						color: #fff;
+						line-height: 1;
+						@media only screen and (max-width: 767px) {
+							font-size: 10vw;
+						}
+					}
+					.ton {
+						font-weight: bold;
+						margin-left: 10px;
+						font-size: 24px;
+						color: #fff;
 					}
 				}
 			}
-			h5 {
-				text-align: center;
+		}
+		.riceGroup {
+			margin-top: 20px;
+			overflow: hidden;
+			@include flex;
+			@include jcc;
+			@include aic;
+			@media only screen and (max-width: 767px) {
+				margin-top: 50px;
+			}
+			.riceGroupImg {
+				position: relative;
+				background-image: url(../images/paddy.svg);
+				background-position: center center;
+				background-size: contain;
+				background-repeat: no-repeat;
+				width: 44vw;height: 20vw;
+				@media only screen and (max-width: 767px) {
+					width: 66vw;
+					height: 30vw;
+				}
 			}
 		}
 	}
@@ -405,6 +434,7 @@ body {overflow-x: hidden;}
 		height: 100vh;
 		&.seaScene {
 			position: relative;
+			background-color: $gray;
 			border: none;
 			overflow: hidden;
 			.sceneCover {
@@ -428,85 +458,27 @@ body {overflow-x: hidden;}
 					margin-top: 15px;
 				}
 				.yearBar {
-					width: 50%;
-					z-index: 500;
 					@media only screen and (max-width: 1279px) {
 						width: 80%;
 					}
 					@media only screen and (max-width: 767px) {
 						width: 90%;
 					}
-					.progressBaro {
-						position: relative;
-						width: 100%;
-						height: 10px;
-						margin: auto;
-						border-radius: 10px;
-				
-						.progressContent {
-							position: absolute;
-							height: 10px;
-							top: 0;
-							left: 0;
-							border-radius: 10px;
-							@media only screen and (max-width: 767px) {
-								width: 30%;
-							}
-							.loadCrab {
-								position: absolute;
-								right: 0;top: 50%;
-								@include background(6vw, 3.3vw, url(../images/farmerHead.svg), contain);
-								@include translate(30%, -50%);
-								@media only screen and (max-width: 1279px) {
-									width: 8vw;height: 4.4vw;
-								}
-								@media only screen and (max-width: 767px) {
-									width: 18vw;height: 9.9vw;
-								}
-								@media screen and (orientation: landscape) and (max-width: 767px) {
-									width: 8vw;height: 4.4vw;
-								}
-								.dialogue {
-									position: absolute;
-									right: 0;top: 0;
-									@include translate(120%,-50%);
-									background-color: $green;
-									line-height: 1.5;
-									color: #fff;
-									min-width: 180px;
-									padding: 10px 20px;
-									border-radius: 10px;
-									@include shadow(2px,2px,5px,.2);
-									&:before {
-										position: absolute;
-										content: '';
-										left: 0;bottom: 0;
-										@include translate(-55%, 0%);
-										width: 0;
-										height: 0;
-										border-style: solid;
-										border-width: 0 0 30px 30px;
-										border-color: transparent transparent $green transparent;
-									}
-									@media screen and (orientation: landscape) and (max-width: 1023px) {
-										display: none;
-									}
-								}
-							}
-						}
-					}
 					.numberBar {
 						@include flex;
-						@include jcsb;
+						@include jcc;
 						@include aic;
+						padding: 7px 0;
+						border-radius: 50px;
+						border: 1px solid #fff;
 						margin-top: 30px;
 						@media screen and (orientation: landscape) and (max-width: 767px) {
 							margin-top: 15px;
 						}
 						.number {
 							font-weight: bold;
-							color: $light-brown;
 							font-size: 18px;
+							margin: 0 10px;
 							a {
 								position: relative;
 								display: inline-block;
@@ -514,7 +486,7 @@ body {overflow-x: hidden;}
 								border-radius: 50px;
 								line-height: 1;
 								text-decoration: none;
-								color: $jungle;
+								color: $subText;
 								background-color: #fff;
 								font-size: 18px;
 								letter-spacing: 1px;
@@ -527,20 +499,9 @@ body {overflow-x: hidden;}
 								@media only screen and (max-width: 767px) {
 									font-size: 14px;
 								}
-								.beforePic {
-									position: absolute;
-									left: 0;top: 50%;
-									@include translate(-100%,-60%);
-									background-position: center center;
-									background-size: contain;
-									background-repeat: no-repeat;
-									@media only screen and (max-width: 767px) {
-										display: none;
-									}
-								}
 								&:hover {
 									color: #fff;
-									background-color: $jungle;
+									background-color: $mainText;
 								}
 							}
 						}
@@ -567,7 +528,7 @@ body {overflow-x: hidden;}
 						font-size: 20px;
 						letter-spacing: 1px;
 						line-height: 1.5;
-						color: $jungle;
+						color: $subText;
 						margin: 0;
 						z-index: 20;
 						.noticeText {
@@ -600,45 +561,6 @@ body {overflow-x: hidden;}
 					}
 				}
 			}
-			.sessionBox {
-				position: absolute;
-				cursor: pointer;
-				border-radius: 50%;
-				background-color: rgba(#fff,.7);
-				z-index: 0;
-				border: 5px solid rgba($red,.8);
-				box-shadow: 0px 0px 5px rgba($red,1);
-				@media only screen and (max-width: 767px) {
-					border: 3px solid rgba($red,.8);
-				}
-				&:after {
-					position: absolute;
-					content: '';
-					width: 100%;
-					height: 100%;
-					border-radius: 50%;
-					border: 1px solid $red;
-					animation: boomFadeLg 1s infinite both;
-					@media only screen and (max-width: 767px) {
-						animation: none;
-					}
-				}
-				.hoverWord {
-					position: absolute;
-					bottom: -50%;left: 50%;
-					@include translate(-50%,0%);
-					color: #fff;
-					background-color: $red;
-					padding: 2px 5px;
-					border-radius: 5px;
-					font-weight: bold;
-					white-space: nowrap;
-					font-size: 14px;
-					@media only screen and (max-width: 767px) {
-						bottom: -100%;
-					}
-				}
-			}
 			.grassStep {
 				position: absolute;
 				left: 50%;bottom: 17%;
@@ -663,40 +585,6 @@ body {overflow-x: hidden;}
 					}
 					@media screen and (orientation: landscape) and (max-width: 767px) {
 						width: 24vw;height: 15vw;
-					}
-					.sessionBox {
-						right: 0;bottom: 0;
-						width: 4vw;height: 4vw;
-						@media only screen and (max-width: 1279px) {
-							width: 8vw;height: 8vw;
-						}
-						@media only screen and (max-width: 767px) {
-							width: 10vw;height: 10vw;
-						}
-						@media screen and (orientation: landscape) and (max-width: 1023px) {
-							width: 7vw;height: 7vw;
-						}
-						@media screen and (orientation: landscape) and (max-width: 767px) {
-							width: 7vw;height: 7vw;
-						}
-						.seed {
-							position: absolute;
-							top: 50%;left: 50%;
-							@include translate(-50%,-50%);
-							@include background(2vw, 2vw, url(../images/seed.svg), contain);
-							@media only screen and (max-width: 1279px) {
-								width: 3vw;height: 3vw;
-							}
-							@media only screen and (max-width: 767px) {
-								width: 5vw;height: 5vw;
-							}
-							@media screen and (orientation: landscape) and (max-width: 1023px) {
-								width: 3vw;height: 3vw;
-							}
-							@media screen and (orientation: landscape) and (max-width: 767px) {
-								width: 3vw;height: 3vw;
-							}
-						}
 					}
 				}
 				&.grassStep2 {
@@ -803,229 +691,6 @@ body {overflow-x: hidden;}
 					@media screen and (orientation: landscape) and (max-width: 767px) {
 						width: 24vw;height: 22vw;
 					}
-					.sessionBox {
-						width: 4vw;height: 4vw;
-						@media only screen and (max-width: 1279px) {
-							width: 6vw;height: 6vw;
-						}
-						@media only screen and (max-width: 767px) {
-							width: 10vw;height: 10vw;
-						}
-						@media screen and (orientation: landscape) and (max-width: 1023px) {
-							width: 6vw;height: 6vw;
-						}
-						@media screen and (orientation: landscape) and (max-width: 767px) {
-							width: 6vw;height: 6vw;
-						}
-						&.bug1Box {
-							left: 10%;top: 10%;
-							.bug1 {
-								position: absolute;
-								top: 50%;left: 50%;
-								@include translate(-50%,-50%);
-								@include background(2vw, 2.4vw, url(../images/bug1.svg), contain);
-								@media only screen and (max-width: 1279px) {
-									width: 4vw;height: 4.8vw;
-								}
-							}
-						}
-						&.bug2Box {
-							left: 30%;top: 40%;
-							.bug2 {
-								position: absolute;
-								top: 50%;left: 50%;
-								@include translate(-50%,-50%);
-								@include background(2vw, 3vw, url(../images/bug2.svg), contain);
-								@media only screen and (max-width: 1279px) {
-									width: 4vw;height: 6vw;
-								}
-							}
-						}
-						&.bug3Box {
-							left: 60%;top: 60%;
-							.bug3 {
-								position: absolute;
-								top: 50%;left: 50%;
-								@include translate(-50%,-50%);
-								@include background(2vw, 4vw, url(../images/bug3.svg), contain);
-								@media only screen and (max-width: 1279px) {
-									width: 4vw;height: 8vw;
-								}
-							}
-						}
-						&.bug4Box {
-							right: 10%;top: 20%;
-							.bug4 {
-								position: absolute;
-								top: 50%;left: 50%;
-								@include translate(-50%,-50%);
-								@include background(2vw, 2vw, url(../images/bug4.svg), contain);
-								@media only screen and (max-width: 1279px) {
-									width: 4vw;height: 4vw;
-								}
-							}
-						}
-					}
-				}
-				&.grassStep4 {
-					@include background(24vw, 22vw, url(../images/grassStep4.svg), contain);
-					@media only screen and (max-width: 1279px) {
-						width: 36vw;height: 33vw;
-					}
-					@media only screen and (max-width: 767px) {
-						width: 48vw;height: 44vw;
-					}
-					@media screen and (orientation: landscape) and (max-width: 1023px) {
-						width: 24vw;height: 22vw;
-					}
-					@media screen and (orientation: landscape) and (max-width: 767px) {
-						width: 24vw;height: 22vw;
-					}
-					.sessionBox {
-						right: 0;top: 30%;
-						width: 10vw;height: 10vw;
-						@media only screen and (max-width: 1279px) {
-							width: 15vw;height: 15vw;
-						}
-						@media only screen and (max-width: 767px) {
-							width: 20vw;height: 20vw;
-						}
-						@media screen and (orientation: landscape) and (max-width: 1023px) {
-							width: 10vw;height: 10vw;
-						}
-						@media screen and (orientation: landscape) and (max-width: 767px) {
-							width: 10vw;height: 10vw;
-						}
-						.grove {
-							position: absolute;
-							top: 50%;left: 50%;
-							@include translate(-50%,-50%);
-							@include background(16vw, 20vw, url(../images/grassStep4_a.svg), contain);
-							@media only screen and (max-width: 1279px) {
-								width: 24vw;height: 30vw;
-							}
-							@media only screen and (max-width: 767px) {
-								width: 32vw;height: 40vw;
-							}
-							@media screen and (orientation: landscape) and (max-width: 1023px) {
-								width: 16vw;height: 20vw;
-							}
-							@media screen and (orientation: landscape) and (max-width: 767px) {
-								width: 16vw;height: 20vw;
-							}
-						}
-					}
-				}
-				&.grassStep5 {
-					@include background(26vw, 22vw, url(../images/grassStep5.svg), contain);
-					@media only screen and (max-width: 1279px) {
-						width: 39vw;height: 33vw;
-					}
-					@media only screen and (max-width: 767px) {
-						width: 52vw;height: 44vw;
-					}
-					@media screen and (orientation: landscape) and (max-width: 1023px) {
-						width: 26vw;height: 22vw;
-					}
-					@media screen and (orientation: landscape) and (max-width: 767px) {
-						width: 26vw;height: 22vw;
-					}
-					.sessionBox {
-						left: 0;top: 20%;
-						width: 10vw;height: 10vw;
-						@media only screen and (max-width: 1279px) {
-							width: 15vw;height: 15vw;
-						}
-						@media only screen and (max-width: 767px) {
-							width: 20vw;height: 20vw;
-						}
-						@media screen and (orientation: landscape) and (max-width: 1023px) {
-							width: 10vw;height: 10vw;
-						}
-						@media screen and (orientation: landscape) and (max-width: 767px) {
-							width: 10vw;height: 10vw;
-						}
-						.grove {
-							position: absolute;
-							top: 50%;left: 50%;
-							@include translate(-50%,-50%);
-							@include background(18vw, 20vw, url(../images/grassStep5_a.svg), contain);
-							@media only screen and (max-width: 1279px) {
-								width: 27vw;height: 30vw;
-							}
-							@media only screen and (max-width: 767px) {
-								width: 36vw;height: 40vw;
-							}
-							@media screen and (orientation: landscape) and (max-width: 1023px) {
-								width: 18vw;height: 20vw;
-							}
-							@media screen and (orientation: landscape) and (max-width: 767px) {
-								width: 18vw;height: 20vw;
-							}
-						}
-					}
-				}
-			}
-			.calendar {
-				position: absolute;
-				right: 10%;top: 50%;
-				@include translate(0%,-50%);
-				width: 9vw;height: 15vw;
-				background-repeat: no-repeat;
-				background-size: contain;
-				z-index: 100;
-				@media only screen and (max-width: 1279px) {
-					top: 60%;
-					width: 13.5vw;height: 22.5vw;
-				}
-				@media only screen and (max-width: 767px) {
-					width: 18vw;height: 30vw;
-					right: 5%;top: 60%;
-				}
-				@media screen and (orientation: landscape) and (max-width: 1023px) {
-					width: 9vw;height: 15vw;
-				}
-				@media screen and (orientation: landscape) and (max-width: 767px) {
-					width: 9vw;height: 15vw;
-				}
-				&.calendar1 {
-					background-image: url(../images/calendar1.svg);
-				}
-				&.calendar2 {
-					background-image: url(../images/calendar2.svg);
-				}
-				&.calendar3 {
-					background-image: url(../images/calendar3.svg);
-				}
-				&.calendar3-1 {
-					background-image: url(../images/calendar3-1.svg);
-				}
-				&.calendar4 {
-					background-image: url(../images/calendar4.svg);
-				}
-				&.calendar5 {
-					background-image: url(../images/calendar5.svg);
-				}
-			}
-			.cloud-date-1 {
-				position: absolute;
-				z-index: 1;
-				right: 0%;top: 0%;
-				@include background(33vw, 7.5vw, url(../images/purpleCloud1.svg), contain);
-				@media only screen and (max-width: 767px) {
-					width: 66vw;
-					height: 15vw;
-				}
-			}
-			.cloud-date-2 {
-				position: absolute;
-				z-index: 1;
-				left: 50%;top: 50%;
-				@include translate(-50%,-50%);
-				@include background(100vw, 42vw, url(../images/purpleCloud2.svg), contain);
-				@media only screen and (max-width: 767px) {
-					width: 100vw;
-					height: 42vw;
 				}
 			}
 			.ground {
@@ -1069,241 +734,6 @@ body {overflow-x: hidden;}
 					}
 				}
 			}
-			.wave {
-				position: absolute;
-				left: 0;bottom: 0;
-				width: 100vw;height: 25vw;
-				background:linear-gradient(rgba($dark-lake,0),$dark-lake);
-				z-index: 30;
-				@media only screen and (min-width: 768px) and (max-width: 1279px) {
-					width: 100%;
-					height: 70vw;
-				}
-				@media only screen and (max-width: 767px) {
-					width: 100%;
-					height: 105vw;
-				}
-				@media screen and (orientation: landscape) and (max-width: 1023px) {
-					height: 50vh;
-				}
-				
-				.flowCover {
-					position: absolute;
-					width: 100%;height: 100%;
-					left: 0;top: 0;
-					z-index: 0;
-					overflow: hidden;
-					[class^="flow"] {height: 5px;
-						background-color: rgba(#fff,.5);
-						border-radius: 50%;
-						animation: flowFloat 10s infinite;
-						@media only screen and (max-width: 767px) {
-							animation: none;
-						}
-					}
-					@for $i from 1 through 50 {
-						.flow#{$i} {
-							$size:random(100)+50;
-							position: absolute;
-							left: random()*100%;
-							top: random()*100%;
-							animation-delay: $i*-0.2s;
-							width: #{$size}px;
-						}
-					}
-					@keyframes flowFloat {
-						0% {opacity: 0;@include translate(-500%, 0%)}
-						50% {opacity: 1;@include translate(0%, 0%)}
-						100% {opacity: 0;@include translate(500%, 0%)}
-					}
-					@media only screen and (max-width: 767px) {
-						display: none;
-					}
-				}
-			}
-			.leftFlower {
-				position: absolute;
-				left: 0;bottom: 0;
-				@include background(40vw, 20vw, url(../images/leftFlower.svg), contain);
-				z-index: 50;
-				@media only screen and (max-width: 767px) {
-					width: 60vw;height: 30vw;
-				}
-				@media screen and (orientation: landscape) and (max-width: 767px) {
-					width: 40vw;height: 20vw;
-				}
-				.butterfly {
-					position: absolute;
-					left: 50%;top: 0;
-					@include translate(-50%,-50%);
-					@include background(5vw, 5vw, url(../images/butterfly.svg), contain);
-				}
-			}
-			.rightFlower {
-				position: absolute;
-				right: 0;bottom: 0;
-				@include background(30vw, 20vw, url(../images/rightFlower.svg), contain);
-				z-index: 50;
-				@media only screen and (max-width: 767px) {
-					width: 45vw;height: 30vw;
-				}
-				@media screen and (orientation: landscape) and (max-width: 767px) {
-					width: 30vw;height: 20vw;
-				}
-				.butterfly2 {
-					position: absolute;
-					right: 70%;bottom: 20%;
-					transform: rotate(90deg);
-					@include background(5vw, 5vw, url(../images/butterfly.svg), contain);
-				}
-			}
-			.growCloud1 {
-				position: absolute;
-				left: 0;top: 20%;
-				@include background(67.5vw, 15vw, url(../images/growCloud1.svg), cover);
-				z-index: 0;
-				@media only screen and (max-width: 767px) {
-					width: 90vw;
-					height: 20vw;
-				}
-			}
-			.growCloud2 {
-				position: absolute;
-				right: 0;top: 5%;
-				@include background(55vw, 10vw, url(../images/growCloud2.svg), cover);
-				z-index: 0;
-				@media only screen and (max-width: 767px) {
-					width: 55vw;
-					height: 10vw;
-				}
-			}
-			.cloud1 {
-				position: absolute;
-				left: 5%;top: 10%;
-				@include background(16vw, 4vw, url(../images/cloud1.svg), contain);
-				animation: swipe 5s .5s linear infinite alternate both;
-				z-index: 2;
-				@media only screen and (max-width: 767px) {
-					display: none;
-				}
-			}
-			.cloud2 {
-				position: absolute;
-				left: 70%;top: 30%;
-				@include background(15vw, 5.2vw, url(../images/cloud2.svg), contain);
-				animation: swipe 3s 1s linear infinite alternate-reverse both;
-				z-index: 2;
-				@media only screen and (max-width: 767px) {
-					// display: block;
-					// left: 30%;
-					// width: 45vw;height: 10.8vw;
-					display: none;
-				}
-			}
-			.cloud3 {
-				position: absolute;
-				left: 40%;top: 10%;
-				@include background(12.7vw, 1.5vw, url(../images/cloud3.svg), contain);
-				animation: swipe 6s .5s linear infinite alternate both;
-				z-index: 2;
-				@media only screen and (max-width: 767px) {
-					display: none;
-				}
-			}
-			.cloud4 {
-				position: absolute;
-				left: 55%;top: 3%;
-				@include background(12vw, 3vw, url(../images/cloud4.svg), contain);
-				animation: swipe 4s linear infinite alternate-reverse both;
-				z-index: 2;
-				@media only screen and (max-width: 767px) {
-					display: none;
-				}
-			}
-			.light {
-				position: absolute;
-				left: 30%;top: 20%;
-				border-radius: 50%;
-				@include translate(-50%, -50%);
-				width: 7vw;
-				height: 7vw;
-				background:linear-gradient(#ffffe0,#fffdff);
-				z-index: 1;
-				@media only screen and (max-width: 1279px) {
-					width: 10vw;height: 10vw;
-				}
-				@media only screen and (max-width: 767px) {
-					width: 14vw;height: 14vw;
-					top: 30%;
-				}
-				&:before {
-					position: absolute;
-					content: '';
-					border-radius: 50%;
-					top: 50%;left: 50%;
-					@include translate(-50%,-50%);
-					width: 9vw;
-					height: 9vw;
-					background:linear-gradient(#ffffff,#d2ffad);
-					opacity: 0.2;
-					@media only screen and (max-width: 1279px) {
-						width: 12vw;height: 12vw;
-					}
-					@media only screen and (max-width: 767px) {
-						width: 18vw;height: 18vw;
-					}
-				}
-				&:after {
-					position: absolute;
-					content: '';
-					border-radius: 50%;
-					top: 50%;left: 50%;
-					@include translate(-50%,-50%);
-					width: 11vw;
-					height: 11vw;
-					background:linear-gradient(#ffffff,#d2ffad);
-					opacity: 0.2;
-					@media only screen and (max-width: 1279px) {
-						width: 16vw;height: 16vw;
-					}
-					@media only screen and (max-width: 767px) {
-						width: 22vw;height: 22vw;
-					}
-				}
-			}
-			.rainCover {
-				position: absolute;
-				width: 100%;height: 100%;
-				left: 0;top: 0;
-				z-index: 1;
-				overflow: hidden;
-				[class^="rain"] {
-					width: 1px;
-					background-color: #fff;
-					animation: rainFloat linear 3s infinite;
-					@media only screen and (max-width: 767px) {
-						animation: none;
-					}
-				}
-				@for $i from 1 through 50 {
-					.rain#{$i} {
-						$size:random(10)+10;
-						position: absolute;
-						left: random()*100%;
-						top: random()*100%;
-						animation-delay: $i*-0.2s;
-						height: #{$size}px;
-					}
-				}
-				@keyframes rainFloat {
-					0% {opacity: 0;height: 0;@include translate(0,0);}
-					50% {opacity: 1;height: 20px;}
-					100% {opacity: 0;height: 40px;@include translate(0,100%);}
-				}
-				@media only screen and (max-width: 767px) {
-					display: none;
-				}
-			}
 		}
 	}
 }
@@ -1314,7 +744,7 @@ body {overflow-x: hidden;}
 	padding-bottom: 50px;
 	width: 100%;
 	overflow: hidden;
-	background-color: $yellow;
+	background-color: $mainText;
 	@media only screen and (max-width: 767px) {
 		padding-top: 70px;
 		padding-bottom: 0;
@@ -1558,7 +988,7 @@ body {overflow-x: hidden;}
 		width: 100%;
 		height: 100vh;
 		position: relative;
-		background-color: $yellow;
+		background-color: $mainText;
 		border: none;
 		padding-top: 20px;
 		overflow: hidden;
@@ -1591,27 +1021,6 @@ body {overflow-x: hidden;}
 				}
 			}
 		}
-		.cloud-day-3 {
-			position: absolute;
-			z-index: 1;
-			right: 0%;top: 0%;
-			@include background(33vw, 7.5vw, url(../images/blueCloud1.svg), contain);
-			@media only screen and (max-width: 767px) {
-				width: 66vw;
-				height: 15vw;
-			}
-		}
-		.cloud-day-4 {
-			position: absolute;
-			z-index: 1;
-			left: 50%;top: 50%;
-			@include translate(-50%,-50%);
-			@include background(100vw, 42vw, url(../images/blueCloud2.svg), contain);
-			@media only screen and (max-width: 767px) {
-				width: 100vw;
-				height: 42vw;
-			}
-		}
 		.endGrass {
 			position: absolute;
 			left: 50%;bottom: 0;
@@ -1627,20 +1036,6 @@ body {overflow-x: hidden;}
 			}
 			@media screen and (orientation: landscape) and (max-width: 767px) {
 				width: 100vw;height: 40vw;
-			}
-		}
-		.bigCloud {
-			position: absolute;
-			left: 0;top: 0;
-			@include background(75vw, 30vw, url(../images/bigCloud.svg), cover);
-			z-index: 30;
-			@media only screen and (min-width: 768px) and (max-width: 1279px) {
-				width: 100%;
-				height: 50vh;
-			}
-			@media only screen and (max-width: 767px) {
-				width: 100%;
-				height: 50vh;
 			}
 		}
 		.sunlight {
@@ -1685,37 +1080,6 @@ body {overflow-x: hidden;}
 				}
 			}
 		}
-		.calendarer {
-			position: absolute;
-			right: 10%;top: 20%;
-			@include translate(0%,-50%);
-			z-index: 50;
-			width: 9vw;height: 15vw;
-			background-repeat: no-repeat;
-			background-size: contain;
-			@media only screen and (max-width: 1279px) {
-				width: 18vw;height: 30vw;
-				right: auto;left: 50%;top: 50%;
-				@include translate(-50%,-50%);
-			}
-			@media only screen and (max-width: 767px) {
-				width: 36vw;height: 60vw;
-			}
-			@media screen and (orientation: landscape) and (max-width: 1023px) {
-				width: 18vw;height: 30vw;
-				right: 0;top: 50%;left: auto;
-			}
-			@media screen and (orientation: landscape) and (max-width: 767px) {
-				width: 18vw;height: 30vw;
-				right: 0;top: 50%;left: auto;
-			}
-			&.calendarer5 {
-				background-image: url(../images/calendar5.svg);
-			}
-			&.calendarer6 {
-				background-image: url(../images/calendar6.svg);
-			}
-		}
 	}
 }
 
@@ -1724,7 +1088,7 @@ body {overflow-x: hidden;}
 	@include jcc;
 	@include aic;
 	@include column;
-	background-color: $yellow;
+	background-color: $mainText;
 	padding-bottom: 50px;
 	.logo {
 		@include background(10vw, 5vw, url(../images/greenLogo.svg), contain);
@@ -1805,38 +1169,5 @@ body {overflow-x: hidden;}
 			text-align: center;
 			small {color: #fff;}
 		}
-	}
-}
-
-.musicBtn {
-	position: absolute;
-	@include flex;
-	@include jcc;
-	@include aic;
-	right: 10px;top: 10px;
-	z-index: 100;
-	background-color: rgba($jungle, .7);
-	color: #fff;
-	border: none;
-	outline: none;
-	border-radius: 50%;
-	font-size: 1vw;
-	padding: 10px;
-	width: 2.5vw;
-	height: 2.5vw;
-	@include transition(.2s);
-	&:hover {
-		background-color: rgba($jungle, 1);
-	}
-	&:active {
-		background-color: darken($jungle, 10%);
-	}
-	@media only screen and (max-width: 1279px) {
-		width: 4vw;height: 4vw;
-		font-size: 2vw;
-	}
-	@media only screen and (max-width: 767px) {
-		width: 7vw;height: 7vw;
-		font-size: 3vw;
 	}
 }
