@@ -209,12 +209,7 @@ body {overflow-x: hidden;}
 							line-height: 1;
 						}
 					}
-					@media only screen and (max-width: 1279px) {
-						width: 60%;
-						margin: auto;
-					}
 					@media only screen and (max-width: 767px) {
-						width: 100%;
 						font-size: 18px;
 					}
 				}
@@ -239,7 +234,61 @@ body {overflow-x: hidden;}
 				}
 			}
 		}
-		.riceGroup {
+		.contactBox {
+			margin-top: 50px;
+			@include flex;
+			@include jcc;
+			@include aic;
+			@include column;
+			.plane {
+				@include background(5vw, 4vw, url(../images/paperPlain.svg), contain);
+				@media only screen and (max-width: 767px) {
+					width: 15vw;height: 12vw;
+				}
+			}
+			h3 {
+				color: $jungle;
+				font-weight: bold;
+			}
+			.buttonArea {
+				@include flex;
+				@include jcc;
+				@include aic;
+				@include row;
+				.shareBtn {
+					@include flex;
+					@include jcc;
+					@include aic;
+					margin: 20px;
+					width: 7vw;height: 7vw;
+					border-radius: 50%;
+					border: 2px solid $subText;
+					text-decoration: none;
+					@include transition(.1s);
+					@media only screen and (max-width: 767px) {
+						margin: 10px;
+					}
+					i {
+						font-size: 3vw;
+						color: $mainText;
+						@include transition(.2s);
+						@media only screen and (max-width: 767px) {
+							font-size: 8vw;
+						}
+					}
+					&:hover {
+						i {
+							color: darken($mainText,5%);
+							transform: scale(0.9);
+						}
+					}
+					&:active {
+						transform: scale(0.8);
+					}
+				}
+			}
+		}
+		.workGroup {
 			margin-top: 20px;
 			overflow: hidden;
 			@include flex;
@@ -248,179 +297,18 @@ body {overflow-x: hidden;}
 			@media only screen and (max-width: 767px) {
 				margin-top: 50px;
 			}
-			.riceGroupImg {
+			.workImg {
 				position: relative;
-				background-image: url(../images/paddy.svg);
+				background-image: url(../images/camego21.jpeg);
 				background-position: center center;
 				background-size: contain;
 				background-repeat: no-repeat;
-				width: 44vw;height: 20vw;
+				width: 60vw;height: 30vw;
 				@media only screen and (max-width: 767px) {
-					width: 66vw;
-					height: 30vw;
+					width: 80vw;
+					height: 40vw;
 				}
 			}
-		}
-	}
-}
-
-.bad-weather {
-	position: relative;
-	background-color: $light-lake;
-	height: 100vh;
-	padding-top: 100px;
-	width: 100%;
-	overflow: hidden;
-	@media only screen and (max-width: 767px) {
-		padding-top: 50px;
-	}
-	@media screen and (orientation: landscape) and (max-width: 1023px) {
-		padding-top: 10px;
-	}
-	p {
-		font-weight: bold;
-		text-align: center;
-		font-size: 24px;
-		line-height: 1.5;
-		letter-spacing: 1px;
-		color: #fff;
-		margin-top: 100px;
-		@media only screen and (max-width: 767px) {
-			width: 90%;
-			margin: auto;
-			margin-top: 15vh;
-			font-size: 18px;
-		}
-		@media screen and (orientation: landscape) and (max-width: 1023px) {
-			margin-top: 0;
-		}
-		@media screen and (orientation: landscape) and (max-width: 767px) {
-			margin-top: 0;
-		}
-		.runNum {
-			display: inline-block;
-			padding: 3px 7px 7px;
-			margin-left: 5px;
-			font-size: 36px;
-			color: #fff;
-			line-height: 1;
-			background-color: $green;
-			font-weight: 900;
-			small {
-				font-weight: bold;
-				margin-left: 2px;
-			}
-			@media only screen and (max-width: 767px) {
-				// display: block;
-				font-size: 8vw;
-				line-height: 1;
-				margin-top: 20px;
-			}
-			@media screen and (orientation: landscape) and (max-width: 767px) {
-				font-size: 4vw;
-				margin-top: 10px;
-			}
-		}
-	}
-	h5 {
-		position: absolute;
-		left: 50%;bottom: 10px;
-		@include translate(-50%,0);
-		color: #fff;
-	}
-	br.brLine {
-		@media only screen and (max-width: 767px) {
-			display: none;
-		}
-	}
-	.darkGrass {
-		position: absolute;
-		left: 0;bottom: 0;
-		@include background(100vw, 13vw, url(../images/darkGrass.svg), cover);
-		@media only screen and (min-width: 768px) and (max-width: 1279px) {
-			width: 100%;
-			height: 26vw;
-		}
-		@media only screen and (max-width: 767px) {
-			width: 100%;
-			height: 39vw;
-			bottom: -5px;
-		}
-		@media screen and (orientation: landscape) and (max-width: 1023px) {
-			height: 13vw;
-		}
-		@media screen and (orientation: landscape) and (max-width: 767px) {
-			height: 13vw;
-		}
-	}
-	.flash1 {
-		position: absolute;
-		z-index: 1;
-		left: 0%;top: 0%;
-		@include background(34vw, 20vw, url(../images/flash1.svg), contain);
-		@media only screen and (max-width: 767px) {
-			width: 51vw;height: 30vw;
-		}
-		@media screen and (orientation: landscape) and (max-width: 767px) {
-			width: 34vw;height: 20vw;
-			opacity: 0.3;
-		}
-	}
-	.flash2 {
-		position: absolute;
-		z-index: 1;
-		right: 0%;top: 0%;
-		@include background(34vw, 20vw, url(../images/flash2.svg), contain);
-		@media only screen and (max-width: 767px) {
-			width: 51vw;height: 30vw;
-		}
-		@media screen and (orientation: landscape) and (max-width: 767px) {
-			width: 34vw;height: 20vw;
-			opacity: 0.3;
-		}
-	}
-	.cloud-day-1 {
-		position: absolute;
-		z-index: -1;
-		right: 0%;top: 0%;
-		@include background(33vw, 7.5vw, url(../images/purpleCloud1.svg), contain);
-		@media only screen and (max-width: 767px) {
-			width: 66vw;
-			height: 15vw;
-		}
-	}
-	.cloud-day-2 {
-		position: absolute;
-		z-index: -1;
-		left: 50%;top: 50%;
-		@include translate(-50%,-50%);
-		@include background(100vw, 42vw, url(../images/purpleCloud2.svg), contain);
-		@media only screen and (max-width: 767px) {
-			width: 100vw;
-			height: 42vw;
-		}
-	}
-	.sun {
-		position: absolute;
-		left: 50%;top: 70%;
-		z-index: -1;
-		@include translate(-50%,-50%);
-		@include background(35vw, 28vw, url(../images/deadGrass.svg), contain);
-		@media only screen and (max-width: 1279px) {
-			top: 70%;
-			width: 70vw;
-			height: 56vw;
-		}
-		@media only screen and (max-width: 767px) {
-			top: 70%;
-			width: 70vw;
-			height: 56vw;
-		}
-		@media screen and (orientation: landscape) and (max-width: 1023px) {
-			width: 35vw;height: 28vw;
-		}
-		@media screen and (orientation: landscape) and (max-width: 767px) {
-			width: 35vw;height: 28vw;
 		}
 	}
 }
@@ -458,12 +346,6 @@ body {overflow-x: hidden;}
 					margin-top: 15px;
 				}
 				.yearBar {
-					@media only screen and (max-width: 1279px) {
-						width: 80%;
-					}
-					@media only screen and (max-width: 767px) {
-						width: 90%;
-					}
 					.numberBar {
 						@include flex;
 						@include jcc;
@@ -522,6 +404,7 @@ body {overflow-x: hidden;}
 					.textContentArticle {
 						width: 100vw;
 						min-width: 100vw;
+						padding: 0 15vw;
 						position: relative;
 						font-weight: bold;
 						text-align: center;
@@ -531,15 +414,8 @@ body {overflow-x: hidden;}
 						color: $subText;
 						margin: 0;
 						z-index: 20;
-						.noticeText {
-							background-color: $red;
-							color: #fff;
-							white-space: nowrap;
-							padding: 3px 10px;
-							border-radius: 5px;
-						}
 						@media only screen and (min-width: 768px) and (max-width: 1279px) {
-							margin-top: 100px;
+							margin-top: 50px;
 						}
 						@media only screen and (max-width: 767px) {
 							font-size: 16px;
@@ -738,351 +614,6 @@ body {overflow-x: hidden;}
 	}
 }
 
-.equipment {
-	position: relative;
-	padding-top: 150px;
-	padding-bottom: 50px;
-	width: 100%;
-	overflow: hidden;
-	background-color: $mainText;
-	@media only screen and (max-width: 767px) {
-		padding-top: 70px;
-		padding-bottom: 0;
-	}
-	.container-fluid {
-		width: 60%;
-		text-align: center;
-		@media only screen and (max-width: 1279px) {
-			width: 80%;
-		}
-		@media only screen and (max-width: 767px) {
-			width: 90%;
-		}
-		.introSec {
-			margin-top: 50px;
-            .introBar {
-                @include flex;
-                @include jcc;
-				margin-bottom: 50px;
-                @media only screen and (max-width: 767px) {
-                    @include aic;
-					@include column;
-                }
-
-                .introPic {
-					.pic {
-						position: relative;
-						@media only screen and (max-width: 767px) {
-							width: 30vw;height: 60vw;
-						}
-						.picBefore {
-							width: 20vw;
-							height: 40vw;
-							background-repeat: no-repeat;
-							background-size: contain;
-							background-position: center bottom;
-							z-index: 1;
-							@media only screen and (max-width: 767px) {
-								width: 30vw;height: 60vw;
-								position: absolute;
-								left: 50%;top: 50%;
-								@include translate(-50%,-50%);
-							}
-							@media screen and (orientation: landscape) and (max-width: 767px) {
-								width: 20vw;height: 40vw;
-							}
-						} 
-						.picAfter {
-							position: absolute;
-							left: 50%;top: 50%;
-							@include translate(-50%,-50%);
-							width: 20vw;
-							height: 40vw;
-							background-repeat: no-repeat;
-							background-size: contain;
-							background-position: center bottom;
-							opacity: 0;
-							z-index: 1;
-							@media only screen and (max-width: 767px) {
-								width: 30vw;height: 60vw;
-							}
-							@media screen and (orientation: landscape) and (max-width: 767px) {
-								width: 20vw;height: 40vw;
-							}
-						}
-						.backLight {
-							position: absolute;
-							left: 50%;top: 50%;
-							@include translate(-50%,-50%);
-							@include background(50vw, 40vw, url(../images/backLight.svg), contain);
-							z-index: 0;
-							@media only screen and (max-width: 767px) {
-								width: 75vw;height: 60vw;
-							}
-						}
-
-						@media only screen and (max-width: 767px) {
-							width: 60vw;
-							height: 48vw;
-							background-position: left bottom;
-						}
-					}
-                }
-
-                .introText {
-					max-width: 420px;
-					margin-left: 4vw;
-					text-align: left;
-					overflow: hidden;
-					@media only screen and (max-width: 767px) {
-						margin-left: 0vw;
-						max-width: none;
-						width: 100%;
-					}
-                    h3 {
-                        font-size: 24px;
-                        font-weight: bold;
-						letter-spacing: 1px;
-						line-height: 1.5;
-                        color: $green;
-						display: inline-block;
-                        @media only screen and (max-width: 767px) {
-                            font-size: 20px;
-                            line-height: 28px;
-							text-align: center;
-							display: block;
-							margin-top: 50px;
-                        }
-                    }
-					.textArea {
-						position: relative;
-						width: 100%;
-						@include flex;
-						z-index: 20;
-						@media screen and (orientation: landscape) and (max-width: 1023px) {
-							margin-top: 0;
-						}
-						@media screen and (orientation: landscape) and (max-width: 767px) {
-							margin-top: 0;
-						}
-						.textContentWord {
-							width: 100%;
-							min-width: 100%;
-							position: relative;
-							font-weight: bold;
-							font-size: 18px;
-							letter-spacing: 1px;
-							line-height: 1.5;
-							color: $jungle;
-							margin: 0;
-							z-index: 20;
-							@media only screen and (min-width: 768px) and (max-width: 1279px) {
-								margin-top: 100px;
-							}
-							@media only screen and (max-width: 767px) {
-								font-size: 16px;
-								padding: 0 30px;
-								margin: auto;
-								margin-top: 20px;
-								line-height: 2;
-								br {
-									display: none;
-								}
-							}
-							@media screen and (orientation: landscape) and (max-width: 1023px) {
-								margin-top: 30px;
-								font-size: 16px;
-								padding-left: 7vw;
-								padding-right: 7vw;
-								br {display: none;}
-							}
-						}
-					}
-					// p {
-					// 	font-size: 18px;
-					// 	color: $jungle;
-					// 	letter-spacing: 1px;
-					// 	line-height: 1.5;
-					// 	br {
-					// 		@media only screen and (max-width: 767px) {
-					// 			display: none;
-					// 		}
-					// 	}
-					// }
-					.introDetail {
-						position: relative;
-						margin-top: 50px;
-						padding: 20px;
-						width: 25vw;height: 20vw;
-						@include flex;
-						@include jcc;
-						@include aic;
-						z-index: 1;
-						@media only screen and (max-width: 767px) {
-							width: 75vw;height: 60vw;
-						}
-						.circle {
-							position: absolute;
-							left: 0;top: 0;
-							position: relative;
-							background-color: #fff;
-							border: 10px solid $green;
-							border-radius: 50%;
-							width: 20vw;height: 20vw;
-							z-index: 1;
-							@media only screen and (max-width: 767px) {
-								width: 60vw;height: 60vw;
-							}
-						}
-						.before {
-							position: absolute;
-							content: '';
-							left: 10%;top: 0%;
-							width: 0;
-							height: 0;
-							border-style: solid;
-							border-width: 10vw 10vw 0 0;
-							border-color: $green transparent transparent transparent;
-							z-index: 0;
-							@media only screen and (max-width: 767px) {
-								border-width: 30vw 30vw 0 0;
-							}
-						}
-						.protectSet {
-							position: absolute;
-							@include background(10vw, 10vw, url(../images/protectSet.png), contain);
-							z-index: 2;
-							@media only screen and (max-width: 767px) {
-								width: 30vw;height: 30vw;
-							}
-						}
-					}
-					.productDetail {
-						margin-top: 20px;
-						margin-bottom: 20px;
-						.product {
-							@include background(20vw, 20vw, url(../images/protection.png), contain);
-							@media only screen and (max-width: 767px) {
-								width: 100%;height: 50vw;
-							}
-						}
-					}
-                }
-            }
-        }
-	}
-	&:before {
-		position: absolute;
-		content: '';
-		left: 0;top: 0;
-		@include translate(0,-2%);
-		@include background(100%, 5vw, url(../images/green-curtain.svg), contain);
-	}
-}
-
-.story-end {
-	width: 100%;
-	height: 100vh;
-	overflow: hidden;
-	.scene {
-		width: 100%;
-		height: 100vh;
-		position: relative;
-		background-color: $mainText;
-		border: none;
-		padding-top: 20px;
-		overflow: hidden;
-		h1 {
-			position: relative;
-			font-weight: bold;
-			text-align: center;
-			color: $green;
-			z-index: 40;
-			@media only screen and (min-width: 768px) and (max-width: 1279px) {
-				font-size: 48px;
-				line-height: 1.5;
-				margin: auto;
-			}
-			@media only screen and (max-width: 767px) {
-				font-size: 36px;
-				line-height: 1.5;
-				margin: auto;
-				br {
-					display: none;
-				}
-			}
-			br {
-				display: none;
-				@media only screen and (max-width: 767px) {
-					display: block;
-				}
-				@media screen and (orientation: landscape) and (max-width: 767px) {
-					display: none;
-				}
-			}
-		}
-		.endGrass {
-			position: absolute;
-			left: 50%;bottom: 0;
-			@include translate(-50%, 0%);
-			@include background(100vw, 35vw, url(../images/endGrass.svg), cover);
-			background-position: center top;
-			z-index: 40;
-			@media only screen and (min-width: 768px) and (max-width: 1279px) {
-			}
-			@media only screen and (max-width: 767px) {
-				width: 100%;
-				height: 40vw;
-			}
-			@media screen and (orientation: landscape) and (max-width: 767px) {
-				width: 100vw;height: 40vw;
-			}
-		}
-		.sunlight {
-			position: absolute;
-			right: 20%;top: 20%;
-			border-radius: 50%;
-			@include translate(-50%, -50%);
-			width: 7vw;
-			height: 7vw;
-			background:linear-gradient(#ffffe0,#fffdff);
-			z-index: 1;
-			@media only screen and (max-width: 1279px) {
-				width: 14vw;height: 14vw;
-				top: 10%;
-			}
-			&:before {
-				position: absolute;
-				content: '';
-				border-radius: 50%;
-				top: 50%;left: 50%;
-				@include translate(-50%,-50%);
-				width: 9vw;
-				height: 9vw;
-				background:linear-gradient(#ffffff,#d2ffad);
-				opacity: 0.2;
-				@media only screen and (max-width: 1279px) {
-					width: 18vw;height: 18vw;
-				}
-			}
-			&:after {
-				position: absolute;
-				content: '';
-				border-radius: 50%;
-				top: 50%;left: 50%;
-				@include translate(-50%,-50%);
-				width: 11vw;
-				height: 11vw;
-				background:linear-gradient(#ffffff,#d2ffad);
-				opacity: 0.2;
-				@media only screen and (max-width: 1279px) {
-					width: 22vw;height: 22vw;
-				}
-			}
-		}
-	}
-}
-
 .contactUs {
 	@include flex;
 	@include jcc;
@@ -1107,54 +638,6 @@ body {overflow-x: hidden;}
 		color: $green;
 		@media only screen and (max-width: 767px) {
 			font-size: 28px;
-		}
-	}
-	.contactBox {
-		margin-top: 50px;
-		@include flex;
-		@include jcc;
-		@include aic;
-		@include column;
-		.plane {
-			@include background(5vw, 4vw, url(../images/paperPlain.svg), contain);
-			@media only screen and (max-width: 767px) {
-				width: 15vw;height: 12vw;
-			}
-		}
-		h3 {
-			color: $jungle;
-			font-weight: bold;
-		}
-		.buttonArea {
-			@include flex;
-			@include jcc;
-			@include aic;
-			@include row;
-			.shareBtn {
-				display: inline-block;
-				margin: 20px;
-				@include transition(.1s);
-				@media only screen and (max-width: 767px) {
-					margin: 10px;
-				}
-				i {
-					font-size: 4vw;
-					color: $jungle;
-					@include transition(.2s);
-					@media only screen and (max-width: 767px) {
-						font-size: 8vw;
-					}
-				}
-				&:hover {
-					i {
-						color: darken($jungle,5%);
-						transform: scale(0.9);
-					}
-				}
-				&:active {
-					transform: scale(0.8);
-				}
-			}
 		}
 	}
 }

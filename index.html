@@ -81,10 +81,32 @@
                     <h4><span class="dataProp" id="workSum">0</span><span class="ton">件</span></h4>
                 </div>
             </div>
-            <div class="riceGroup">
-                <div class="riceGroupImg">
+            <div class="contactBox">
+                <!-- <div class="plane"></div>
+                <h3>立即分享</h3> -->
+                <div class="buttonArea">
+                    <a class="shareBtn" href="instagram.com/jhihsyunhu/" title="instagram" id="instagram" target="_blank">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a class="shareBtn" href="https://www.facebook.com/jhihsyun.hu/" title="facebook" id="facebook" target="_blank">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a class="shareBtn" href="https://www.behance.net/cj654vmp2069" title="behance" id="behance" target="_blank">
+                        <i class="fab fa-behance"></i>
+                    </a>
+                    <a class="shareBtn" href="https://www.linkedin.com/in/jhih-syun-hu-339b4b172/" title="linkedin"
+                    id="linkedin" target="_blank">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a class="shareBtn" id="copyLink" href="javascript:void(0);" onclick="Copy();" data-toggle="tooltip" data-placement="top" title="Copy link">
+                        <i class="fas fa-link"></i>
+                    </a>
                 </div>
             </div>
+            <!-- <div class="workGroup">
+                <div class="workImg">
+                </div>
+            </div> -->
         </div>
     </article>
 
@@ -99,12 +121,9 @@
                     </div>
                 </nav>
                 <div class="textArea">
-                    <p class="textContentArticle">水稻秧苗通常由秧苗場負責培育，經過一段時間（約15-30天），<br>當秧苗長到 10 公分左右的時候，就可以移植到水田了</p>
-                    <p class="textContentArticle">到了插秧階段，一欉欉的秧苗透過人工或插秧機仔細地插入水田中，<br>秧苗整齊排列、隨風自在搖晃的景象，是台灣每逢春天最美的風景<br><br><span class="noticeText">此時，稗草種子也漸漸萌發 ...</span></p>
-                    <p class="textContentArticle">隨著秧苗漸漸長大，稻田中開始增生各種<span class="noticeText">雜草</span>，<br>不但會競爭水分、養分與空間，更有機會成為病原與害蟲藏匿的場所...</p>
-                    <p class="textContentArticle">在水稻分孽期至乳熟期，水稻也開始有<span class="noticeText">害蟲</span>來作亂！<br>寄生在水稻中的害蟲會啃食葉肉、吸取稻株養液，<br>往往因此造成水稻大量損失</p>
-                    <p class="textContentArticle">此外，若氣候不佳、降雨頻繁，在悶熱潮濕的環境下，水稻容易發生<br><span class="noticeText">紋枯病</span>，可能導致作物減產 15% 以上，<br>嚴重的甚至會造成欠收</p>
-                    <p class="textContentArticle">進入孕穗期至抽穗期，此時受梅雨鋒面影響，氣候不穩定。<br>在潮濕的環境下，<span class="noticeText">穗稻熱病</span>是在抽穗後常見的明顯病徵，<br>對於稻米產量與品質影響甚大</p>
+                    <p class="textContentArticle">小學時多年的美術才藝班與對繪畫的興趣，即使非本科升學，畢業後職涯規劃仍走向網頁這條路；秉持對設計與程式的熱情，高中即加入網路研究社，學習 VB 與 C++ 語言，大學接觸網頁架設課程，畢業後參加電腦補習班並順利踏入網頁設計領域，每當完成作品或成功解決程式問題總讓我獲得成就，這讓工作起來充滿樂趣。</p>
+                    <p class="textContentArticle">除技術外，也傾向造就內在涵養與軟實力。大學選擇就讀中文系，就業上雖非立即見效，但長遠而言，文字力與思想皆有助益，這幫助我發想設計時總會首先思考其核心價值，並以想要傳達給對方的意義內涵去發揮，而不淪於漫無想法的創作；尤其中文系上如書法、戲曲等中國美學的薰陶，也讓我從一種另類角度切入設計，四年的學習過程，培養了我對於畫面呈現上有一定程度的敏感度。</p>
+                    <p class="textContentArticle">愛好學習並持續精進是我的興趣，現今每天仍不斷研究介面設計與前端程式技術，期許以 javascript 為核心提升能力，藉由 canvas、D3.js 與 GSAP 視差卷軸設計更有美感與互動的畫面；前端方面，希望以 Vue 為框架開發更符合業界需求之功能，現階段也持續製作 side project 並累積 Vue3、Nuxt、Node.js 等技術經驗。</p>
                 </div>
             </div>
             <div class="ground"><div class="groundMud"></div></div>
@@ -117,77 +136,11 @@
         </div>
     </main>
 
-    <!-- <main class="bad-weather">
-        <p id="storyContent1">然而，面對難以預測的天氣變化、蟲害、病害和雜草等問題，<br class="brLine">
-            平均一年受損的水稻面積超過<br><span class="runNum">1.9<small>萬公頃</small></span></p>
-        <div class="darkGrass"></div>
-        <div class="flash1"></div>
-        <div class="flash2"></div>
-        <div class="cloud-day-1"></div>
-        <div class="cloud-day-2"></div>
-        <div id="testforslide1" class="sun"></div>
-    </main> -->
-
-    <section class="equipment">
-        <div class="mainTitle">
-            <div class="title">
-                <h1>除了作物保護</h1><br>
-                <h2>農友安全更是我們的責任</h2>
-            </div>
-        </div>
-        <div class="container-fluid">
-                <div class="introSec">
-                    <div class="introBar">
-                        <div class="introPic">
-                            <div class="pic">
-                                <div class="picBefore" style="background-image: url(images/equipment_before.svg);"></div>
-                                <div class="picAfter" style="background-image: url(images/equipment_after.svg);"></div>
-                                <div class="backLight"></div>
-                            </div>
-                        </div>
-                        <div class="introText">
-                            <h3>巴斯夫專業農友防護組<br>
-                                提升農友自我保護力</h3>
-                            <div class="textArea">
-                                <div class="textContentWord">
-                                    為了降低作物藥劑暴露的風險，巴斯夫針對種植稻米的農友們，貼心打造了這款專業農友防護組，提升了個人保護力，以後我們可以更安全的耕作啦！
-                                </div>
-                                <div class="textContentWord">
-                                    整裝完畢後，作伙前往稻田耕種囉！<br>
-                                    鄉親們！水稻現在急需你們的幫助，<br>
-                                    快跟我們一起加強病蟲害防治、保護作物吧!
-                                </div>
-                            </div>
-                            <div class="productDetail">
-                                <div class="product"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-        </div>
-    </section>
-
-    <section class="story-end">
-        <div class="scene">
-            <h1 class="cheerWord">稻米收割，<br>慶豐收啦！</h1>
-            <div class="endGrass"></div>
-            <div class="sunlight"></div>
-        </div>
-    </section>
-
     <footer class="contactUs">
         <div class="logo"></div>
         <div class="award"></div>
         <h1>巴斯夫 值得信賴的植保專家</h1>
-        <div class="contactBox">
-            <div class="plane"></div>
-            <h3>立即分享</h3>
-            <div class="buttonArea">
-                <a class="shareBtn fb-xfbml-parse-ignore" href="https://hujhihsyun.github.io/" target="_blank"><i class="fab fa-facebook-square"></i></a>
-                <a class="shareBtn" href="https://hujhihsyun.github.io/" title="line" target="_blank"><i class="fab fa-line"></i></a>
-                <a class="shareBtn" id="copyLink" href="javascript:void(0);" onclick="Copy();" data-toggle="tooltip" data-placement="top" title="Copy link"><i class="fas fa-link"></i></a>
-            </div>
-        </div>
+        
     </footer>
 
     <footer class="footer" id="footer">
