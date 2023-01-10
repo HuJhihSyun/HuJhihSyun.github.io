@@ -53,12 +53,12 @@ $(document).ready(function () {
             end: "bottom 30%",
             toggleActions: "restart none none none"
         }});
-    contactBox.from("#instagram", { scale: 5, duration: 0.5 })
-        .from("#facebook", { scale: 0.1, duration: 0.5 })
-        .from("#behance", { rotate: '360deg', duration: 0.5 })
-        .from("#linkedin", { borderRadius: '5px', duration: 0.5 })
+    contactBox.from("#instagram", { opacity:0, scale: 5, duration: 0.5 })
+        .from("#facebook", { opacity:0, scale: 0.1, duration: 0.5 })
+        .from("#behance", { opacity:0, rotate: '360deg', duration: 0.5 })
+        .from("#linkedin", { opacity:0, borderRadius: '5px', duration: 0.5 })
         // .from(".fa-linkedin-in", { color: '#ffffff', duration: 0.1 })
-        .from("#copyLink", { rotateY: '360deg', duration: 0.5 })
+        .from("#copyLink", { opacity:0, rotateY: '360deg', duration: 0.5 })
     
 
     // article section: 500 ton every year
@@ -102,29 +102,27 @@ $(document).ready(function () {
     // grow-story section: talking a story
     var growStory = gsap.timeline();
     growStory
-        .to("#hash1", { backgroundColor: '#dbc5a4', color: '#ffffff'},'hashGo0')
-        .from(".textArea", { yPercent: 10, opacity: 0 },'hashGo0')
-        .from(".ground", { yPercent: 100 })
-        .from(".groundMud", { opacity: 0, yPercent: 10 })
-        .from(".grassStep1", { opacity: 0 })
-        .to(".ground", { yPercent: 100 },'progress0')
-        .to(".groundMud", { opacity: 0, yPercent: 10 })
-        // .to(".textContentArticle", { xPercent: -100 },'grassStep0')
-        .to("#hash1", { backgroundColor: '#ffffff', color: '#878176' },'hashGo1')
-        .to("#hash2", { backgroundColor: '#dbc5a4', color: '#ffffff' },'hashGo1')
+        .to("#hash1", { backgroundColor: '#dbc5a4', color: '#ffffff'},'hash0')
+        .from(".textArea", { yPercent: 10, opacity: 0 },'hash0')
+        .from(".earth", { opacity: 0, yPercent: 50, rotate: '360deg'  })
+        .to("#hash1", { backgroundColor: '#ffffff', color: '#878176' },'hash1')
+        .to("#hash2", { backgroundColor: '#dbc5a4', color: '#ffffff' },'hash1')
         .to(".textContentArticle", { xPercent: -100 })
-        .to(".grassStep1", { opacity: 0, yPercent: 10 })
-        .to(".grassStep1", { display: 'none' })
-        .from(".grassStep2", { opacity: 0, yPercent: 10 })
-        .to("#hash2", { backgroundColor: '#ffffff', color: '#878176' },'hashGo2')
-        .to("#hash3", { backgroundColor: '#dbc5a4', color: '#ffffff' },'hashGo2')
-        .to(".grassStep2", { opacity: 0, yPercent: 10 },'hashGo2')
-        .to(".grassStep2", { display: 'none' },'hashGo2')
-        .from(".grassStep3", { opacity: 0, yPercent: 10 },'hashGo2')
-        .to(".textContentArticle", { xPercent: -200 },'hashGo2')
-        .to(".grassStep3", { opacity: 0, yPercent: 10 },'grassStep2')
-        .to(".grassStep3", { display: 'none' },'grassStep2')
-        .to("#hash3", { backgroundColor: '#ffffff', color: '#878176' },'hashGo3')
+        .to(".earth", { opacity: 0, scale: 5 }, 'fade1')
+        .to(".earth", { display: 'none' }, 'fade1')
+        .from(".world", { opacity: 0, scale: 0 }, 'fade1')
+        .to("#hash2", { backgroundColor: '#ffffff', color: '#878176' },'hash2')
+        .to("#hash3", { backgroundColor: '#dbc5a4', color: '#ffffff' },'hash2')
+        .from(".route", { opacity: 0, yPercent: -48 },'hash2')
+        .to(".world", { opacity: 0 },'fade2')
+        .to(".route", { opacity: 0 },'fade2')
+        .to(".world", { display: 'none' },'fade2')
+        .from(".mapApp", { opacity: 0, yPercent: 10 },'fade2')
+        .from(".mapText", { opacity: 0, yPercent: 10 })
+        .to(".textContentArticle", { xPercent: -200 },'hash3')
+        .to(".mapApp", { xPercent: -70 },'hash3')
+        .to(".mapText", { xPercent: 70 },'hash3')
+        .to("#hash3", { backgroundColor: '#ffffff', color: '#878176' },'hash3')
 
     ScrollTrigger.create({
         animation: growStory,
