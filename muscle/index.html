@@ -51,7 +51,7 @@
             </div>
             <div class="menu">
                 <ul>
-                    <a href="#foreword" title="首頁"><li>首頁</li></a>
+                    <a href="#bannerArea" title="首頁"><li>首頁</li></a>
                     <a href="#customArea" title="肌肉流失的生活習慣"><li>肌肉流失的生活習慣</li></a>
                     <a href="#growArea" title="我的肌肉量夠嗎"><li>我的肌肉量夠嗎?</li></a>
                     <a href="#importantArea" title="腿部肌肉的重要性"><li>腿部肌肉的重要性</li></a>
@@ -70,7 +70,7 @@
     <aside class="sidebar">
         <div class="menu-aside">
             <ul>
-                <a href="#foreword" title="首頁"><li><i class="fas fa-caret-right"></i>首頁</li></a>
+                <a href="#bannerArea" title="首頁"><li><i class="fas fa-caret-right"></i>首頁</li></a>
                 <a href="#customArea" title="肌肉流失的生活習慣"><li><i class="fas fa-caret-right"></i>肌肉流失的生活習慣</li></a>
                 <a href="#growArea" title="我的肌肉量夠嗎"><li><i class="fas fa-caret-right"></i>我的肌肉量夠嗎?</li></a>
                 <a href="#importantArea" title="腿部肌肉的重要性"><li><i class="fas fa-caret-right"></i>腿部肌肉的重要性</li></a>
@@ -80,7 +80,7 @@
         </div>
     </aside>
 
-    <header class="bannerArea">
+    <header class="bannerArea" id="bannerArea">
         <div class="banner">
             <div class="bannerTitle">
                 <h1 class="title">
@@ -105,11 +105,11 @@
                 </div>
                 <div class="contentRight">
                     <div class="oldPaper staggerPaste"></div>
-                    <div class="chart staggerPaste"></div>
+                    <div class="chart"></div>
                 </div>
             </div>
             <div class="bannerSubTitle">
-                <div class="subtitle">
+                <div class="subtitle" id="bannerSubtitle">
                     <div class="subtitleTheme">誰偷走了我的肌肉</div>
                     <div class="subtitleQuestion"><div class="question"></div></div>
                 </div>
@@ -119,58 +119,54 @@
             <div id="people2" class="people right"></div>
             <div class="footPrint">
                 <svg x="0px" y="0px" viewBox="0 0 400 100" style="enable-background:new 0 0 400 100;" xml:space="preserve">
-                <g>
-                    <g id="artwork">
-                        <g style="opacity:0.6;">
-                            <g style="opacity:0.7;">
-                                <path style="fill:#414042;" d="M47.9,12.6L39.3,23c1.2,1.5,2.1,3.1,2.7,4.8c1.9,4.8,5.4,8.9,9.8,11.5c4.7,2.5,6.7,2.4,8.9,0.5
-                                    c2.5-2.2,3.5-5.6,2.2-10.1c-1-3.5-4.9-8.3-7.1-10.6C53.4,16.7,50.7,14.6,47.9,12.6z"/>
-                                <path style="fill:#414042;" d="M43.9,9.1l-8.2,9.7c-1.3-1.1-2.7-2.1-4.2-3c-1.9-1.1-4.1-3.2-4.3-5.3s0.7-4.2,3.1-6.4s6-1.3,7.7-0.2
-                                    C40,5.5,42,7.2,43.9,9.1z"/>
-                            </g>
-                            <g style="opacity:0.7;">
-                                <path style="fill:#414042;" d="M8.7,20.9l11.1-7.7c1.3,1.3,2.9,2.3,4.6,3.1c4.6,2.3,8.4,6.1,10.6,10.7c2.1,4.9,1.8,6.9-0.3,8.9
-                                    c-2.3,2.3-5.9,3-10.2,1.4c-3.4-1.3-7.9-5.6-10-7.9C12.4,26.8,10.5,23.9,8.7,20.9z"/>
-                                <path style="fill:#414042;" d="M5.6,16.7L16,9.3c-1-1.4-1.9-2.9-2.7-4.4c-0.9-2-2.9-4.4-5-4.8S4,0.5,1.7,2.7s-1.8,5.9-0.8,7.7
-                                    C2.3,12.6,3.9,14.7,5.6,16.7z"/>
-                            </g>
-                            <g style="opacity:0.7;">
-                                <path style="fill:#414042;" d="M274.6,64.7l1,13.5c1.8,0.3,3.6,0.8,5.3,1.6c4.7,2.2,10,2.8,15,1.6c5.2-1.4,6.5-2.9,6.8-5.7
-                                    c0.4-3.3-1.3-6.5-5.3-8.8c-3.1-1.9-9.3-2.7-12.4-2.9C281.5,64,278.1,64.2,274.6,64.7z"/>
-                                <path style="fill:#414042;" d="M269.3,64.9l0.7,12.7c-1.7,0.1-3.5,0.3-5.2,0.7c-2.1,0.5-5.2,0.5-6.8-0.9c-1.6-1.4-2.4-3.6-2.1-6.8
-                                    c0.3-3.2,3.5-5,5.5-5.4C264.1,64.9,266.7,64.8,269.3,64.9z"/>
-                            </g>
-                            <g style="opacity:0.7;">
-                                <path style="fill:#414042;" d="M251.9,97.7l2.8-13.2c1.9,0,3.7-0.3,5.5-0.8c4.9-1.5,10.3-1.3,15.1,0.6c4.9,2.1,6,3.8,5.9,6.6
-                                    c-0.1,3.3-2.2,6.2-6.5,8c-3.4,1.4-9.6,1.3-12.7,1.1C258.5,99.4,255.2,98.6,251.9,97.7z"/>
-                                <path style="fill:#414042;" d="M246.6,96.7l2.5-12.5c-1.7-0.3-3.4-0.8-5-1.4c-2-0.8-5-1.2-6.9-0.1c-1.8,1.1-2.9,3.2-3.1,6.4
-                                    c-0.2,3.2,2.7,5.5,4.7,6.1C241.4,95.9,244,96.4,246.6,96.7z"/>
-                            </g>
-                            <g style="opacity:0.7;">
-                                <path style="fill:#414042;" d="M159.1,51.1L152.6,63c1.4,1.2,2.6,2.6,3.6,4.2c2.8,4.4,6.9,7.7,11.8,9.4c5.1,1.6,7.1,1,8.8-1.2
-                                    c2.1-2.6,2.4-6.2,0.3-10.3c-1.7-3.3-6.4-7.3-8.9-9.1C165.2,54.2,162.2,52.6,159.1,51.1z"/>
-                                <path style="fill:#414042;" d="M154.5,48.5l-6.2,11.1c-1.5-0.9-3.1-1.6-4.7-2.2c-2.1-0.7-4.6-2.4-5.3-4.4c-0.7-2-0.1-4.3,1.8-6.8
-                                    c1.9-2.5,5.6-2.4,7.5-1.6C150,45.7,152.3,47,154.5,48.5z"/>
-                            </g>
-                            <g style="opacity:0.7;">
-                                <path style="fill:#414042;" d="M122.2,66.8l9.5-9.7c1.6,1,3.3,1.7,5.1,2.2c5,1.4,9.4,4.4,12.4,8.5c3,4.4,3.1,6.4,1.4,8.8
-                                    c-1.9,2.7-5.2,4.1-9.8,3.3c-3.6-0.6-8.8-4-11.3-5.9C126.9,71.8,124.5,69.4,122.2,66.8z"/>
-                                <path style="fill:#414042;" d="M118.3,63.2l8.8-9.2c-1.3-1.2-2.4-2.5-3.5-3.9c-1.3-1.8-3.6-3.7-5.8-3.7s-4.1,1.2-6,3.7
-                                    c-1.9,2.6-0.6,6.1,0.6,7.7C114.3,59.7,116.2,61.5,118.3,63.2z"/>
-                            </g>
-                            <g style="opacity:0.7;">
-                                <path style="fill:#414042;" d="M371.1,20.5l10.2,8.8c1.5-1.1,3.1-2,4.9-2.6c4.9-1.8,9-5.1,11.7-9.5c2.7-4.7,2.5-6.6,0.7-8.9
-                                    c-2.1-2.6-5.5-3.6-10-2.5c-3.5,0.9-8.5,4.7-10.8,6.8C375.4,15.1,373.1,17.8,371.1,20.5z"/>
-                                <path style="fill:#414042;" d="M367.5,24.4l9.6,8.5c-1.2,1.3-2.2,2.7-3.2,4.1c-1.1,1.9-3.3,4-5.5,4.2c-2.1,0.2-4.2-0.8-6.3-3.3
-                                    c-2.1-2.5-1.1-6,0-7.7C363.8,28.2,365.6,26.2,367.5,24.4z"/>
-                            </g>
-                            <g style="opacity:0.7;">
-                                <path style="fill:#414042;" d="M378.4,59.9L371,48.6c1.3-1.3,2.4-2.8,3.2-4.5c2.4-4.6,6.3-8.2,11-10.3c5-2,6.9-1.6,8.9,0.5
-                                    c2.3,2.4,2.9,6,1.1,10.3c-1.4,3.4-5.8,7.7-8.2,9.8C384.3,56.4,381.4,58.3,378.4,59.9z"/>
-                                <path style="fill:#414042;" d="M374,63l-7.1-10.6c-1.4,1-3,1.8-4.5,2.6c-2,0.9-4.4,2.7-4.9,4.8s0.2,4.3,2.4,6.6s5.8,1.9,7.6,1
-                                    C369.8,66.1,371.9,64.6,374,63z"/>
-                            </g>
-                        </g>
+                <g style="opacity:0.6;">
+                    <g style="opacity:0.7;" class="bannerFoot">
+                        <path style="fill:#414042;" d="M8.7,20.9l11.1-7.7c1.3,1.3,2.9,2.3,4.6,3.1c4.6,2.3,8.4,6.1,10.6,10.7c2.1,4.9,1.8,6.9-0.3,8.9
+                            c-2.3,2.3-5.9,3-10.2,1.4c-3.4-1.3-7.9-5.6-10-7.9C12.4,26.8,10.5,23.9,8.7,20.9z"/>
+                        <path style="fill:#414042;" d="M5.6,16.7L16,9.3c-1-1.4-1.9-2.9-2.7-4.4c-0.9-2-2.9-4.4-5-4.8S4,0.5,1.7,2.7s-1.8,5.9-0.8,7.7
+                            C2.3,12.6,3.9,14.7,5.6,16.7z"/>
+                    </g>
+                    <g style="opacity:0.7;" class="bannerFoot">
+                        <path style="fill:#414042;" d="M47.9,12.6L39.3,23c1.2,1.5,2.1,3.1,2.7,4.8c1.9,4.8,5.4,8.9,9.8,11.5c4.7,2.5,6.7,2.4,8.9,0.5
+                            c2.5-2.2,3.5-5.6,2.2-10.1c-1-3.5-4.9-8.3-7.1-10.6C53.4,16.7,50.7,14.6,47.9,12.6z"/>
+                        <path style="fill:#414042;" d="M43.9,9.1l-8.2,9.7c-1.3-1.1-2.7-2.1-4.2-3c-1.9-1.1-4.1-3.2-4.3-5.3s0.7-4.2,3.1-6.4s6-1.3,7.7-0.2
+                            C40,5.5,42,7.2,43.9,9.1z"/>
+                    </g>
+                    <g style="opacity:0.7;" class="bannerFoot">
+                        <path style="fill:#414042;" d="M122.2,66.8l9.5-9.7c1.6,1,3.3,1.7,5.1,2.2c5,1.4,9.4,4.4,12.4,8.5c3,4.4,3.1,6.4,1.4,8.8
+                            c-1.9,2.7-5.2,4.1-9.8,3.3c-3.6-0.6-8.8-4-11.3-5.9C126.9,71.8,124.5,69.4,122.2,66.8z"/>
+                        <path style="fill:#414042;" d="M118.3,63.2l8.8-9.2c-1.3-1.2-2.4-2.5-3.5-3.9c-1.3-1.8-3.6-3.7-5.8-3.7s-4.1,1.2-6,3.7
+                            c-1.9,2.6-0.6,6.1,0.6,7.7C114.3,59.7,116.2,61.5,118.3,63.2z"/>
+                    </g>
+                    <g style="opacity:0.7;" class="bannerFoot">
+                        <path style="fill:#414042;" d="M159.1,51.1L152.6,63c1.4,1.2,2.6,2.6,3.6,4.2c2.8,4.4,6.9,7.7,11.8,9.4c5.1,1.6,7.1,1,8.8-1.2
+                            c2.1-2.6,2.4-6.2,0.3-10.3c-1.7-3.3-6.4-7.3-8.9-9.1C165.2,54.2,162.2,52.6,159.1,51.1z"/>
+                        <path style="fill:#414042;" d="M154.5,48.5l-6.2,11.1c-1.5-0.9-3.1-1.6-4.7-2.2c-2.1-0.7-4.6-2.4-5.3-4.4c-0.7-2-0.1-4.3,1.8-6.8
+                            c1.9-2.5,5.6-2.4,7.5-1.6C150,45.7,152.3,47,154.5,48.5z"/>
+                    </g>
+                    <g style="opacity:0.7;" class="bannerFoot">
+                        <path style="fill:#414042;" d="M251.9,97.7l2.8-13.2c1.9,0,3.7-0.3,5.5-0.8c4.9-1.5,10.3-1.3,15.1,0.6c4.9,2.1,6,3.8,5.9,6.6
+                            c-0.1,3.3-2.2,6.2-6.5,8c-3.4,1.4-9.6,1.3-12.7,1.1C258.5,99.4,255.2,98.6,251.9,97.7z"/>
+                        <path style="fill:#414042;" d="M246.6,96.7l2.5-12.5c-1.7-0.3-3.4-0.8-5-1.4c-2-0.8-5-1.2-6.9-0.1c-1.8,1.1-2.9,3.2-3.1,6.4
+                            c-0.2,3.2,2.7,5.5,4.7,6.1C241.4,95.9,244,96.4,246.6,96.7z"/>
+                    </g>
+                    <g style="opacity:0.7;" class="bannerFoot">
+                        <path style="fill:#414042;" d="M274.6,64.7l1,13.5c1.8,0.3,3.6,0.8,5.3,1.6c4.7,2.2,10,2.8,15,1.6c5.2-1.4,6.5-2.9,6.8-5.7
+                            c0.4-3.3-1.3-6.5-5.3-8.8c-3.1-1.9-9.3-2.7-12.4-2.9C281.5,64,278.1,64.2,274.6,64.7z"/>
+                        <path style="fill:#414042;" d="M269.3,64.9l0.7,12.7c-1.7,0.1-3.5,0.3-5.2,0.7c-2.1,0.5-5.2,0.5-6.8-0.9c-1.6-1.4-2.4-3.6-2.1-6.8
+                            c0.3-3.2,3.5-5,5.5-5.4C264.1,64.9,266.7,64.8,269.3,64.9z"/>
+                    </g>
+                    <g style="opacity:0.7;" class="bannerFoot">
+                        <path style="fill:#414042;" d="M378.4,59.9L371,48.6c1.3-1.3,2.4-2.8,3.2-4.5c2.4-4.6,6.3-8.2,11-10.3c5-2,6.9-1.6,8.9,0.5
+                            c2.3,2.4,2.9,6,1.1,10.3c-1.4,3.4-5.8,7.7-8.2,9.8C384.3,56.4,381.4,58.3,378.4,59.9z"/>
+                        <path style="fill:#414042;" d="M374,63l-7.1-10.6c-1.4,1-3,1.8-4.5,2.6c-2,0.9-4.4,2.7-4.9,4.8s0.2,4.3,2.4,6.6s5.8,1.9,7.6,1
+                            C369.8,66.1,371.9,64.6,374,63z"/>
+                    </g>
+                    <g style="opacity:0.7;" class="bannerFoot">
+                        <path style="fill:#414042;" d="M371.1,20.5l10.2,8.8c1.5-1.1,3.1-2,4.9-2.6c4.9-1.8,9-5.1,11.7-9.5c2.7-4.7,2.5-6.6,0.7-8.9
+                            c-2.1-2.6-5.5-3.6-10-2.5c-3.5,0.9-8.5,4.7-10.8,6.8C375.4,15.1,373.1,17.8,371.1,20.5z"/>
+                        <path style="fill:#414042;" d="M367.5,24.4l9.6,8.5c-1.2,1.3-2.2,2.7-3.2,4.1c-1.1,1.9-3.3,4-5.5,4.2c-2.1,0.2-4.2-0.8-6.3-3.3
+                            c-2.1-2.5-1.1-6,0-7.7C363.8,28.2,365.6,26.2,367.5,24.4z"/>
                     </g>
                 </g>
                 </svg>
@@ -182,12 +178,12 @@
         <div class="envelop">
             <h2 class="title">前言</h2>
             <div class="content">
-                <p class="forwardText">你知道嗎？從 40 歲開始，人體的肌肉就會不斷得流失！<br>
-                    多數人每 10 年會減少 8% 的肌肉量，<br>
-                    如果你開始常摔倒、坐站吃力、走樓梯緩慢，<br>
-                    那代表，肌肉正漸漸離你遠去啊！<br><br>
-                    其實生活中某些小習慣，可能就是默默偷走你「肌肉」的元兇！<br>
-                    一起來看看，你是否也不知不覺陷入「肌肉流失」的危機？</p>
+                <p class="forwardText"><span class="quote">你知道嗎？從 40 歲開始，人體的肌肉就會不斷得流失！</span><br>
+                    <span class="quote">多數人每 10 年會減少 8% 的肌肉量，</span><br>
+                    <span class="quote">如果你開始常摔倒、坐站吃力、走樓梯緩慢，</span><br>
+                    <span class="quote">那代表，肌肉正漸漸離你遠去啊！</span><br><br>
+                    <span class="quote">其實生活中某些小習慣，可能就是默默偷走你「肌肉」的元兇！</span><br>
+                    <span class="quote">一起來看看，你是否也不知不覺陷入「肌肉流失」的危機？</span></p>
             </div>
             <div class="envelop-top"></div>
             <div class="envelop-bottom"></div>
@@ -199,6 +195,7 @@
     </article>
 
     <section class="customArea" id="customArea">
+        <div class="customCover"></div>
         <div class="container-fluid">
             <div class="titleBar">
                 <div class="mainTitle custom"></div>
@@ -261,54 +258,90 @@
                 <div class="subtitleNum">3.1</div>
                 <div class="subtitleTheme">簡易測試</div>
             </div>
-            <div class="growContent">
+            <div class="cardContent">
                 <div class="row">
                     <div class="col-md-4 col-sm-6">
-                        <div class="growBar">
-                            <div class="introduce">
-                                <h3>用手量腿圍</h3>
-                                <p>首先用雙手食指和拇指成一個圓，並圈起小腿最粗的位置看是否有空隙，空隙越多可能就要注意囉！</p>
+                        <div class="card-wrap">
+                            <div class="card">
+                                <div class="card-front">
+                                    <div class="icon" style="background-image: url(images/card-icon1.svg);"></div>
+                                    <h3>用手量腿圍</h3>
+                                </div>
+                                <div class="card-back">
+                                    <h3>用手量腿圍</h3>
+                                    <p>首先用雙手食指和拇指成一個圓，並圈起小腿最粗的位置看是否有空隙，空隙越多可能就要注意囉！</p>
+                                </div>
                             </div>
                         </div>
                     </div>
                     <div class="col-md-4 col-sm-6">
-                        <div class="growBar">
-                            <div class="introduce">
-                                <h3>握力下降</h3>
-                                <p>毛巾擰不乾、拿不動5公斤沙拉油罐。</p>
+                        <div class="card-wrap">
+                            <div class="card">
+                                <div class="card-front">
+                                    <div class="icon" style="background-image: url(images/card-icon2.svg);"></div>
+                                    <h3>握力下降</h3>
+                                </div>
+                                <div class="card-back">
+                                    <h3>握力下降</h3>
+                                    <p>毛巾擰不乾、拿不動5公斤沙拉油罐。</p>
+                                </div>
                             </div>
                         </div>
                     </div>
                     <div class="col-md-4 col-sm-6">
-                        <div class="growBar">
-                            <div class="introduce">
-                                <h3>行動吃力</h3>
-                                <p>坐著起身困難，需撐扶手；爬走2～3階樓梯就需要休息。</p>
+                        <div class="card-wrap">
+                            <div class="card">
+                                <div class="card-front">
+                                    <div class="icon" style="background-image: url(images/card-icon3.svg);"></div>
+                                    <h3>行動吃力</h3>
+                                </div>
+                                <div class="card-back">
+                                    <h3>行動吃力</h3>
+                                    <p>坐著起身困難，需撐扶手；爬走2～3階樓梯就需要休息。</p>
+                                </div>
                             </div>
                         </div>
                     </div>
                     <div class="col-md-4 col-sm-6">
-                        <div class="growBar">
-                            <div class="introduce">
-                                <h3>反覆跌倒</h3>
-                                <p>跌倒頻率增加，1年內連續跌倒2次以上。</p>
+                        <div class="card-wrap">
+                            <div class="card">
+                                <div class="card-front">
+                                    <div class="icon" style="background-image: url(images/card-icon4.svg);"></div>
+                                    <h3>反覆跌倒</h3>
+                                </div>
+                                <div class="card-back">
+                                    <h3>反覆跌倒</h3>
+                                    <p>跌倒頻率增加，1年內連續跌倒2次以上。</p>
+                                </div>
                             </div>
                         </div>
                     </div>
                     <div class="col-md-4 col-sm-6">
-                        <div class="growBar">
-                            <div class="introduce">
-                                <h3>體重減輕</h3>
-                                <p>無刻意減重，但體重無緣故下滑，6個月內體重減輕5%。
-                                    如：原本體重60公斤，在半年內瘦超過3公斤</p>
+                        <div class="card-wrap">
+                            <div class="card">
+                                <div class="card-front">
+                                    <div class="icon" style="background-image: url(images/card-icon5.svg);"></div>
+                                    <h3>體重減輕</h3>
+                                </div>
+                                <div class="card-back">
+                                    <h3>體重減輕</h3>
+                                    <p>無刻意減重，但體重無緣故下滑，6個月內體重減輕5%。
+                                        如：原本體重60公斤，在半年內瘦超過3公斤</p>
+                                </div>
                             </div>
                         </div>
                     </div>
                     <div class="col-md-4 col-sm-6">
-                        <div class="growBar">
-                            <div class="introduce">
-                                <h3>肌耐力下降</h3>
-                                <p>跟以前相比，現在走路或跑步時容易感到疲憊，且無法長時間持續。</p>
+                        <div class="card-wrap">
+                            <div class="card">
+                                <div class="card-front">
+                                    <div class="icon" style="background-image: url(images/card-icon6.svg);"></div>
+                                    <h3>肌耐力下降</h3>
+                                </div>
+                                <div class="card-back">
+                                    <h3>肌耐力下降</h3>
+                                    <p>跟以前相比，現在走路或跑步時容易感到疲憊，且無法長時間持續。</p>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -330,7 +363,7 @@
                 <div class="owl-carousel eventCarousel owl-theme">
                     <div class="item">
                         <div class="picBar">
-                            <div class="pic" style="background-image: url(images/card-item.jpg);"></div>
+                            <div class="pic" style="background-image: url(images/card-item4.svg);"></div>
                             <div class="cardContent">
                                 <h4>BMI身體質量指數</h4>
                                 <h5>體重與身高的標準化比例，計算公式是體重 (kg)/身高(m)²。計算後落在18.5至24屬正常範圍。</h5>
@@ -340,63 +373,31 @@
                     </div>
                     <div class="item">
                         <div class="picBar">
-                            <div class="pic" style="background-image: url(images/card-item3.jpg);"></div>
+                            <div class="pic" style="background-image: url(images/card-item1.svg);"></div>
                             <div class="cardContent">
-                                <h4>BMI身體質量指數</h4>
-                                <h5>體重與身高的標準化比例，計算公式是體重 (kg)/身高(m)²。計算後落在18.5至24屬正常範圍。</h5>
-                                <h6>tips：可以對複雜的身體組成有一個初步了解！</h6>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <a href="javascript:void(0);" data-toggle="modal" data-target="#Modal_1st_3">
-                            <div class="picBar">
-                                <div class="pic" style="background-image: url(images/card-item4.jpg);"></div>
-                                <div class="cardContent">
-                                    <h4>BMI身體質量指數</h4>
-                                    <h5>體重與身高的標準化比例，計算公式是體重 (kg)/身高(m)²。計算後落在18.5至24屬正常範圍。</h5>
-                                    <h6>tips：可以對複雜的身體組成有一個初步了解！</h6>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="item">
-                        <div class="picBar">
-                            <div class="pic" style="background-image: url(images/card-item.jpg);"></div>
-                            <div class="cardContent">
-                                <h4>BMI身體質量指數</h4>
-                                <h5>體重與身高的標準化比例，計算公式是體重 (kg)/身高(m)²。計算後落在18.5至24屬正常範圍。</h5>
-                                <h6>tips：可以對複雜的身體組成有一個初步了解！</h6>
+                                <h4>體脂率</h4>
+                                <h5>身體中脂肪量佔體重的百分比，男性建議體脂率約在 12%-22%之間，女性則約在 22%-35%之間。</h5>
+                                <h6>tips：體脂肪過高產生心血管疾病的風險也會增加。</h6>
                             </div>
                         </div>
                     </div>
                     <div class="item">
                         <div class="picBar">
-                            <div class="pic" style="background-image: url(images/card-item3.jpg);"></div>
+                            <div class="pic" style="background-image: url(images/card-item2.svg);"></div>
                             <div class="cardContent">
-                                <h4>BMI身體質量指數</h4>
-                                <h5>體重與身高的標準化比例，計算公式是體重 (kg)/身高(m)²。計算後落在18.5至24屬正常範圍。</h5>
-                                <h6>tips：可以對複雜的身體組成有一個初步了解！</h6>
+                                <h4>肌肉量</h4>
+                                <h5>身體內肌肉的預估重量，肌肉組織包含骨骼肌、平滑肌、內臟肌肉(例如心臟和消化器官)，以及這些肌肉所含的水分。</h5>
+                                <h6>tips：增加肌肉量可以減少體脂肪、提升骨質健康、改善新陳代謝。</h6>
                             </div>
                         </div>
                     </div>
                     <div class="item">
                         <div class="picBar">
-                            <div class="pic" style="background-image: url(images/card-item4.jpg);"></div>
+                            <div class="pic" style="background-image: url(images/card-item3.svg);"></div>
                             <div class="cardContent">
-                                <h4>BMI身體質量指數</h4>
-                                <h5>體重與身高的標準化比例，計算公式是體重 (kg)/身高(m)²。計算後落在18.5至24屬正常範圍。</h5>
-                                <h6>tips：可以對複雜的身體組成有一個初步了解！</h6>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="picBar">
-                            <div class="pic" style="background-image: url(images/card-item.jpg);"></div>
-                            <div class="cardContent">
-                                <h4>BMI身體質量指數</h4>
-                                <h5>體重與身高的標準化比例，計算公式是體重 (kg)/身高(m)²。計算後落在18.5至24屬正常範圍。</h5>
-                                <h6>tips：可以對複雜的身體組成有一個初步了解！</h6>
+                                <h4>肌肉品質</h4>
+                                <h5>身體內肌肉纖維比例的高低，透過儀器的高頻及低頻電流測量出肌肉纖維密度，以50歲的女性為例，測量數值49點以下就可能是肌肉品質過低喔！</h5>
+                                <h6>tips：肌纖維密度高代表脂肪比例較低，肌肉較具彈性，運動時比較能正確發力，也能減少運動傷害。</h6>
                             </div>
                         </div>
                     </div>
@@ -406,22 +407,58 @@
     </section>
 
     <section class="importantArea" id="importantArea">
+        <div class="importantCover"></div>
         <div class="container-fluid">
             <div class="titleBar">
                 <div class="mainTitle important"></div>
             </div>
+            <div class="content" id="introContent">
+                人體大約有70%的肌肉集中在下半身，如果說心臟是維繫生命的重要器官，那下肢肌肉可以被稱為「第二個心臟」！
+《醫學與健康期刊》在針對50歲以上肌力、肌肉量的研究中曾提及，透過DXA儀器分析可以看出50歲以上的下肢肌肉量的高低，連帶影響他們的下肢肌力，而且下肢肌肉量同時也是跌到或防止跌倒的重要因素。下肢肌肉的功能除了能帶著身體移動之外，還能保護膝蓋，甚至也是瘦身的好朋友、脂肪的燃燒器，還能促進血液循環喔！
+            </div>
             <div class="introSec">
-                <div class="introBar">
+                <div class="introBar" id="introChart1">
                     <div class="introText">
                         <h3>腿部肌肉流失的比手部肌肉快</h3>
                         <p>也有研究指出，人一旦過20歲，下半身肌肉的流失速度會比上半身更快，特別是大腿股四頭肌。所以及早預防下肢肌肉流失，對未來的體力和日常生活的維持都會有很大的幫助。</p>
                     </div>
-                    <div class="introPic">
-                        <div class="pic" style="background-image: url(images/custom-photo1.svg);"></div>
-                        <div class="scope"></div>
+                    <div class="introPaper">
+                        <div class="paper" id="introPhoto1">
+                            <div class="paperContent period">
+                                <div class="paperMain"></div>
+                                <div class="conclude">
+                                    <div class="percent">(%)</div>
+                                    <div class="rateClude">
+                                        <span class="cludeText">變化率 (%)</span>
+                                        <span class="cludeText"><div class="cludeColor1"></div>手的肌肉量</span>
+                                        <span class="cludeText"><div class="cludeColor2"></div>腿的肌肉量</span>
+                                    </div>
+                                </div>
+                                <ul class="chartTable">
+                                    <li class="chartList"><div class="rate">5</div></li>
+                                    <li class="chartList"><div class="rate">0</div></li>
+                                    <li class="chartList">
+                                        <div class="rate">-5</div>
+                                        <ul class="axisX">
+                                            <li class="axisXNum">20-29</li>
+                                            <li class="axisXNum">30-39</li>
+                                            <li class="axisXNum">40-49</li>
+                                            <li class="axisXNum">50-59</li>
+                                            <li class="axisXNum">60-69</li>
+                                            <li class="axisXNum">70-79</li>
+                                            <li class="axisXNum">(年齡)</li>
+                                        </ul>
+                                    </li>
+                                    <li class="chartList"><div class="rate">-10</div></li>
+                                    <li class="chartList"><div class="rate">-15</div></li>
+                                    <li class="chartList"><div class="rate">(日本研究數據，資料為Tanita提供)</div></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="scope" id="introScope1"></div>
                     </div>
                 </div>
-                <div class="introBar">
+                <div class="introBar" id="introChart2">
                     <div class="introText">
                         <h3>下肢肌肉量怎麼測？</h3>
                         <p>但該如何得知下肢肌肉量夠不夠呢？透過TANITA這次推出的BC-771全新「腳點」功能體組成計可以測量看看，由電阻抗測量技術評估腿部肌肉量是否足以支撐體重，「腳點」功能，有三個。</p>
@@ -440,9 +477,29 @@
                             </div>
                         </div>
                     </div>
-                    <div class="introPic">
-                        <div class="pic" style="background-image: url(images/custom-photo2.svg);"></div>
-                        <div class="scope"></div>
+                    <div class="introPaper">
+                        <div class="paper" id="introPhoto2">
+                            <div class="paperContent calculate">
+                                <div class="contentLeft">
+                                    <div class="pointList top">
+                                        <div class="pointLeft">很棒</div>
+                                        <div class="pointRight"><span id="topStart">0</span> ~ <span id="topEnd">0</span>pt</div>
+                                    </div>
+                                    <div class="pointList medium">
+                                        <div class="pointLeft">可以更好</div>
+                                        <div class="pointRight"><span id="mediumStart">0</span> ~ <span id="mediumEnd">0</span>pt</div>
+                                    </div>
+                                    <div class="pointList low">
+                                        <div class="pointLeft">要加強</div>
+                                        <div class="pointRight"><span id="lowStart">0</span> ~ <span id="lowEnd">0</span>pt</div>
+                                    </div>
+                                </div>
+                                <div class="contentRight" id="footTest">
+                                    <div class="ruler"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="scope" id="introScope2"></div>
                     </div>
                 </div>
             </div>
@@ -456,8 +513,8 @@
             </p>
             <div class="recommendBar">
                 <div class="recommendBox" id="videoBox1">
-                    <div class="videoBox">
-                        <iframe src="https://www.youtube.com/embed/ECmXulED8zY" title="椅子訓練，練核心練腿力" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <div class="pic videoPic" style="background-image: url(images/video-item1.svg);">
+                        <a href="#" class="playBtn"><i class="far fa-play-circle"></i></a>
                     </div>
                     <div class="videoText">
                         <div class="mainText">椅子訓練，練核心練腿力</div>
@@ -465,8 +522,8 @@
                     </div>
                 </div>
                 <div class="recommendBox" id="videoBox2">
-                    <div class="videoBox">
-                        <iframe src="https://www.youtube.com/embed/ECmXulED8zY" title="深蹲初級！強化下半身" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <div class="pic videoPic" style="background-image: url(images/video-item2.svg);">
+                        <a href="#" class="playBtn"><i class="far fa-play-circle"></i></a>
                     </div>
                     <div class="videoText">
                         <div class="mainText">深蹲初級！強化下半身</div>
@@ -474,46 +531,56 @@
                     </div>
                 </div>
             </div>
-            <div class="picBar">
-                <div class="picBox">
-                    <div class="pic" style="background-image: url(images/article-item-1.jpg);"></div>
-                    <div class="cardContent">
-                        <h4>肌力訓練10動作在家就能練！健身教練肌力訓練菜單公開</h4>
-                        <h5>體重與身高的標準化比例，計算公式是體重 (kg)/身高(m)²。計算後落在18.5至24屬正常範圍。</h5>
-                        <div class="ctaArea">
-                            <a href="https://www.tanita.com.tw/products/rd-545" target="_blank" class="ctaBtn">前往閱讀 ›</a>
+        </div>
+        <div class="container-fluid recommendCarousel">
+            <div class="carousel-inner">
+                <div class="owl-carousel eventCarousel owl-theme">
+                    <div class="item">
+                        <div class="picBox">
+                            <div class="pic" style="background-image: url(images/article-item3.svg);"></div>
+                            <div class="cardContent">
+                                <h4>誰偷走了我的肌肉？讓TANITA「腳點」功能告訴你...</h4>
+                                <h5>現代人生活忙碌，雖多有注意體態但都著重在體重的變化，較少去關注自身肌肉量的多寡，尤其人體下半身又被稱為「第二個心...</h5>
+                                <div class="ctaArea">
+                                    <a href="https://www.tanita.com.tw/products/rd-545" target="_blank" class="ctaBtn">前往閱讀 ›</a>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="picBox">
-                    <div class="pic" style="background-image: url(images/article-item-2.jpg);"></div>
-                    <div class="cardContent">
-                        <h4>肌力訓練10動作在家就能練！健身教練肌力訓練菜單公開</h4>
-                        <h5>體重與身高的標準化比例，計算公式是體重 (kg)/身高(m)²。計算後落在18.5至24屬正常範圍。</h5>
-                        <div class="ctaArea">
-                            <a href="#" target="_blank" class="ctaBtn">前往閱讀 ›</a>
+                    <div class="item">
+                        <div class="picBox">
+                            <div class="pic" style="background-image: url(images/article-item4.svg);"></div>
+                            <div class="cardContent">
+                                <h4>肌力訓練10動作在家就能練！健身教練肌力訓練菜單公開</h4>
+                                <h5>但該如何得知下肢肌肉量夠不夠呢？透過TANITA這次推出的BC-771全新「腳點」功能可以測量看看，由電阻...</h5>
+                                <div class="ctaArea">
+                                    <a href="#" target="_blank" class="ctaBtn">前往閱讀 ›</a>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </div>
-            </div>
-            <div class="picBar">
-                <div class="picBox">
-                    <div class="pic" style="background-image: url(images/article-item-3.jpg);"></div>
-                    <div class="cardContent">
-                        <h4>肌力訓練10動作在家就能練！健身教練肌力訓練菜單公開</h4>
-                        <h5>體重與身高的標準化比例，計算公式是體重 (kg)/身高(m)²。計算後落在18.5至24屬正常範圍。</h5>
-                        <div class="ctaArea">
-                            <a href="#" target="_blank" class="ctaBtn">前往閱讀 ›</a>
+                    <div class="item">
+                        <div class="picBox">
+                            <div class="pic" style="background-image: url(images/article-item1.svg);"></div>
+                            <div class="cardContent">
+                                <h4>練臀腿-強化下肢肌力，預防膝關節受傷</h4>
+                                <h5>過了30歲，肌肉會以每年0.5∼1%速度減少，訓練肌力成為一種全民運動！根據美國國家癌症研究中心研究發現，從 40-...</h5>
+                                <div class="ctaArea">
+                                    <a href="#" target="_blank" class="ctaBtn">前往閱讀 ›</a>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="picBox">
-                    <div class="pic" style="background-image: url(images/article-item-4.jpg);"></div>
-                    <div class="cardContent">
-                        <h4>肌力訓練10動作在家就能練！健身教練肌力訓練菜單公開</h4>
-                        <h5>體重與身高的標準化比例，計算公式是體重 (kg)/身高(m)²。計算後落在18.5至24屬正常範圍。</h5>
-                        <div class="ctaArea">
-                            <a href="#" target="_blank" class="ctaBtn">前往閱讀 ›</a>
+                    <div class="item">
+                        <div class="picBox">
+                            <div class="pic" style="background-image: url(images/article-item2.svg);"></div>
+                            <div class="cardContent">
+                                <h4>10大高蛋白質食物排行，蛋白質攝取量、好處一次看</h4>
+                                <h5>蛋白質好處多，但蛋白質吃不夠、吃太多都不好，一天攝取量多少最佳？蛋白質過量有哪些壞處？攝取優質蛋白質可以吃...</h5>
+                                <div class="ctaArea">
+                                    <a href="#" target="_blank" class="ctaBtn">前往閱讀 ›</a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -754,7 +821,7 @@
                             <h3>身體組成分析簡稱Inbody嗎？</h3>
                             <button type="button" class="collapseBtn collapsed" id="collapseBtn3" data-toggle="collapse" data-target="#collapse3" aria-expanded="false" aria-controls="collapse3"></button>
                         </div>
-                        <div class="questionPic" style="background-image: url(images/qa-pic2.svg);"></div>
+                        <div class="questionPic" style="background-image: url(images/qa-pic3.svg);"></div>
                     </div>
                     <div class="answerBar collapse" id="collapse3">
                         <p>
@@ -781,6 +848,9 @@
                     <div class="productText">
                         <h3>TANITA BC-771</h3>
                         <p>除了基本的體重、BMI、體脂肪、肌肉量、內臟脂肪、基礎代謝、及體內年齡外， BC-771新增「腳點」功能，將腿部肌肉量與體重之比值與理想值進行比較並以三階段（50至150分）判定。</p>
+                        <div class="ctaArea">
+                            <a href="#" target="_blank" class="ctaBtn">立即前往</a>
+                        </div>
                     </div>
                 </div>
                 <div class="productBox">
@@ -788,6 +858,9 @@
                     <div class="productText">
                         <h3>TANITA RD-545</h3>
                         <p>可測量多達26項量測數值，除了有全身、四肢與軀幹個別的肌肉與脂肪狀況外，還獨創肌肉品質量測，運用高、低頻率微電流來測量肌纖維比例，肌肉品質數值愈高，代表肌纖維比例高，肌肉較具彈性。</p>
+                        <div class="ctaArea">
+                            <a href="#" target="_blank" class="ctaBtn">立即前往</a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -807,8 +880,13 @@
                         <div class="picBar">
                             <div class="pic" style="background-image: url(images/product3.jpg);"></div>
                             <div class="cardContent">
-                                <h4>muva可調式透氣支撐護膝</h4>
-                                <h5>支撐力佳、高透氣材質</h5>
+                                <div class="contentArea">
+                                    <h4>muva可調式透氣支撐護膝</h4>
+                                    <h5>支撐力佳、高透氣材質</h5>
+                                </div>
+                                <div class="ctaArea">
+                                    <a href="#" target="_blank" class="ctaBtn">立即前往</a>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -816,8 +894,13 @@
                         <div class="picBar">
                             <div class="pic" style="background-image: url(images/product4.jpg);"></div>
                             <div class="cardContent">
-                                <h4>Sunlus &lt;日本正宗&gt;竹酢保健貼</h4>
-                                <h5>足部保健袪濕氣</h5>
+                                <div class="contentArea">
+                                    <h4>Sunlus &lt;日本正宗&gt;竹酢保健貼</h4>
+                                    <h5>足部保健袪濕氣</h5>
+                                </div>
+                                <div class="ctaArea">
+                                    <a href="#" target="_blank" class="ctaBtn">立即前往</a>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -825,8 +908,13 @@
                         <div class="picBar">
                             <div class="pic" style="background-image: url(images/product5.jpg);"></div>
                             <div class="cardContent">
-                                <h4>muva黑金剛花生球</h4>
-                                <h5>舒筋按摩好放鬆</h5>
+                                <div class="contentArea">
+                                    <h4>muva黑金剛花生球</h4>
+                                    <h5>舒筋按摩好放鬆</h5>
+                                </div>
+                                <div class="ctaArea">
+                                    <a href="#" target="_blank" class="ctaBtn">立即前往</a>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -834,26 +922,13 @@
                         <div class="picBar">
                             <div class="pic" style="background-image: url(images/product6.jpg);"></div>
                             <div class="cardContent">
-                                <h4>三合一美型舒筋板</h4>
-                                <h5>拉筋、按摩、運動</h5>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="picBar">
-                            <div class="pic" style="background-image: url(images/product1.jpg);"></div>
-                            <div class="cardContent">
-                                <h4>三合一美型舒筋板</h4>
-                                <h5>拉筋、按摩、運動</h5>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="picBar">
-                            <div class="pic" style="background-image: url(images/product2.jpg);"></div>
-                            <div class="cardContent">
-                                <h4>三合一美型舒筋板</h4>
-                                <h5>拉筋、按摩、運動</h5>
+                                <div class="contentArea">
+                                    <h4>三合一美型舒筋板</h4>
+                                    <h5>拉筋、按摩、運動</h5>
+                                </div>
+                                <div class="ctaArea">
+                                    <a href="#" target="_blank" class="ctaBtn">立即前往</a>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -883,10 +958,6 @@
         </div>
     </footer>
 
-    <div class="notice">
-        2023.06.20 網頁初版(60%)，RWD尚未完善
-    </div>
-
     <a href="#forewordArea" class="scroll" id="scroll">
         <p>scroll</p>
         <div class="scrollLine">
@@ -894,6 +965,13 @@
             <div class="line"></div>
         </div>
         <div class="circle2"></div>
+    </a>
+
+    <a href="#" class="learnFoot">
+        <div class="learnPic"></div>
+        <div class="learnText">
+            認識腳點
+        </div>
     </a>
 
     <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
@@ -905,7 +983,7 @@
     <script src="js/fly.js" defer></script>
     <script src="js/all.js" defer></script>
     <script>
-        $('.owl-carousel.eventCarousel').owlCarousel({
+        $('.owl-carousel.eventCarousel, .owl-carousel.newsCarousel').owlCarousel({
             nav: true,
             loop: true,
             margin: 0,
@@ -918,7 +996,7 @@
                 0:{
                     items:1
                 },
-                480:{
+                599:{
                     items:2
                 },
                 768:{
@@ -927,34 +1005,7 @@
                 992:{
                     items:4
                 },
-                1280:{
-                    items:5
-                }
-            }
-        });
-        $('.owl-carousel.newsCarousel').owlCarousel({
-            nav: true,
-            loop: true,
-            margin: 0,
-            autoplay: true,
-            slideTransition: 'linear',
-            autoplayTimeout: 6000,
-            autoplaySpeed: 6000,
-            autoplayHoverPause: false,
-            responsive:{
-                0:{
-                    items:1
-                },
-                480:{
-                    items:2
-                },
-                768:{
-                    items:3
-                },
-                992:{
-                    items:4
-                },
-                1280:{
+                1699:{
                     items:5
                 }
             }
