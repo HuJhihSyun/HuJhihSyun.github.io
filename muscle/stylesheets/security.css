@@ -7,30 +7,30 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@500;700;900&display=swap");
 @-webkit-keyframes bgColorAn {
   0% {
-    background-color: #c9b1b1;
+    background-color: #CEBEBE;
   }
   40% {
-    background-color: #c9b1b1;
+    background-color: #CEBEBE;
   }
   60% {
-    background-color: #cfb1bf;
+    background-color: #C9B1B1;
   }
   100% {
-    background-color: #cfb1bf;
+    background-color: #C9B1B1;
   }
 }
 @keyframes bgColorAn {
   0% {
-    background-color: #c9b1b1;
+    background-color: #CEBEBE;
   }
   40% {
-    background-color: #c9b1b1;
+    background-color: #CEBEBE;
   }
   60% {
-    background-color: #cfb1bf;
+    background-color: #C9B1B1;
   }
   100% {
-    background-color: #cfb1bf;
+    background-color: #C9B1B1;
   }
 }
 

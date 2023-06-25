@@ -26,4 +26,21 @@ $(document).ready(function () {
         }
     });
 
+    // $((function() {
+    //     $.each(Array(4), (function(e) {
+    //         var t = $("#instrumentCard" + ++e);
+    //         $(t).click((function() {
+    //             // $("#modal-" + e).fadeIn()
+    //             // alert('test')
+    //             console.log('test');
+    //         }
+    //         ))
+    //     }
+    //     ))
+    // }
+    // ));
+    $("#instrumentCard1").click(function(){
+        alert('test');
+    })
+
 });

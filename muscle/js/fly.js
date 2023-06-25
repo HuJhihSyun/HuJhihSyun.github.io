@@ -106,6 +106,8 @@ $(document).ready(function () {
         .from("#introScope1", { opacity:0, x: -200 }, 'effect1')
         .from(".chartTable", {opacity:0})
         .from(".paperMain", {opacity:0})
+        .to("#introScope1", { opacity: 0 })
+        .to("#introScope1", { scale: 0 })
         .to("#introChart1", { opacity:0, yPercent: -100 }, 'transition1')
         .from("#introChart2", { opacity:0, yPercent: 100 }, 'transition1')
         .from("#introPhoto2", { opacity:0, scale: 2 }, 'effect2')
@@ -194,21 +196,6 @@ $(document).ready(function () {
         trigger: ".tableArea",
         start: "top 50%",
         end:"bottom 50%",
-        toggleActions: "play none none none"
-    });
-
-    var protectEquip = gsap.timeline();
-    protectEquip
-    .from(".productDetail", {opacity:0, xPercent:-10})
-    .to(".picAfter", {opacity:1,yPercent:-10})
-    .from(".backLight", {opacity: 0})
-    .from(".backLight", {rotationZ: 90})
-    
-    ScrollTrigger.create({
-        animation: protectEquip,
-        trigger: ".productArea",
-        start: "top 50%",
-        end:"bottom 100%",
         toggleActions: "play none none none"
     });
 
