@@ -86,6 +86,22 @@ $(document).ready(function () {
     }
 
     // importantArea
+    const introBarA = gsap.timeline();
+    introBarA
+        .from("#introChart1", { opacity:0, yPercent: 100 })
+        .from("#introPhoto1", { opacity:0, scale: 2 })
+        .from("#introScope1", { opacity:0, x: -200 })
+        .from(".chartTable", {opacity:0})
+        .from(".paperMain", {opacity:0})
+
+    ScrollTrigger.create({
+        animation: introBarA,
+        trigger: '#introChart1',
+        start: "top 100%",
+        end: "bottom 50%",
+        toggleActions: "restart none restart none"
+    });
+
     const num1 = document.getElementById("topStart");
     const obj1 = { value: 0 };
     const num2 = document.getElementById("topEnd");
@@ -98,17 +114,9 @@ $(document).ready(function () {
     const obj5 = { value: 0 };
     const num6 = document.getElementById("lowEnd");
     const obj6 = { value: 0 };
-    const importantArea = gsap.timeline();
-    importantArea
-        .from("#introChart1", { opacity:0, yPercent: 100 })
-        // .to("#introTitle", { opacity:0, height: 0 })
-        .to("#introContent", { opacity:0, height: 0 })
-        .from("#introPhoto1", { opacity:0, scale: 2 }, 'effect1')
-        .from("#introScope1", { opacity:0, x: -200 }, 'effect1')
-        .from(".chartTable", {opacity:0})
-        .from(".paperMain", {opacity:0})
-        .to("#introScope1", { opacity: 0 })
-        .to("#introScope1", { scale: 0 })
+
+    const introBarB = gsap.timeline();
+    introBarB
         .to("#introChart1", { opacity:0, yPercent: -100 }, 'transition1')
         .from("#introChart2", { opacity:0, yPercent: 100 }, 'transition1')
         .from("#introPhoto2", { opacity:0, scale: 2 }, 'effect2')
@@ -145,17 +153,13 @@ $(document).ready(function () {
             roundProps: {value: 1},
             onUpdate: () => {num6.innerHTML = obj6.value;}
         }, 'statistic')
-        .to("#introScope2", { opacity: 0 })
-        .to("#introScope2", { scale: 0 })
-        
+
     ScrollTrigger.create({
-        animation: importantArea,
-        trigger: ".importantArea",
-        start: "top top",
-        end: "+=2000",
-        scrub: 10,
-        pin: true,
-        anticipatePin: 1,
+        animation: introBarB,
+        trigger: '#introChart2',
+        start: "top 100%",
+        end: "bottom 50%",
+        toggleActions: "restart none restart none"
     });
 
     // advantageArea
