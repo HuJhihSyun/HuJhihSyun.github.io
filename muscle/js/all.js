@@ -39,8 +39,8 @@ $(document).ready(function () {
     //     ))
     // }
     // ));
-    $("#instrumentCard1").click(function(){
-        alert('test');
-    })
+    // $("#instrumentCard1").click(function(){
+    //     alert('test');
+    // })
 
 });
