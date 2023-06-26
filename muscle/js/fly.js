@@ -88,20 +88,21 @@ $(document).ready(function () {
     // importantArea
     const introBarA = gsap.timeline();
     introBarA
-        .from("#introChart1", { opacity:0, yPercent: 100 })
-        .from("#introPhoto1", { opacity:0, scale: 2 })
-        .from("#introScope1", { opacity:0, x: -200 })
-        .from(".chartTable", {opacity:0})
-        .from(".paperMain", {opacity:0})
+        .from("#introTextA", 0.5, { opacity:0, xPercent: -20 })
+        .from("#introPhoto1", 0.5, { opacity:0, scale: 2 })
+        .from("#introScope1", 0.5, { opacity:0, x: -200 })
+        .from(".chartTable", 0.5, {opacity:0})
+        .from(".paperMain", 0.5, {opacity:0})
 
     ScrollTrigger.create({
         animation: introBarA,
         trigger: '#introChart1',
-        start: "top 100%",
+        start: "top 70%",
         end: "bottom 50%",
         toggleActions: "restart none restart none"
     });
 
+    // importantArea
     const num1 = document.getElementById("topStart");
     const obj1 = { value: 0 };
     const num2 = document.getElementById("topEnd");
@@ -117,8 +118,7 @@ $(document).ready(function () {
 
     const introBarB = gsap.timeline();
     introBarB
-        .to("#introChart1", { opacity:0, yPercent: -100 }, 'transition1')
-        .from("#introChart2", { opacity:0, yPercent: 100 }, 'transition1')
+        .from("#introTextB", 0.5, { opacity:0, xPercent: -20 })
         .from("#introPhoto2", { opacity:0, scale: 2 }, 'effect2')
         .from("#introScope2", { opacity:0, x: -200 }, 'effect2')
         .from("#footTest", { yPercent: -100 }, 'statistic')
@@ -157,7 +157,7 @@ $(document).ready(function () {
     ScrollTrigger.create({
         animation: introBarB,
         trigger: '#introChart2',
-        start: "top 100%",
+        start: "top 70%",
         end: "bottom 50%",
         toggleActions: "restart none restart none"
     });

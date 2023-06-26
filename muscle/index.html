@@ -498,7 +498,7 @@
             </div>
             <div class="introSec">
                 <div class="introBar" id="introChart1">
-                    <div class="introText">
+                    <div class="introText" id="introTextA">
                         <h3>腿部肌肉流失的比手部肌肉快</h3>
                         <p>也有研究指出，人一旦過20歲，下半身肌肉的流失速度會比上半身更快，特別是大腿股四頭肌。所以及早預防下肢肌肉流失，對未來的體力和日常生活的維持都會有很大的幫助。</p>
                     </div>
@@ -539,7 +539,7 @@
                     </div>
                 </div>
                 <div class="introBar" id="introChart2">
-                    <div class="introText">
+                    <div class="introText" id="introTextB">
                         <h3>下肢肌肉量怎麼測？</h3>
                         <p>但該如何得知下肢肌肉量夠不夠呢？透過TANITA這次推出的BC-771全新「腳點」體組成計可以測量看看，由電阻抗測量技術評估腿部肌肉量是否足以支撐體重，腳點 (腿部肌肉量) 共三階段判定。</p>
                         <div class="levelTable">
@@ -619,7 +619,7 @@
         </div>
         <div class="container-fluid recommendCarousel">
             <div class="carousel-inner">
-                <div class="owl-carousel eventCarousel owl-theme">
+                <div class="owl-carousel videoCarousel owl-theme">
                     <div class="item">
                         <div class="picBox">
                             <div class="pic" style="background-image: url(images/article-item3.svg);"></div>
@@ -1097,6 +1097,30 @@
                 1599:{
                     items:5
                 }
+            }
+        });
+
+        $('.owl-carousel.videoCarousel').owlCarousel({
+            nav: true,
+            loop: true,
+            margin: 0,
+            mouseDrag: true,
+            autoplay: true,
+            slideTransition: 'linear',
+            autoplayHoverPause: true,
+            responsive:{
+                0:{
+                    items:1
+                },
+                599:{
+                    items:2
+                },
+                992:{
+                    items:3
+                },
+                1400:{
+                    items:4
+                },
             }
         });
     </script>
