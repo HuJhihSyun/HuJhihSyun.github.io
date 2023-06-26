@@ -2174,12 +2174,6 @@ body {
   }
 }
 
-@media only screen and (max-width: 599px) {
-  .forewordArea .envelop .content p {
-    font-size: 14px;
-  }
-}
-
 .forewordArea .envelop .envelop-top {
   position: absolute;
   top: 0;
@@ -2854,602 +2848,602 @@ body {
 
 .customArea .customCover .customDot1 {
   position: absolute;
-  left: 48.59728%;
-  top: 18.76956%;
+  left: 29.92606%;
+  top: 76.24953%;
   -webkit-animation-delay: -0.2s;
           animation-delay: -0.2s;
-  width: 6px;
-  height: 8px;
-  -webkit-transform: rotate(15deg);
-          transform: rotate(15deg);
-}
-
-.customArea .customCover .customDot2 {
-  position: absolute;
-  left: 38.24749%;
-  top: 24.7434%;
-  -webkit-animation-delay: -0.4s;
-          animation-delay: -0.4s;
-  width: 9px;
-  height: 14px;
-  -webkit-transform: rotate(82deg);
-          transform: rotate(82deg);
-}
-
-.customArea .customCover .customDot3 {
-  position: absolute;
-  left: 74.44018%;
-  top: 20.9661%;
-  -webkit-animation-delay: -0.6s;
-          animation-delay: -0.6s;
   width: 15px;
-  height: 14px;
-  -webkit-transform: rotate(48deg);
-          transform: rotate(48deg);
-}
-
-.customArea .customCover .customDot4 {
-  position: absolute;
-  left: 20.20407%;
-  top: 63.06282%;
-  -webkit-animation-delay: -0.8s;
-          animation-delay: -0.8s;
-  width: 12px;
-  height: 6px;
-  -webkit-transform: rotate(24deg);
-          transform: rotate(24deg);
-}
-
-.customArea .customCover .customDot5 {
-  position: absolute;
-  left: 59.65094%;
-  top: 51.00636%;
-  -webkit-animation-delay: -1s;
-          animation-delay: -1s;
-  width: 10px;
-  height: 13px;
-  -webkit-transform: rotate(38deg);
-          transform: rotate(38deg);
-}
-
-.customArea .customCover .customDot6 {
-  position: absolute;
-  left: 12.21164%;
-  top: 84.14409%;
-  -webkit-animation-delay: -1.2s;
-          animation-delay: -1.2s;
-  width: 10px;
-  height: 15px;
-  -webkit-transform: rotate(66deg);
-          transform: rotate(66deg);
-}
-
-.customArea .customCover .customDot7 {
-  position: absolute;
-  left: 74.18681%;
-  top: 28.40018%;
-  -webkit-animation-delay: -1.4s;
-          animation-delay: -1.4s;
-  width: 9px;
-  height: 13px;
-  -webkit-transform: rotate(78deg);
-          transform: rotate(78deg);
-}
-
-.customArea .customCover .customDot8 {
-  position: absolute;
-  left: 51.89875%;
-  top: 35.70382%;
-  -webkit-animation-delay: -1.6s;
-          animation-delay: -1.6s;
-  width: 10px;
-  height: 9px;
-  -webkit-transform: rotate(15deg);
-          transform: rotate(15deg);
-}
-
-.customArea .customCover .customDot9 {
-  position: absolute;
-  left: 49.56603%;
-  top: 95.37904%;
-  -webkit-animation-delay: -1.8s;
-          animation-delay: -1.8s;
-  width: 12px;
-  height: 6px;
-  -webkit-transform: rotate(5deg);
-          transform: rotate(5deg);
-}
-
-.customArea .customCover .customDot10 {
-  position: absolute;
-  left: 2.91684%;
-  top: 22.01827%;
-  -webkit-animation-delay: -2s;
-          animation-delay: -2s;
-  width: 15px;
-  height: 15px;
-  -webkit-transform: rotate(66deg);
-          transform: rotate(66deg);
-}
-
-.customArea .customCover .customDot11 {
-  position: absolute;
-  left: 96.54877%;
-  top: 30.98932%;
-  -webkit-animation-delay: -2.2s;
-          animation-delay: -2.2s;
-  width: 12px;
-  height: 8px;
-  -webkit-transform: rotate(30deg);
-          transform: rotate(30deg);
-}
-
-.customArea .customCover .customDot12 {
-  position: absolute;
-  left: 78.86885%;
-  top: 92.38612%;
-  -webkit-animation-delay: -2.4s;
-          animation-delay: -2.4s;
-  width: 15px;
-  height: 9px;
-  -webkit-transform: rotate(40deg);
-          transform: rotate(40deg);
-}
-
-.customArea .customCover .customDot13 {
-  position: absolute;
-  left: 44.61308%;
-  top: 70.97941%;
-  -webkit-animation-delay: -2.6s;
-          animation-delay: -2.6s;
-  width: 14px;
-  height: 15px;
-  -webkit-transform: rotate(73deg);
-          transform: rotate(73deg);
-}
-
-.customArea .customCover .customDot14 {
-  position: absolute;
-  left: 81.87388%;
-  top: 99.41274%;
-  -webkit-animation-delay: -2.8s;
-          animation-delay: -2.8s;
-  width: 15px;
-  height: 15px;
-  -webkit-transform: rotate(7deg);
-          transform: rotate(7deg);
-}
-
-.customArea .customCover .customDot15 {
-  position: absolute;
-  left: 82.91419%;
-  top: 37.67663%;
-  -webkit-animation-delay: -3s;
-          animation-delay: -3s;
-  width: 13px;
-  height: 10px;
-  -webkit-transform: rotate(41deg);
-          transform: rotate(41deg);
-}
-
-.customArea .customCover .customDot16 {
-  position: absolute;
-  left: 21.01361%;
-  top: 26.27903%;
-  -webkit-animation-delay: -3.2s;
-          animation-delay: -3.2s;
-  width: 13px;
-  height: 15px;
-  -webkit-transform: rotate(68deg);
-          transform: rotate(68deg);
-}
-
-.customArea .customCover .customDot17 {
-  position: absolute;
-  left: 17.97248%;
-  top: 82.54014%;
-  -webkit-animation-delay: -3.4s;
-          animation-delay: -3.4s;
-  width: 6px;
   height: 15px;
   -webkit-transform: rotate(37deg);
           transform: rotate(37deg);
 }
 
-.customArea .customCover .customDot18 {
+.customArea .customCover .customDot2 {
   position: absolute;
-  left: 10.92498%;
-  top: 8.06641%;
-  -webkit-animation-delay: -3.6s;
-          animation-delay: -3.6s;
-  width: 9px;
-  height: 12px;
-  -webkit-transform: rotate(12deg);
-          transform: rotate(12deg);
-}
-
-.customArea .customCover .customDot19 {
-  position: absolute;
-  left: 17.91324%;
-  top: 86.46749%;
-  -webkit-animation-delay: -3.8s;
-          animation-delay: -3.8s;
+  left: 81.50654%;
+  top: 42.07855%;
+  -webkit-animation-delay: -0.4s;
+          animation-delay: -0.4s;
   width: 15px;
-  height: 9px;
-  -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
-}
-
-.customArea .customCover .customDot20 {
-  position: absolute;
-  left: 26.48827%;
-  top: 21.56146%;
-  -webkit-animation-delay: -4s;
-          animation-delay: -4s;
-  width: 6px;
-  height: 12px;
-  -webkit-transform: rotate(63deg);
-          transform: rotate(63deg);
-}
-
-.customArea .customCover .customDot21 {
-  position: absolute;
-  left: 21.18929%;
-  top: 45.35547%;
-  -webkit-animation-delay: -4.2s;
-          animation-delay: -4.2s;
-  width: 11px;
-  height: 11px;
-  -webkit-transform: rotate(15deg);
-          transform: rotate(15deg);
-}
-
-.customArea .customCover .customDot22 {
-  position: absolute;
-  left: 87.11947%;
-  top: 3.40487%;
-  -webkit-animation-delay: -4.4s;
-          animation-delay: -4.4s;
-  width: 6px;
-  height: 15px;
-  -webkit-transform: rotate(10deg);
-          transform: rotate(10deg);
-}
-
-.customArea .customCover .customDot23 {
-  position: absolute;
-  left: 3.74798%;
-  top: 94.93578%;
-  -webkit-animation-delay: -4.6s;
-          animation-delay: -4.6s;
-  width: 12px;
-  height: 14px;
-  -webkit-transform: rotate(2deg);
-          transform: rotate(2deg);
-}
-
-.customArea .customCover .customDot24 {
-  position: absolute;
-  left: 62.80528%;
-  top: 78.09177%;
-  -webkit-animation-delay: -4.8s;
-          animation-delay: -4.8s;
-  width: 6px;
-  height: 15px;
-  -webkit-transform: rotate(75deg);
-          transform: rotate(75deg);
-}
-
-.customArea .customCover .customDot25 {
-  position: absolute;
-  left: 59.57267%;
-  top: 59.54894%;
-  -webkit-animation-delay: -5s;
-          animation-delay: -5s;
-  width: 12px;
-  height: 8px;
-  -webkit-transform: rotate(55deg);
-          transform: rotate(55deg);
-}
-
-.customArea .customCover .customDot26 {
-  position: absolute;
-  left: 98.13767%;
-  top: 17.49735%;
-  -webkit-animation-delay: -5.2s;
-          animation-delay: -5.2s;
-  width: 12px;
-  height: 12px;
-  -webkit-transform: rotate(48deg);
-          transform: rotate(48deg);
-}
-
-.customArea .customCover .customDot27 {
-  position: absolute;
-  left: 71.22124%;
-  top: 15.82094%;
-  -webkit-animation-delay: -5.4s;
-          animation-delay: -5.4s;
-  width: 12px;
-  height: 15px;
-  -webkit-transform: rotate(11deg);
-          transform: rotate(11deg);
-}
-
-.customArea .customCover .customDot28 {
-  position: absolute;
-  left: 75.869%;
-  top: 75.94054%;
-  -webkit-animation-delay: -5.6s;
-          animation-delay: -5.6s;
-  width: 9px;
-  height: 10px;
-  -webkit-transform: rotate(56deg);
-          transform: rotate(56deg);
-}
-
-.customArea .customCover .customDot29 {
-  position: absolute;
-  left: 52.62317%;
-  top: 50.03331%;
-  -webkit-animation-delay: -5.8s;
-          animation-delay: -5.8s;
-  width: 7px;
-  height: 8px;
-  -webkit-transform: rotate(17deg);
-          transform: rotate(17deg);
-}
-
-.customArea .customCover .customDot30 {
-  position: absolute;
-  left: 84.38178%;
-  top: 16.82118%;
-  -webkit-animation-delay: -6s;
-          animation-delay: -6s;
-  width: 14px;
-  height: 15px;
-  -webkit-transform: rotate(47deg);
-          transform: rotate(47deg);
-}
-
-.customArea .customCover .customDot31 {
-  position: absolute;
-  left: 99.8626%;
-  top: 91.95708%;
-  -webkit-animation-delay: -6.2s;
-          animation-delay: -6.2s;
-  width: 11px;
-  height: 7px;
-  -webkit-transform: rotate(52deg);
-          transform: rotate(52deg);
-}
-
-.customArea .customCover .customDot32 {
-  position: absolute;
-  left: 70.82043%;
-  top: 56.23835%;
-  -webkit-animation-delay: -6.4s;
-          animation-delay: -6.4s;
-  width: 12px;
-  height: 11px;
-  -webkit-transform: rotate(66deg);
-          transform: rotate(66deg);
-}
-
-.customArea .customCover .customDot33 {
-  position: absolute;
-  left: 23.9753%;
-  top: 60.18885%;
-  -webkit-animation-delay: -6.6s;
-          animation-delay: -6.6s;
-  width: 8px;
-  height: 9px;
-  -webkit-transform: rotate(77deg);
-          transform: rotate(77deg);
-}
-
-.customArea .customCover .customDot34 {
-  position: absolute;
-  left: 44.66008%;
-  top: 50.61598%;
-  -webkit-animation-delay: -6.8s;
-          animation-delay: -6.8s;
-  width: 7px;
-  height: 8px;
-  -webkit-transform: rotate(90deg);
-          transform: rotate(90deg);
-}
-
-.customArea .customCover .customDot35 {
-  position: absolute;
-  left: 64.68915%;
-  top: 59.70272%;
-  -webkit-animation-delay: -7s;
-          animation-delay: -7s;
-  width: 10px;
-  height: 10px;
-  -webkit-transform: rotate(11deg);
-          transform: rotate(11deg);
-}
-
-.customArea .customCover .customDot36 {
-  position: absolute;
-  left: 52.82068%;
-  top: 18.01003%;
-  -webkit-animation-delay: -7.2s;
-          animation-delay: -7.2s;
-  width: 6px;
   height: 13px;
-  -webkit-transform: rotate(48deg);
-          transform: rotate(48deg);
+  -webkit-transform: rotate(68deg);
+          transform: rotate(68deg);
 }
 
-.customArea .customCover .customDot37 {
+.customArea .customCover .customDot3 {
   position: absolute;
-  left: 27.01873%;
-  top: 80.84336%;
-  -webkit-animation-delay: -7.4s;
-          animation-delay: -7.4s;
-  width: 14px;
-  height: 14px;
-  -webkit-transform: rotate(42deg);
-          transform: rotate(42deg);
+  left: 3.5915%;
+  top: 51.78902%;
+  -webkit-animation-delay: -0.6s;
+          animation-delay: -0.6s;
+  width: 15px;
+  height: 15px;
+  -webkit-transform: rotate(71deg);
+          transform: rotate(71deg);
 }
 
-.customArea .customCover .customDot38 {
+.customArea .customCover .customDot4 {
   position: absolute;
-  left: 23.59313%;
-  top: 72.72051%;
-  -webkit-animation-delay: -7.6s;
-          animation-delay: -7.6s;
-  width: 9px;
+  left: 25.70308%;
+  top: 47.71925%;
+  -webkit-animation-delay: -0.8s;
+          animation-delay: -0.8s;
+  width: 13px;
+  height: 13px;
+  -webkit-transform: rotate(32deg);
+          transform: rotate(32deg);
+}
+
+.customArea .customCover .customDot5 {
+  position: absolute;
+  left: 19.8593%;
+  top: 62.86618%;
+  -webkit-animation-delay: -1s;
+          animation-delay: -1s;
+  width: 10px;
   height: 8px;
-  -webkit-transform: rotate(20deg);
-          transform: rotate(20deg);
+  -webkit-transform: rotate(76deg);
+          transform: rotate(76deg);
 }
 
-.customArea .customCover .customDot39 {
+.customArea .customCover .customDot6 {
   position: absolute;
-  left: 72.61348%;
-  top: 23.25212%;
-  -webkit-animation-delay: -7.8s;
-          animation-delay: -7.8s;
-  width: 7px;
-  height: 7px;
-  -webkit-transform: rotate(64deg);
-          transform: rotate(64deg);
+  left: 77.56148%;
+  top: 63.97966%;
+  -webkit-animation-delay: -1.2s;
+          animation-delay: -1.2s;
+  width: 13px;
+  height: 10px;
+  -webkit-transform: rotate(80deg);
+          transform: rotate(80deg);
 }
 
-.customArea .customCover .customDot40 {
+.customArea .customCover .customDot7 {
   position: absolute;
-  left: 57.66774%;
-  top: 86.0836%;
-  -webkit-animation-delay: -8s;
-          animation-delay: -8s;
-  width: 9px;
-  height: 6px;
-  -webkit-transform: rotate(74deg);
-          transform: rotate(74deg);
-}
-
-.customArea .customCover .customDot41 {
-  position: absolute;
-  left: 19.13244%;
-  top: 19.74597%;
-  -webkit-animation-delay: -8.2s;
-          animation-delay: -8.2s;
-  width: 7px;
-  height: 6px;
-  -webkit-transform: rotate(8deg);
-          transform: rotate(8deg);
-}
-
-.customArea .customCover .customDot42 {
-  position: absolute;
-  left: 7.01242%;
-  top: 72.5014%;
-  -webkit-animation-delay: -8.4s;
-          animation-delay: -8.4s;
-  width: 9px;
-  height: 14px;
+  left: 63.038%;
+  top: 48.26784%;
+  -webkit-animation-delay: -1.4s;
+          animation-delay: -1.4s;
+  width: 13px;
+  height: 10px;
   -webkit-transform: rotate(60deg);
           transform: rotate(60deg);
 }
 
-.customArea .customCover .customDot43 {
+.customArea .customCover .customDot8 {
   position: absolute;
-  left: 7.34965%;
-  top: 6.47014%;
-  -webkit-animation-delay: -8.6s;
-          animation-delay: -8.6s;
+  left: 31.04581%;
+  top: 13.23282%;
+  -webkit-animation-delay: -1.6s;
+          animation-delay: -1.6s;
   width: 8px;
+  height: 9px;
+  -webkit-transform: rotate(72deg);
+          transform: rotate(72deg);
+}
+
+.customArea .customCover .customDot9 {
+  position: absolute;
+  left: 38.83909%;
+  top: 74.19819%;
+  -webkit-animation-delay: -1.8s;
+          animation-delay: -1.8s;
+  width: 7px;
+  height: 6px;
+  -webkit-transform: rotate(46deg);
+          transform: rotate(46deg);
+}
+
+.customArea .customCover .customDot10 {
+  position: absolute;
+  left: 69.50994%;
+  top: 14.97252%;
+  -webkit-animation-delay: -2s;
+          animation-delay: -2s;
+  width: 10px;
+  height: 11px;
+  -webkit-transform: rotate(60deg);
+          transform: rotate(60deg);
+}
+
+.customArea .customCover .customDot11 {
+  position: absolute;
+  left: 42.40796%;
+  top: 20.7404%;
+  -webkit-animation-delay: -2.2s;
+          animation-delay: -2.2s;
+  width: 12px;
+  height: 12px;
+  -webkit-transform: rotate(56deg);
+          transform: rotate(56deg);
+}
+
+.customArea .customCover .customDot12 {
+  position: absolute;
+  left: 93.9807%;
+  top: 12.87043%;
+  -webkit-animation-delay: -2.4s;
+          animation-delay: -2.4s;
+  width: 11px;
   height: 15px;
+  -webkit-transform: rotate(49deg);
+          transform: rotate(49deg);
+}
+
+.customArea .customCover .customDot13 {
+  position: absolute;
+  left: 46.26524%;
+  top: 53.85579%;
+  -webkit-animation-delay: -2.6s;
+          animation-delay: -2.6s;
+  width: 10px;
+  height: 11px;
+  -webkit-transform: rotate(26deg);
+          transform: rotate(26deg);
+}
+
+.customArea .customCover .customDot14 {
+  position: absolute;
+  left: 93.8538%;
+  top: 12.75367%;
+  -webkit-animation-delay: -2.8s;
+          animation-delay: -2.8s;
+  width: 8px;
+  height: 7px;
+  -webkit-transform: rotate(22deg);
+          transform: rotate(22deg);
+}
+
+.customArea .customCover .customDot15 {
+  position: absolute;
+  left: 34.65257%;
+  top: 6.58947%;
+  -webkit-animation-delay: -3s;
+          animation-delay: -3s;
+  width: 13px;
+  height: 8px;
+  -webkit-transform: rotate(13deg);
+          transform: rotate(13deg);
+}
+
+.customArea .customCover .customDot16 {
+  position: absolute;
+  left: 89.30132%;
+  top: 29.69579%;
+  -webkit-animation-delay: -3.2s;
+          animation-delay: -3.2s;
+  width: 14px;
+  height: 11px;
+  -webkit-transform: rotate(54deg);
+          transform: rotate(54deg);
+}
+
+.customArea .customCover .customDot17 {
+  position: absolute;
+  left: 60.37656%;
+  top: 31.89502%;
+  -webkit-animation-delay: -3.4s;
+          animation-delay: -3.4s;
+  width: 7px;
+  height: 8px;
+  -webkit-transform: rotate(39deg);
+          transform: rotate(39deg);
+}
+
+.customArea .customCover .customDot18 {
+  position: absolute;
+  left: 75.69687%;
+  top: 57.35084%;
+  -webkit-animation-delay: -3.6s;
+          animation-delay: -3.6s;
+  width: 7px;
+  height: 13px;
+  -webkit-transform: rotate(18deg);
+          transform: rotate(18deg);
+}
+
+.customArea .customCover .customDot19 {
+  position: absolute;
+  left: 54.0398%;
+  top: 77.00584%;
+  -webkit-animation-delay: -3.8s;
+          animation-delay: -3.8s;
+  width: 13px;
+  height: 12px;
+  -webkit-transform: rotate(26deg);
+          transform: rotate(26deg);
+}
+
+.customArea .customCover .customDot20 {
+  position: absolute;
+  left: 74.45445%;
+  top: 75.74641%;
+  -webkit-animation-delay: -4s;
+          animation-delay: -4s;
+  width: 14px;
+  height: 11px;
+  -webkit-transform: rotate(12deg);
+          transform: rotate(12deg);
+}
+
+.customArea .customCover .customDot21 {
+  position: absolute;
+  left: 26.50244%;
+  top: 58.28941%;
+  -webkit-animation-delay: -4.2s;
+          animation-delay: -4.2s;
+  width: 13px;
+  height: 10px;
+  -webkit-transform: rotate(11deg);
+          transform: rotate(11deg);
+}
+
+.customArea .customCover .customDot22 {
+  position: absolute;
+  left: 20.9134%;
+  top: 10.68531%;
+  -webkit-animation-delay: -4.4s;
+          animation-delay: -4.4s;
+  width: 6px;
+  height: 10px;
+  -webkit-transform: rotate(82deg);
+          transform: rotate(82deg);
+}
+
+.customArea .customCover .customDot23 {
+  position: absolute;
+  left: 7.50408%;
+  top: 82.84889%;
+  -webkit-animation-delay: -4.6s;
+          animation-delay: -4.6s;
+  width: 9px;
+  height: 15px;
+  -webkit-transform: rotate(27deg);
+          transform: rotate(27deg);
+}
+
+.customArea .customCover .customDot24 {
+  position: absolute;
+  left: 25.83776%;
+  top: 28.2415%;
+  -webkit-animation-delay: -4.8s;
+          animation-delay: -4.8s;
+  width: 15px;
+  height: 14px;
+  -webkit-transform: rotate(70deg);
+          transform: rotate(70deg);
+}
+
+.customArea .customCover .customDot25 {
+  position: absolute;
+  left: 94.84722%;
+  top: 70.40298%;
+  -webkit-animation-delay: -5s;
+          animation-delay: -5s;
+  width: 11px;
+  height: 12px;
+  -webkit-transform: rotate(61deg);
+          transform: rotate(61deg);
+}
+
+.customArea .customCover .customDot26 {
+  position: absolute;
+  left: 51.13537%;
+  top: 4.4217%;
+  -webkit-animation-delay: -5.2s;
+          animation-delay: -5.2s;
+  width: 8px;
+  height: 11px;
+  -webkit-transform: rotate(68deg);
+          transform: rotate(68deg);
+}
+
+.customArea .customCover .customDot27 {
+  position: absolute;
+  left: 32.08093%;
+  top: 26.95037%;
+  -webkit-animation-delay: -5.4s;
+          animation-delay: -5.4s;
+  width: 14px;
+  height: 13px;
+  -webkit-transform: rotate(34deg);
+          transform: rotate(34deg);
+}
+
+.customArea .customCover .customDot28 {
+  position: absolute;
+  left: 69.20225%;
+  top: 46.41761%;
+  -webkit-animation-delay: -5.6s;
+          animation-delay: -5.6s;
+  width: 10px;
+  height: 7px;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+.customArea .customCover .customDot29 {
+  position: absolute;
+  left: 67.23251%;
+  top: 60.43218%;
+  -webkit-animation-delay: -5.8s;
+          animation-delay: -5.8s;
+  width: 14px;
+  height: 9px;
+  -webkit-transform: rotate(72deg);
+          transform: rotate(72deg);
+}
+
+.customArea .customCover .customDot30 {
+  position: absolute;
+  left: 57.16539%;
+  top: 25.51035%;
+  -webkit-animation-delay: -6s;
+          animation-delay: -6s;
+  width: 15px;
+  height: 8px;
+  -webkit-transform: rotate(79deg);
+          transform: rotate(79deg);
+}
+
+.customArea .customCover .customDot31 {
+  position: absolute;
+  left: 46.12421%;
+  top: 13.26049%;
+  -webkit-animation-delay: -6.2s;
+          animation-delay: -6.2s;
+  width: 7px;
+  height: 7px;
+  -webkit-transform: rotate(57deg);
+          transform: rotate(57deg);
+}
+
+.customArea .customCover .customDot32 {
+  position: absolute;
+  left: 16.13514%;
+  top: 93.82195%;
+  -webkit-animation-delay: -6.4s;
+          animation-delay: -6.4s;
+  width: 9px;
+  height: 9px;
+  -webkit-transform: rotate(33deg);
+          transform: rotate(33deg);
+}
+
+.customArea .customCover .customDot33 {
+  position: absolute;
+  left: 36.38658%;
+  top: 91.96919%;
+  -webkit-animation-delay: -6.6s;
+          animation-delay: -6.6s;
+  width: 15px;
+  height: 10px;
+  -webkit-transform: rotate(74deg);
+          transform: rotate(74deg);
+}
+
+.customArea .customCover .customDot34 {
+  position: absolute;
+  left: 37.2122%;
+  top: 6.46072%;
+  -webkit-animation-delay: -6.8s;
+          animation-delay: -6.8s;
+  width: 12px;
+  height: 10px;
+  -webkit-transform: rotate(49deg);
+          transform: rotate(49deg);
+}
+
+.customArea .customCover .customDot35 {
+  position: absolute;
+  left: 37.66553%;
+  top: 54.13876%;
+  -webkit-animation-delay: -7s;
+          animation-delay: -7s;
+  width: 6px;
+  height: 9px;
+  -webkit-transform: rotate(30deg);
+          transform: rotate(30deg);
+}
+
+.customArea .customCover .customDot36 {
+  position: absolute;
+  left: 98.40847%;
+  top: 56.85997%;
+  -webkit-animation-delay: -7.2s;
+          animation-delay: -7.2s;
+  width: 12px;
+  height: 10px;
+  -webkit-transform: rotate(37deg);
+          transform: rotate(37deg);
+}
+
+.customArea .customCover .customDot37 {
+  position: absolute;
+  left: 19.75132%;
+  top: 58.44793%;
+  -webkit-animation-delay: -7.4s;
+          animation-delay: -7.4s;
+  width: 10px;
+  height: 6px;
   -webkit-transform: rotate(29deg);
           transform: rotate(29deg);
+}
+
+.customArea .customCover .customDot38 {
+  position: absolute;
+  left: 82.43473%;
+  top: 9.22251%;
+  -webkit-animation-delay: -7.6s;
+          animation-delay: -7.6s;
+  width: 9px;
+  height: 7px;
+  -webkit-transform: rotate(86deg);
+          transform: rotate(86deg);
+}
+
+.customArea .customCover .customDot39 {
+  position: absolute;
+  left: 46.03044%;
+  top: 19.5205%;
+  -webkit-animation-delay: -7.8s;
+          animation-delay: -7.8s;
+  width: 7px;
+  height: 8px;
+  -webkit-transform: rotate(4deg);
+          transform: rotate(4deg);
+}
+
+.customArea .customCover .customDot40 {
+  position: absolute;
+  left: 59.24519%;
+  top: 24.87027%;
+  -webkit-animation-delay: -8s;
+          animation-delay: -8s;
+  width: 9px;
+  height: 7px;
+  -webkit-transform: rotate(5deg);
+          transform: rotate(5deg);
+}
+
+.customArea .customCover .customDot41 {
+  position: absolute;
+  left: 72.1494%;
+  top: 11.95714%;
+  -webkit-animation-delay: -8.2s;
+          animation-delay: -8.2s;
+  width: 6px;
+  height: 7px;
+  -webkit-transform: rotate(22deg);
+          transform: rotate(22deg);
+}
+
+.customArea .customCover .customDot42 {
+  position: absolute;
+  left: 32.48252%;
+  top: 92.27255%;
+  -webkit-animation-delay: -8.4s;
+          animation-delay: -8.4s;
+  width: 9px;
+  height: 14px;
+  -webkit-transform: rotate(79deg);
+          transform: rotate(79deg);
+}
+
+.customArea .customCover .customDot43 {
+  position: absolute;
+  left: 67.82048%;
+  top: 91.88745%;
+  -webkit-animation-delay: -8.6s;
+          animation-delay: -8.6s;
+  width: 7px;
+  height: 15px;
+  -webkit-transform: rotate(7deg);
+          transform: rotate(7deg);
 }
 
 .customArea .customCover .customDot44 {
   position: absolute;
-  left: 84.31681%;
-  top: 90.46898%;
+  left: 35.09934%;
+  top: 84.43385%;
   -webkit-animation-delay: -8.8s;
           animation-delay: -8.8s;
-  width: 11px;
-  height: 14px;
-  -webkit-transform: rotate(36deg);
-          transform: rotate(36deg);
+  width: 13px;
+  height: 8px;
+  -webkit-transform: rotate(44deg);
+          transform: rotate(44deg);
 }
 
 .customArea .customCover .customDot45 {
   position: absolute;
-  left: 35.35328%;
-  top: 22.71711%;
+  left: 98.26949%;
+  top: 95.43109%;
   -webkit-animation-delay: -9s;
           animation-delay: -9s;
-  width: 8px;
-  height: 10px;
-  -webkit-transform: rotate(29deg);
-          transform: rotate(29deg);
+  width: 12px;
+  height: 9px;
+  -webkit-transform: rotate(67deg);
+          transform: rotate(67deg);
 }
 
 .customArea .customCover .customDot46 {
   position: absolute;
-  left: 46.62091%;
-  top: 78.77228%;
+  left: 82.86971%;
+  top: 90.41073%;
   -webkit-animation-delay: -9.2s;
           animation-delay: -9.2s;
-  width: 7px;
-  height: 11px;
-  -webkit-transform: rotate(14deg);
-          transform: rotate(14deg);
+  width: 15px;
+  height: 7px;
+  -webkit-transform: rotate(27deg);
+          transform: rotate(27deg);
 }
 
 .customArea .customCover .customDot47 {
   position: absolute;
-  left: 68.97443%;
-  top: 84.49134%;
+  left: 22.66029%;
+  top: 97.66096%;
   -webkit-animation-delay: -9.4s;
           animation-delay: -9.4s;
-  width: 14px;
-  height: 13px;
-  -webkit-transform: rotate(81deg);
-          transform: rotate(81deg);
+  width: 6px;
+  height: 6px;
+  -webkit-transform: rotate(24deg);
+          transform: rotate(24deg);
 }
 
 .customArea .customCover .customDot48 {
   position: absolute;
-  left: 8.00938%;
-  top: 80.72768%;
+  left: 16.33262%;
+  top: 9.58455%;
   -webkit-animation-delay: -9.6s;
           animation-delay: -9.6s;
-  width: 11px;
-  height: 12px;
-  -webkit-transform: rotate(25deg);
-          transform: rotate(25deg);
+  width: 10px;
+  height: 8px;
+  -webkit-transform: rotate(15deg);
+          transform: rotate(15deg);
 }
 
 .customArea .customCover .customDot49 {
   position: absolute;
-  left: 23.52091%;
-  top: 98.49423%;
+  left: 26.63989%;
+  top: 80.51013%;
   -webkit-animation-delay: -9.8s;
           animation-delay: -9.8s;
-  width: 6px;
-  height: 12px;
-  -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
+  width: 11px;
+  height: 9px;
+  -webkit-transform: rotate(31deg);
+          transform: rotate(31deg);
 }
 
 .customArea .customCover .customDot50 {
   position: absolute;
-  left: 88.41334%;
-  top: 60.25094%;
+  left: 76.41503%;
+  top: 93.86695%;
   -webkit-animation-delay: -10s;
           animation-delay: -10s;
   width: 6px;
-  height: 12px;
-  -webkit-transform: rotate(58deg);
-          transform: rotate(58deg);
+  height: 13px;
+  -webkit-transform: rotate(35deg);
+          transform: rotate(35deg);
 }
 
 .growArea {
@@ -3522,7 +3516,6 @@ body {
 @media only screen and (max-width: 767px) {
   .growArea .container-fluid .content {
     width: 90%;
-    font-size: 14px;
   }
 }
 
@@ -3844,7 +3837,6 @@ body {
 @media only screen and (max-width: 767px) {
   .instrumentArea .content {
     width: 90%;
-    font-size: 14px;
   }
 }
 
@@ -4229,7 +4221,6 @@ body {
 @media only screen and (max-width: 767px) {
   .importantArea .container-fluid .content {
     width: 90%;
-    font-size: 14px;
   }
 }
 
@@ -4956,602 +4947,602 @@ body {
 
 .importantArea .importantCover .importantDot1 {
   position: absolute;
-  left: 92.26605%;
-  top: 23.9741%;
+  left: 86.94594%;
+  top: 84.26366%;
   -webkit-animation-delay: -0.2s;
           animation-delay: -0.2s;
-  width: 6px;
-  height: 6px;
-  -webkit-transform: rotate(65deg);
-          transform: rotate(65deg);
+  width: 9px;
+  height: 10px;
+  -webkit-transform: rotate(37deg);
+          transform: rotate(37deg);
 }
 
 .importantArea .importantCover .importantDot2 {
   position: absolute;
-  left: 77.62992%;
-  top: 44.92165%;
+  left: 45.96485%;
+  top: 47.69291%;
   -webkit-animation-delay: -0.4s;
           animation-delay: -0.4s;
   width: 7px;
-  height: 8px;
-  -webkit-transform: rotate(16deg);
-          transform: rotate(16deg);
-}
-
-.importantArea .importantCover .importantDot3 {
-  position: absolute;
-  left: 88.36156%;
-  top: 99.81061%;
-  -webkit-animation-delay: -0.6s;
-          animation-delay: -0.6s;
-  width: 6px;
-  height: 9px;
-  -webkit-transform: rotate(64deg);
-          transform: rotate(64deg);
-}
-
-.importantArea .importantCover .importantDot4 {
-  position: absolute;
-  left: 57.76768%;
-  top: 42.7702%;
-  -webkit-animation-delay: -0.8s;
-          animation-delay: -0.8s;
-  width: 9px;
-  height: 9px;
-  -webkit-transform: rotate(71deg);
-          transform: rotate(71deg);
-}
-
-.importantArea .importantCover .importantDot5 {
-  position: absolute;
-  left: 10.67714%;
-  top: 13.45523%;
-  -webkit-animation-delay: -1s;
-          animation-delay: -1s;
-  width: 10px;
-  height: 14px;
-  -webkit-transform: rotate(50deg);
-          transform: rotate(50deg);
-}
-
-.importantArea .importantCover .importantDot6 {
-  position: absolute;
-  left: 14.48052%;
-  top: 55.74074%;
-  -webkit-animation-delay: -1.2s;
-          animation-delay: -1.2s;
-  width: 6px;
-  height: 11px;
-  -webkit-transform: rotate(17deg);
-          transform: rotate(17deg);
-}
-
-.importantArea .importantCover .importantDot7 {
-  position: absolute;
-  left: 23.32951%;
-  top: 89.44765%;
-  -webkit-animation-delay: -1.4s;
-          animation-delay: -1.4s;
-  width: 13px;
-  height: 10px;
-  -webkit-transform: rotate(29deg);
-          transform: rotate(29deg);
-}
-
-.importantArea .importantCover .importantDot8 {
-  position: absolute;
-  left: 94.39123%;
-  top: 30.33688%;
-  -webkit-animation-delay: -1.6s;
-          animation-delay: -1.6s;
-  width: 10px;
-  height: 12px;
-  -webkit-transform: rotate(73deg);
-          transform: rotate(73deg);
-}
-
-.importantArea .importantCover .importantDot9 {
-  position: absolute;
-  left: 11.94971%;
-  top: 13.1807%;
-  -webkit-animation-delay: -1.8s;
-          animation-delay: -1.8s;
-  width: 10px;
-  height: 12px;
-  -webkit-transform: rotate(76deg);
-          transform: rotate(76deg);
-}
-
-.importantArea .importantCover .importantDot10 {
-  position: absolute;
-  left: 23.00476%;
-  top: 63.44395%;
-  -webkit-animation-delay: -2s;
-          animation-delay: -2s;
-  width: 9px;
   height: 15px;
-  -webkit-transform: rotate(16deg);
-          transform: rotate(16deg);
-}
-
-.importantArea .importantCover .importantDot11 {
-  position: absolute;
-  left: 36.80472%;
-  top: 14.33954%;
-  -webkit-animation-delay: -2.2s;
-          animation-delay: -2.2s;
-  width: 9px;
-  height: 7px;
-  -webkit-transform: rotate(11deg);
-          transform: rotate(11deg);
-}
-
-.importantArea .importantCover .importantDot12 {
-  position: absolute;
-  left: 25.38367%;
-  top: 42.85444%;
-  -webkit-animation-delay: -2.4s;
-          animation-delay: -2.4s;
-  width: 10px;
-  height: 13px;
-  -webkit-transform: rotate(5deg);
-          transform: rotate(5deg);
-}
-
-.importantArea .importantCover .importantDot13 {
-  position: absolute;
-  left: 25.46053%;
-  top: 92.14917%;
-  -webkit-animation-delay: -2.6s;
-          animation-delay: -2.6s;
-  width: 14px;
-  height: 12px;
-  -webkit-transform: rotate(68deg);
-          transform: rotate(68deg);
-}
-
-.importantArea .importantCover .importantDot14 {
-  position: absolute;
-  left: 50.2457%;
-  top: 37.09355%;
-  -webkit-animation-delay: -2.8s;
-          animation-delay: -2.8s;
-  width: 7px;
-  height: 10px;
-  -webkit-transform: rotate(60deg);
-          transform: rotate(60deg);
-}
-
-.importantArea .importantCover .importantDot15 {
-  position: absolute;
-  left: 35.00263%;
-  top: 16.81052%;
-  -webkit-animation-delay: -3s;
-          animation-delay: -3s;
-  width: 12px;
-  height: 13px;
-  -webkit-transform: rotate(60deg);
-          transform: rotate(60deg);
-}
-
-.importantArea .importantCover .importantDot16 {
-  position: absolute;
-  left: 13.36823%;
-  top: 0.5371%;
-  -webkit-animation-delay: -3.2s;
-          animation-delay: -3.2s;
-  width: 14px;
-  height: 9px;
-  -webkit-transform: rotate(23deg);
-          transform: rotate(23deg);
-}
-
-.importantArea .importantCover .importantDot17 {
-  position: absolute;
-  left: 26.58912%;
-  top: 40.67852%;
-  -webkit-animation-delay: -3.4s;
-          animation-delay: -3.4s;
-  width: 8px;
-  height: 9px;
-  -webkit-transform: rotate(14deg);
-          transform: rotate(14deg);
-}
-
-.importantArea .importantCover .importantDot18 {
-  position: absolute;
-  left: 15.50804%;
-  top: 76.00412%;
-  -webkit-animation-delay: -3.6s;
-          animation-delay: -3.6s;
-  width: 10px;
-  height: 11px;
-  -webkit-transform: rotate(70deg);
-          transform: rotate(70deg);
-}
-
-.importantArea .importantCover .importantDot19 {
-  position: absolute;
-  left: 19.94311%;
-  top: 7.23408%;
-  -webkit-animation-delay: -3.8s;
-          animation-delay: -3.8s;
-  width: 14px;
-  height: 11px;
-  -webkit-transform: rotate(74deg);
-          transform: rotate(74deg);
-}
-
-.importantArea .importantCover .importantDot20 {
-  position: absolute;
-  left: 8.49665%;
-  top: 4.28169%;
-  -webkit-animation-delay: -4s;
-          animation-delay: -4s;
-  width: 11px;
-  height: 15px;
-  -webkit-transform: rotate(48deg);
-          transform: rotate(48deg);
-}
-
-.importantArea .importantCover .importantDot21 {
-  position: absolute;
-  left: 96.63632%;
-  top: 78.0647%;
-  -webkit-animation-delay: -4.2s;
-          animation-delay: -4.2s;
-  width: 9px;
-  height: 10px;
-  -webkit-transform: rotate(13deg);
-          transform: rotate(13deg);
-}
-
-.importantArea .importantCover .importantDot22 {
-  position: absolute;
-  left: 90.7145%;
-  top: 86.76238%;
-  -webkit-animation-delay: -4.4s;
-          animation-delay: -4.4s;
-  width: 14px;
-  height: 11px;
-  -webkit-transform: rotate(4deg);
-          transform: rotate(4deg);
-}
-
-.importantArea .importantCover .importantDot23 {
-  position: absolute;
-  left: 26.06683%;
-  top: 61.37679%;
-  -webkit-animation-delay: -4.6s;
-          animation-delay: -4.6s;
-  width: 11px;
-  height: 7px;
-  -webkit-transform: rotate(27deg);
-          transform: rotate(27deg);
-}
-
-.importantArea .importantCover .importantDot24 {
-  position: absolute;
-  left: 30.70511%;
-  top: 46.98985%;
-  -webkit-animation-delay: -4.8s;
-          animation-delay: -4.8s;
-  width: 6px;
-  height: 12px;
-  -webkit-transform: rotate(5deg);
-          transform: rotate(5deg);
-}
-
-.importantArea .importantCover .importantDot25 {
-  position: absolute;
-  left: 26.08862%;
-  top: 90.67366%;
-  -webkit-animation-delay: -5s;
-          animation-delay: -5s;
-  width: 10px;
-  height: 10px;
-  -webkit-transform: rotate(7deg);
-          transform: rotate(7deg);
-}
-
-.importantArea .importantCover .importantDot26 {
-  position: absolute;
-  left: 46.1765%;
-  top: 46.57574%;
-  -webkit-animation-delay: -5.2s;
-          animation-delay: -5.2s;
-  width: 7px;
-  height: 6px;
-  -webkit-transform: rotate(35deg);
-          transform: rotate(35deg);
-}
-
-.importantArea .importantCover .importantDot27 {
-  position: absolute;
-  left: 96.15604%;
-  top: 91.15863%;
-  -webkit-animation-delay: -5.4s;
-          animation-delay: -5.4s;
-  width: 14px;
-  height: 12px;
-  -webkit-transform: rotate(4deg);
-          transform: rotate(4deg);
-}
-
-.importantArea .importantCover .importantDot28 {
-  position: absolute;
-  left: 59.32538%;
-  top: 34.28677%;
-  -webkit-animation-delay: -5.6s;
-          animation-delay: -5.6s;
-  width: 8px;
-  height: 12px;
   -webkit-transform: rotate(88deg);
           transform: rotate(88deg);
 }
 
-.importantArea .importantCover .importantDot29 {
+.importantArea .importantCover .importantDot3 {
   position: absolute;
-  left: 42.68527%;
-  top: 74.27339%;
-  -webkit-animation-delay: -5.8s;
-          animation-delay: -5.8s;
-  width: 12px;
-  height: 11px;
-  -webkit-transform: rotate(74deg);
-          transform: rotate(74deg);
+  left: 13.60251%;
+  top: 21.79219%;
+  -webkit-animation-delay: -0.6s;
+          animation-delay: -0.6s;
+  width: 13px;
+  height: 13px;
+  -webkit-transform: rotate(59deg);
+          transform: rotate(59deg);
 }
 
-.importantArea .importantCover .importantDot30 {
+.importantArea .importantCover .importantDot4 {
   position: absolute;
-  left: 5.63494%;
-  top: 32.27641%;
-  -webkit-animation-delay: -6s;
-          animation-delay: -6s;
+  left: 95.56617%;
+  top: 43.91905%;
+  -webkit-animation-delay: -0.8s;
+          animation-delay: -0.8s;
+  width: 15px;
+  height: 7px;
+  -webkit-transform: rotate(32deg);
+          transform: rotate(32deg);
+}
+
+.importantArea .importantCover .importantDot5 {
+  position: absolute;
+  left: 20.93877%;
+  top: 26.41916%;
+  -webkit-animation-delay: -1s;
+          animation-delay: -1s;
+  width: 7px;
+  height: 10px;
+  -webkit-transform: rotate(67deg);
+          transform: rotate(67deg);
+}
+
+.importantArea .importantCover .importantDot6 {
+  position: absolute;
+  left: 89.63049%;
+  top: 75.47207%;
+  -webkit-animation-delay: -1.2s;
+          animation-delay: -1.2s;
+  width: 9px;
+  height: 9px;
+  -webkit-transform: rotate(21deg);
+          transform: rotate(21deg);
+}
+
+.importantArea .importantCover .importantDot7 {
+  position: absolute;
+  left: 42.55797%;
+  top: 90.67548%;
+  -webkit-animation-delay: -1.4s;
+          animation-delay: -1.4s;
+  width: 14px;
+  height: 7px;
+  -webkit-transform: rotate(41deg);
+          transform: rotate(41deg);
+}
+
+.importantArea .importantCover .importantDot8 {
+  position: absolute;
+  left: 92.16877%;
+  top: 28.47667%;
+  -webkit-animation-delay: -1.6s;
+          animation-delay: -1.6s;
+  width: 7px;
+  height: 11px;
+  -webkit-transform: rotate(1deg);
+          transform: rotate(1deg);
+}
+
+.importantArea .importantCover .importantDot9 {
+  position: absolute;
+  left: 16.99284%;
+  top: 42.29081%;
+  -webkit-animation-delay: -1.8s;
+          animation-delay: -1.8s;
   width: 12px;
   height: 13px;
-  -webkit-transform: rotate(53deg);
-          transform: rotate(53deg);
+  -webkit-transform: rotate(75deg);
+          transform: rotate(75deg);
 }
 
-.importantArea .importantCover .importantDot31 {
+.importantArea .importantCover .importantDot10 {
   position: absolute;
-  left: 74.1917%;
-  top: 16.36717%;
-  -webkit-animation-delay: -6.2s;
-          animation-delay: -6.2s;
-  width: 7px;
-  height: 14px;
-  -webkit-transform: rotate(40deg);
-          transform: rotate(40deg);
+  left: 98.66923%;
+  top: 17.96515%;
+  -webkit-animation-delay: -2s;
+          animation-delay: -2s;
+  width: 12px;
+  height: 12px;
+  -webkit-transform: rotate(21deg);
+          transform: rotate(21deg);
 }
 
-.importantArea .importantCover .importantDot32 {
+.importantArea .importantCover .importantDot11 {
   position: absolute;
-  left: 58.71282%;
-  top: 64.17414%;
-  -webkit-animation-delay: -6.4s;
-          animation-delay: -6.4s;
+  left: 21.36965%;
+  top: 35.56699%;
+  -webkit-animation-delay: -2.2s;
+          animation-delay: -2.2s;
+  width: 14px;
+  height: 6px;
+  -webkit-transform: rotate(12deg);
+          transform: rotate(12deg);
+}
+
+.importantArea .importantCover .importantDot12 {
+  position: absolute;
+  left: 77.95542%;
+  top: 80.26107%;
+  -webkit-animation-delay: -2.4s;
+          animation-delay: -2.4s;
+  width: 12px;
+  height: 7px;
+  -webkit-transform: rotate(79deg);
+          transform: rotate(79deg);
+}
+
+.importantArea .importantCover .importantDot13 {
+  position: absolute;
+  left: 37.06746%;
+  top: 93.28921%;
+  -webkit-animation-delay: -2.6s;
+          animation-delay: -2.6s;
   width: 7px;
-  height: 15px;
+  height: 8px;
   -webkit-transform: rotate(23deg);
           transform: rotate(23deg);
 }
 
-.importantArea .importantCover .importantDot33 {
+.importantArea .importantCover .importantDot14 {
   position: absolute;
-  left: 2.72574%;
-  top: 2.92706%;
-  -webkit-animation-delay: -6.6s;
-          animation-delay: -6.6s;
-  width: 13px;
-  height: 14px;
-  -webkit-transform: rotate(19deg);
-          transform: rotate(19deg);
-}
-
-.importantArea .importantCover .importantDot34 {
-  position: absolute;
-  left: 88.20366%;
-  top: 90.66436%;
-  -webkit-animation-delay: -6.8s;
-          animation-delay: -6.8s;
-  width: 8px;
-  height: 15px;
-  -webkit-transform: rotate(59deg);
-          transform: rotate(59deg);
-}
-
-.importantArea .importantCover .importantDot35 {
-  position: absolute;
-  left: 8.97809%;
-  top: 85.64965%;
-  -webkit-animation-delay: -7s;
-          animation-delay: -7s;
-  width: 12px;
-  height: 6px;
-  -webkit-transform: rotate(63deg);
-          transform: rotate(63deg);
-}
-
-.importantArea .importantCover .importantDot36 {
-  position: absolute;
-  left: 96.29668%;
-  top: 29.20358%;
-  -webkit-animation-delay: -7.2s;
-          animation-delay: -7.2s;
-  width: 11px;
-  height: 6px;
-  -webkit-transform: rotate(73deg);
-          transform: rotate(73deg);
-}
-
-.importantArea .importantCover .importantDot37 {
-  position: absolute;
-  left: 48.71591%;
-  top: 90.54963%;
-  -webkit-animation-delay: -7.4s;
-          animation-delay: -7.4s;
-  width: 13px;
-  height: 8px;
+  left: 53.44954%;
+  top: 33.33092%;
+  -webkit-animation-delay: -2.8s;
+          animation-delay: -2.8s;
+  width: 15px;
+  height: 12px;
   -webkit-transform: rotate(64deg);
           transform: rotate(64deg);
 }
 
-.importantArea .importantCover .importantDot38 {
+.importantArea .importantCover .importantDot15 {
   position: absolute;
-  left: 41.08957%;
-  top: 79.71595%;
-  -webkit-animation-delay: -7.6s;
-          animation-delay: -7.6s;
-  width: 8px;
+  left: 53.67189%;
+  top: 83.92423%;
+  -webkit-animation-delay: -3s;
+          animation-delay: -3s;
+  width: 12px;
+  height: 13px;
+  -webkit-transform: rotate(29deg);
+          transform: rotate(29deg);
+}
+
+.importantArea .importantCover .importantDot16 {
+  position: absolute;
+  left: 19.78824%;
+  top: 64.66196%;
+  -webkit-animation-delay: -3.2s;
+          animation-delay: -3.2s;
+  width: 13px;
+  height: 12px;
+  -webkit-transform: rotate(3deg);
+          transform: rotate(3deg);
+}
+
+.importantArea .importantCover .importantDot17 {
+  position: absolute;
+  left: 0.8505%;
+  top: 56.84526%;
+  -webkit-animation-delay: -3.4s;
+          animation-delay: -3.4s;
+  width: 6px;
+  height: 8px;
+  -webkit-transform: rotate(10deg);
+          transform: rotate(10deg);
+}
+
+.importantArea .importantCover .importantDot18 {
+  position: absolute;
+  left: 25.15313%;
+  top: 71.48971%;
+  -webkit-animation-delay: -3.6s;
+          animation-delay: -3.6s;
+  width: 15px;
+  height: 10px;
+  -webkit-transform: rotate(56deg);
+          transform: rotate(56deg);
+}
+
+.importantArea .importantCover .importantDot19 {
+  position: absolute;
+  left: 40.60828%;
+  top: 14.62324%;
+  -webkit-animation-delay: -3.8s;
+          animation-delay: -3.8s;
+  width: 10px;
   height: 9px;
+  -webkit-transform: rotate(87deg);
+          transform: rotate(87deg);
+}
+
+.importantArea .importantCover .importantDot20 {
+  position: absolute;
+  left: 45.52129%;
+  top: 71.66287%;
+  -webkit-animation-delay: -4s;
+          animation-delay: -4s;
+  width: 11px;
+  height: 6px;
+  -webkit-transform: rotate(26deg);
+          transform: rotate(26deg);
+}
+
+.importantArea .importantCover .importantDot21 {
+  position: absolute;
+  left: 13.85125%;
+  top: 98.07523%;
+  -webkit-animation-delay: -4.2s;
+          animation-delay: -4.2s;
+  width: 8px;
+  height: 11px;
+  -webkit-transform: rotate(41deg);
+          transform: rotate(41deg);
+}
+
+.importantArea .importantCover .importantDot22 {
+  position: absolute;
+  left: 44.35559%;
+  top: 85.37189%;
+  -webkit-animation-delay: -4.4s;
+          animation-delay: -4.4s;
+  width: 10px;
+  height: 9px;
+  -webkit-transform: rotate(52deg);
+          transform: rotate(52deg);
+}
+
+.importantArea .importantCover .importantDot23 {
+  position: absolute;
+  left: 81.86577%;
+  top: 10.82948%;
+  -webkit-animation-delay: -4.6s;
+          animation-delay: -4.6s;
+  width: 6px;
+  height: 9px;
+  -webkit-transform: rotate(80deg);
+          transform: rotate(80deg);
+}
+
+.importantArea .importantCover .importantDot24 {
+  position: absolute;
+  left: 57.92836%;
+  top: 32.79798%;
+  -webkit-animation-delay: -4.8s;
+          animation-delay: -4.8s;
+  width: 13px;
+  height: 14px;
+  -webkit-transform: rotate(24deg);
+          transform: rotate(24deg);
+}
+
+.importantArea .importantCover .importantDot25 {
+  position: absolute;
+  left: 66.05683%;
+  top: 93.37808%;
+  -webkit-animation-delay: -5s;
+          animation-delay: -5s;
+  width: 14px;
+  height: 7px;
+  -webkit-transform: rotate(79deg);
+          transform: rotate(79deg);
+}
+
+.importantArea .importantCover .importantDot26 {
+  position: absolute;
+  left: 38.54449%;
+  top: 40.83489%;
+  -webkit-animation-delay: -5.2s;
+          animation-delay: -5.2s;
+  width: 7px;
+  height: 13px;
+  -webkit-transform: rotate(81deg);
+          transform: rotate(81deg);
+}
+
+.importantArea .importantCover .importantDot27 {
+  position: absolute;
+  left: 98.55664%;
+  top: 88.07666%;
+  -webkit-animation-delay: -5.4s;
+          animation-delay: -5.4s;
+  width: 6px;
+  height: 12px;
+  -webkit-transform: rotate(75deg);
+          transform: rotate(75deg);
+}
+
+.importantArea .importantCover .importantDot28 {
+  position: absolute;
+  left: 16.00588%;
+  top: 95.3408%;
+  -webkit-animation-delay: -5.6s;
+          animation-delay: -5.6s;
+  width: 7px;
+  height: 9px;
+  -webkit-transform: rotate(65deg);
+          transform: rotate(65deg);
+}
+
+.importantArea .importantCover .importantDot29 {
+  position: absolute;
+  left: 97.53199%;
+  top: 47.99951%;
+  -webkit-animation-delay: -5.8s;
+          animation-delay: -5.8s;
+  width: 12px;
+  height: 14px;
+  -webkit-transform: rotate(37deg);
+          transform: rotate(37deg);
+}
+
+.importantArea .importantCover .importantDot30 {
+  position: absolute;
+  left: 62.53902%;
+  top: 27.3685%;
+  -webkit-animation-delay: -6s;
+          animation-delay: -6s;
+  width: 15px;
+  height: 14px;
+  -webkit-transform: rotate(3deg);
+          transform: rotate(3deg);
+}
+
+.importantArea .importantCover .importantDot31 {
+  position: absolute;
+  left: 46.16723%;
+  top: 57.34631%;
+  -webkit-animation-delay: -6.2s;
+          animation-delay: -6.2s;
+  width: 8px;
+  height: 10px;
   -webkit-transform: rotate(19deg);
           transform: rotate(19deg);
 }
 
-.importantArea .importantCover .importantDot39 {
+.importantArea .importantCover .importantDot32 {
   position: absolute;
-  left: 55.82571%;
-  top: 92.29983%;
-  -webkit-animation-delay: -7.8s;
-          animation-delay: -7.8s;
-  width: 7px;
-  height: 7px;
-  -webkit-transform: rotate(39deg);
-          transform: rotate(39deg);
-}
-
-.importantArea .importantCover .importantDot40 {
-  position: absolute;
-  left: 92.36627%;
-  top: 20.16672%;
-  -webkit-animation-delay: -8s;
-          animation-delay: -8s;
-  width: 7px;
+  left: 51.54392%;
+  top: 39.50576%;
+  -webkit-animation-delay: -6.4s;
+          animation-delay: -6.4s;
+  width: 12px;
   height: 9px;
-  -webkit-transform: rotate(33deg);
-          transform: rotate(33deg);
+  -webkit-transform: rotate(15deg);
+          transform: rotate(15deg);
 }
 
-.importantArea .importantCover .importantDot41 {
+.importantArea .importantCover .importantDot33 {
   position: absolute;
-  left: 29.13271%;
-  top: 13.34663%;
-  -webkit-animation-delay: -8.2s;
-          animation-delay: -8.2s;
+  left: 86.34828%;
+  top: 64.51629%;
+  -webkit-animation-delay: -6.6s;
+          animation-delay: -6.6s;
   width: 14px;
-  height: 8px;
-  -webkit-transform: rotate(8deg);
-          transform: rotate(8deg);
+  height: 6px;
+  -webkit-transform: rotate(89deg);
+          transform: rotate(89deg);
 }
 
-.importantArea .importantCover .importantDot42 {
+.importantArea .importantCover .importantDot34 {
   position: absolute;
-  left: 44.81116%;
-  top: 70.69098%;
-  -webkit-animation-delay: -8.4s;
-          animation-delay: -8.4s;
-  width: 10px;
-  height: 9px;
-  -webkit-transform: rotate(14deg);
-          transform: rotate(14deg);
+  left: 59.9561%;
+  top: 53.55047%;
+  -webkit-animation-delay: -6.8s;
+          animation-delay: -6.8s;
+  width: 6px;
+  height: 6px;
+  -webkit-transform: rotate(22deg);
+          transform: rotate(22deg);
 }
 
-.importantArea .importantCover .importantDot43 {
+.importantArea .importantCover .importantDot35 {
   position: absolute;
-  left: 60.44599%;
-  top: 77.31451%;
-  -webkit-animation-delay: -8.6s;
-          animation-delay: -8.6s;
-  width: 11px;
-  height: 12px;
-  -webkit-transform: rotate(16deg);
-          transform: rotate(16deg);
+  left: 96.44467%;
+  top: 76.45283%;
+  -webkit-animation-delay: -7s;
+          animation-delay: -7s;
+  width: 15px;
+  height: 14px;
+  -webkit-transform: rotate(46deg);
+          transform: rotate(46deg);
 }
 
-.importantArea .importantCover .importantDot44 {
+.importantArea .importantCover .importantDot36 {
   position: absolute;
-  left: 58.28794%;
-  top: 94.84092%;
-  -webkit-animation-delay: -8.8s;
-          animation-delay: -8.8s;
+  left: 55.25558%;
+  top: 7.80479%;
+  -webkit-animation-delay: -7.2s;
+          animation-delay: -7.2s;
   width: 6px;
   height: 13px;
+  -webkit-transform: rotate(76deg);
+          transform: rotate(76deg);
+}
+
+.importantArea .importantCover .importantDot37 {
+  position: absolute;
+  left: 98.66191%;
+  top: 46.13259%;
+  -webkit-animation-delay: -7.4s;
+          animation-delay: -7.4s;
+  width: 11px;
+  height: 8px;
   -webkit-transform: rotate(61deg);
           transform: rotate(61deg);
 }
 
+.importantArea .importantCover .importantDot38 {
+  position: absolute;
+  left: 68.01218%;
+  top: 18.1774%;
+  -webkit-animation-delay: -7.6s;
+          animation-delay: -7.6s;
+  width: 7px;
+  height: 11px;
+  -webkit-transform: rotate(49deg);
+          transform: rotate(49deg);
+}
+
+.importantArea .importantCover .importantDot39 {
+  position: absolute;
+  left: 24.3656%;
+  top: 70.35744%;
+  -webkit-animation-delay: -7.8s;
+          animation-delay: -7.8s;
+  width: 13px;
+  height: 10px;
+  -webkit-transform: rotate(9deg);
+          transform: rotate(9deg);
+}
+
+.importantArea .importantCover .importantDot40 {
+  position: absolute;
+  left: 61.00691%;
+  top: 12.49081%;
+  -webkit-animation-delay: -8s;
+          animation-delay: -8s;
+  width: 15px;
+  height: 15px;
+  -webkit-transform: rotate(40deg);
+          transform: rotate(40deg);
+}
+
+.importantArea .importantCover .importantDot41 {
+  position: absolute;
+  left: 86.83643%;
+  top: 26.25058%;
+  -webkit-animation-delay: -8.2s;
+          animation-delay: -8.2s;
+  width: 6px;
+  height: 7px;
+  -webkit-transform: rotate(87deg);
+          transform: rotate(87deg);
+}
+
+.importantArea .importantCover .importantDot42 {
+  position: absolute;
+  left: 80.94636%;
+  top: 54.98064%;
+  -webkit-animation-delay: -8.4s;
+          animation-delay: -8.4s;
+  width: 7px;
+  height: 12px;
+  -webkit-transform: rotate(53deg);
+          transform: rotate(53deg);
+}
+
+.importantArea .importantCover .importantDot43 {
+  position: absolute;
+  left: 41.59519%;
+  top: 96.16743%;
+  -webkit-animation-delay: -8.6s;
+          animation-delay: -8.6s;
+  width: 7px;
+  height: 15px;
+  -webkit-transform: rotate(88deg);
+          transform: rotate(88deg);
+}
+
+.importantArea .importantCover .importantDot44 {
+  position: absolute;
+  left: 24.19384%;
+  top: 35.51728%;
+  -webkit-animation-delay: -8.8s;
+          animation-delay: -8.8s;
+  width: 10px;
+  height: 12px;
+  -webkit-transform: rotate(87deg);
+          transform: rotate(87deg);
+}
+
 .importantArea .importantCover .importantDot45 {
   position: absolute;
-  left: 30.01359%;
-  top: 41.94364%;
+  left: 38.02519%;
+  top: 9.19211%;
   -webkit-animation-delay: -9s;
           animation-delay: -9s;
   width: 13px;
-  height: 11px;
-  -webkit-transform: rotate(56deg);
-          transform: rotate(56deg);
+  height: 14px;
+  -webkit-transform: rotate(84deg);
+          transform: rotate(84deg);
 }
 
 .importantArea .importantCover .importantDot46 {
   position: absolute;
-  left: 87.87121%;
-  top: 7.24433%;
+  left: 78.49108%;
+  top: 77.9705%;
   -webkit-animation-delay: -9.2s;
           animation-delay: -9.2s;
-  width: 15px;
-  height: 6px;
-  -webkit-transform: rotate(56deg);
-          transform: rotate(56deg);
+  width: 8px;
+  height: 7px;
+  -webkit-transform: rotate(67deg);
+          transform: rotate(67deg);
 }
 
 .importantArea .importantCover .importantDot47 {
   position: absolute;
-  left: 60.52249%;
-  top: 22.51252%;
+  left: 3.21579%;
+  top: 20.84301%;
   -webkit-animation-delay: -9.4s;
           animation-delay: -9.4s;
-  width: 15px;
-  height: 9px;
-  -webkit-transform: rotate(63deg);
-          transform: rotate(63deg);
+  width: 9px;
+  height: 10px;
+  -webkit-transform: rotate(21deg);
+          transform: rotate(21deg);
 }
 
 .importantArea .importantCover .importantDot48 {
   position: absolute;
-  left: 84.57091%;
-  top: 77.07828%;
+  left: 45.53847%;
+  top: 19.56832%;
   -webkit-animation-delay: -9.6s;
           animation-delay: -9.6s;
-  width: 7px;
-  height: 8px;
-  -webkit-transform: rotate(59deg);
-          transform: rotate(59deg);
+  width: 9px;
+  height: 13px;
+  -webkit-transform: rotate(31deg);
+          transform: rotate(31deg);
 }
 
 .importantArea .importantCover .importantDot49 {
   position: absolute;
-  left: 15.49265%;
-  top: 65.10967%;
+  left: 86.25755%;
+  top: 85.66053%;
   -webkit-animation-delay: -9.8s;
           animation-delay: -9.8s;
-  width: 9px;
-  height: 6px;
-  -webkit-transform: rotate(18deg);
-          transform: rotate(18deg);
+  width: 8px;
+  height: 10px;
+  -webkit-transform: rotate(73deg);
+          transform: rotate(73deg);
 }
 
 .importantArea .importantCover .importantDot50 {
   position: absolute;
-  left: 46.39469%;
-  top: 36.96525%;
+  left: 6.0789%;
+  top: 14.64071%;
   -webkit-animation-delay: -10s;
           animation-delay: -10s;
-  width: 7px;
-  height: 6px;
-  -webkit-transform: rotate(79deg);
-          transform: rotate(79deg);
+  width: 11px;
+  height: 13px;
+  -webkit-transform: rotate(83deg);
+          transform: rotate(83deg);
 }
 
 .videoArea {
@@ -5627,7 +5618,6 @@ body {
 @media only screen and (max-width: 767px) {
   .videoArea .container-fluid .content {
     width: 90%;
-    font-size: 14px;
     margin-bottom: 20px;
   }
 }
@@ -6118,602 +6108,602 @@ body {
 
 .videoArea .importantCover .importantDot1 {
   position: absolute;
-  left: 94.92097%;
-  top: 94.60796%;
+  left: 3.13174%;
+  top: 91.83171%;
   -webkit-animation-delay: -0.2s;
           animation-delay: -0.2s;
-  width: 11px;
-  height: 14px;
-  -webkit-transform: rotate(6deg);
-          transform: rotate(6deg);
-}
-
-.videoArea .importantCover .importantDot2 {
-  position: absolute;
-  left: 70.87089%;
-  top: 35.16893%;
-  -webkit-animation-delay: -0.4s;
-          animation-delay: -0.4s;
-  width: 12px;
+  width: 6px;
   height: 13px;
-  -webkit-transform: rotate(75deg);
-          transform: rotate(75deg);
-}
-
-.videoArea .importantCover .importantDot3 {
-  position: absolute;
-  left: 18.83289%;
-  top: 76.98593%;
-  -webkit-animation-delay: -0.6s;
-          animation-delay: -0.6s;
-  width: 11px;
-  height: 15px;
-  -webkit-transform: rotate(82deg);
-          transform: rotate(82deg);
-}
-
-.videoArea .importantCover .importantDot4 {
-  position: absolute;
-  left: 42.03361%;
-  top: 91.05264%;
-  -webkit-animation-delay: -0.8s;
-          animation-delay: -0.8s;
-  width: 8px;
-  height: 8px;
-  -webkit-transform: rotate(15deg);
-          transform: rotate(15deg);
-}
-
-.videoArea .importantCover .importantDot5 {
-  position: absolute;
-  left: 42.27889%;
-  top: 11.12543%;
-  -webkit-animation-delay: -1s;
-          animation-delay: -1s;
-  width: 12px;
-  height: 11px;
-  -webkit-transform: rotate(87deg);
-          transform: rotate(87deg);
-}
-
-.videoArea .importantCover .importantDot6 {
-  position: absolute;
-  left: 30.57838%;
-  top: 72.94424%;
-  -webkit-animation-delay: -1.2s;
-          animation-delay: -1.2s;
-  width: 10px;
-  height: 14px;
   -webkit-transform: rotate(7deg);
           transform: rotate(7deg);
 }
 
+.videoArea .importantCover .importantDot2 {
+  position: absolute;
+  left: 77.6659%;
+  top: 36.53439%;
+  -webkit-animation-delay: -0.4s;
+          animation-delay: -0.4s;
+  width: 14px;
+  height: 9px;
+  -webkit-transform: rotate(52deg);
+          transform: rotate(52deg);
+}
+
+.videoArea .importantCover .importantDot3 {
+  position: absolute;
+  left: 71.30533%;
+  top: 65.04252%;
+  -webkit-animation-delay: -0.6s;
+          animation-delay: -0.6s;
+  width: 15px;
+  height: 13px;
+  -webkit-transform: rotate(41deg);
+          transform: rotate(41deg);
+}
+
+.videoArea .importantCover .importantDot4 {
+  position: absolute;
+  left: 68.59503%;
+  top: 42.10705%;
+  -webkit-animation-delay: -0.8s;
+          animation-delay: -0.8s;
+  width: 11px;
+  height: 10px;
+  -webkit-transform: rotate(23deg);
+          transform: rotate(23deg);
+}
+
+.videoArea .importantCover .importantDot5 {
+  position: absolute;
+  left: 30.96439%;
+  top: 76.8882%;
+  -webkit-animation-delay: -1s;
+          animation-delay: -1s;
+  width: 9px;
+  height: 7px;
+  -webkit-transform: rotate(74deg);
+          transform: rotate(74deg);
+}
+
+.videoArea .importantCover .importantDot6 {
+  position: absolute;
+  left: 43.69767%;
+  top: 26.81981%;
+  -webkit-animation-delay: -1.2s;
+          animation-delay: -1.2s;
+  width: 15px;
+  height: 13px;
+  -webkit-transform: rotate(38deg);
+          transform: rotate(38deg);
+}
+
 .videoArea .importantCover .importantDot7 {
   position: absolute;
-  left: 59.09018%;
-  top: 15.26795%;
+  left: 89.58879%;
+  top: 9.31918%;
   -webkit-animation-delay: -1.4s;
           animation-delay: -1.4s;
   width: 15px;
-  height: 12px;
-  -webkit-transform: rotate(36deg);
-          transform: rotate(36deg);
-}
-
-.videoArea .importantCover .importantDot8 {
-  position: absolute;
-  left: 2.71552%;
-  top: 57.91544%;
-  -webkit-animation-delay: -1.6s;
-          animation-delay: -1.6s;
-  width: 9px;
-  height: 7px;
-  -webkit-transform: rotate(55deg);
-          transform: rotate(55deg);
-}
-
-.videoArea .importantCover .importantDot9 {
-  position: absolute;
-  left: 77.85365%;
-  top: 93.53243%;
-  -webkit-animation-delay: -1.8s;
-          animation-delay: -1.8s;
-  width: 13px;
-  height: 11px;
-  -webkit-transform: rotate(57deg);
-          transform: rotate(57deg);
-}
-
-.videoArea .importantCover .importantDot10 {
-  position: absolute;
-  left: 83.52981%;
-  top: 4.00905%;
-  -webkit-animation-delay: -2s;
-          animation-delay: -2s;
-  width: 10px;
-  height: 13px;
-  -webkit-transform: rotate(8deg);
-          transform: rotate(8deg);
-}
-
-.videoArea .importantCover .importantDot11 {
-  position: absolute;
-  left: 95.26347%;
-  top: 94.57668%;
-  -webkit-animation-delay: -2.2s;
-          animation-delay: -2.2s;
-  width: 7px;
   height: 7px;
   -webkit-transform: rotate(56deg);
           transform: rotate(56deg);
 }
 
+.videoArea .importantCover .importantDot8 {
+  position: absolute;
+  left: 54.56834%;
+  top: 40.85649%;
+  -webkit-animation-delay: -1.6s;
+          animation-delay: -1.6s;
+  width: 8px;
+  height: 11px;
+  -webkit-transform: rotate(4deg);
+          transform: rotate(4deg);
+}
+
+.videoArea .importantCover .importantDot9 {
+  position: absolute;
+  left: 33.39637%;
+  top: 8.95727%;
+  -webkit-animation-delay: -1.8s;
+          animation-delay: -1.8s;
+  width: 10px;
+  height: 8px;
+  -webkit-transform: rotate(87deg);
+          transform: rotate(87deg);
+}
+
+.videoArea .importantCover .importantDot10 {
+  position: absolute;
+  left: 99.32576%;
+  top: 96.32662%;
+  -webkit-animation-delay: -2s;
+          animation-delay: -2s;
+  width: 9px;
+  height: 13px;
+  -webkit-transform: rotate(15deg);
+          transform: rotate(15deg);
+}
+
+.videoArea .importantCover .importantDot11 {
+  position: absolute;
+  left: 4.95482%;
+  top: 14.58136%;
+  -webkit-animation-delay: -2.2s;
+          animation-delay: -2.2s;
+  width: 10px;
+  height: 15px;
+  -webkit-transform: rotate(76deg);
+          transform: rotate(76deg);
+}
+
 .videoArea .importantCover .importantDot12 {
   position: absolute;
-  left: 74.34835%;
-  top: 73.03912%;
+  left: 78.40749%;
+  top: 11.73738%;
   -webkit-animation-delay: -2.4s;
           animation-delay: -2.4s;
-  width: 10px;
-  height: 7px;
-  -webkit-transform: rotate(33deg);
-          transform: rotate(33deg);
+  width: 11px;
+  height: 10px;
+  -webkit-transform: rotate(1deg);
+          transform: rotate(1deg);
 }
 
 .videoArea .importantCover .importantDot13 {
   position: absolute;
-  left: 37.759%;
-  top: 32.66349%;
+  left: 65.39533%;
+  top: 68.73483%;
   -webkit-animation-delay: -2.6s;
           animation-delay: -2.6s;
   width: 15px;
-  height: 8px;
-  -webkit-transform: rotate(77deg);
-          transform: rotate(77deg);
+  height: 6px;
+  -webkit-transform: rotate(32deg);
+          transform: rotate(32deg);
 }
 
 .videoArea .importantCover .importantDot14 {
   position: absolute;
-  left: 73.11713%;
-  top: 92.46902%;
+  left: 83.67283%;
+  top: 43.43261%;
   -webkit-animation-delay: -2.8s;
           animation-delay: -2.8s;
-  width: 12px;
-  height: 10px;
-  -webkit-transform: rotate(22deg);
-          transform: rotate(22deg);
+  width: 7px;
+  height: 14px;
+  -webkit-transform: rotate(62deg);
+          transform: rotate(62deg);
 }
 
 .videoArea .importantCover .importantDot15 {
   position: absolute;
-  left: 15.69928%;
-  top: 55.89866%;
+  left: 94.05632%;
+  top: 52.31512%;
   -webkit-animation-delay: -3s;
           animation-delay: -3s;
-  width: 6px;
-  height: 13px;
-  -webkit-transform: rotate(17deg);
-          transform: rotate(17deg);
+  width: 9px;
+  height: 12px;
+  -webkit-transform: rotate(80deg);
+          transform: rotate(80deg);
 }
 
 .videoArea .importantCover .importantDot16 {
   position: absolute;
-  left: 35.59257%;
-  top: 34.82792%;
+  left: 25.66989%;
+  top: 11.65765%;
   -webkit-animation-delay: -3.2s;
           animation-delay: -3.2s;
-  width: 9px;
-  height: 14px;
-  -webkit-transform: rotate(18deg);
-          transform: rotate(18deg);
+  width: 12px;
+  height: 9px;
+  -webkit-transform: rotate(82deg);
+          transform: rotate(82deg);
 }
 
 .videoArea .importantCover .importantDot17 {
   position: absolute;
-  left: 38.2701%;
-  top: 68.50478%;
+  left: 67.75725%;
+  top: 89.73416%;
   -webkit-animation-delay: -3.4s;
           animation-delay: -3.4s;
-  width: 14px;
+  width: 12px;
   height: 7px;
-  -webkit-transform: rotate(17deg);
-          transform: rotate(17deg);
+  -webkit-transform: rotate(29deg);
+          transform: rotate(29deg);
 }
 
 .videoArea .importantCover .importantDot18 {
   position: absolute;
-  left: 48.34589%;
-  top: 28.14144%;
+  left: 5.30809%;
+  top: 95.59276%;
   -webkit-animation-delay: -3.6s;
           animation-delay: -3.6s;
-  width: 14px;
-  height: 14px;
-  -webkit-transform: rotate(38deg);
-          transform: rotate(38deg);
+  width: 13px;
+  height: 10px;
+  -webkit-transform: rotate(31deg);
+          transform: rotate(31deg);
 }
 
 .videoArea .importantCover .importantDot19 {
   position: absolute;
-  left: 54.81649%;
-  top: 73.08761%;
+  left: 37.27943%;
+  top: 89.78938%;
   -webkit-animation-delay: -3.8s;
           animation-delay: -3.8s;
-  width: 12px;
-  height: 10px;
+  width: 14px;
+  height: 14px;
   -webkit-transform: rotate(80deg);
           transform: rotate(80deg);
 }
 
 .videoArea .importantCover .importantDot20 {
   position: absolute;
-  left: 16.72173%;
-  top: 0.95355%;
+  left: 74.06508%;
+  top: 1.2649%;
   -webkit-animation-delay: -4s;
           animation-delay: -4s;
-  width: 11px;
-  height: 8px;
-  -webkit-transform: rotate(37deg);
-          transform: rotate(37deg);
+  width: 7px;
+  height: 7px;
+  -webkit-transform: rotate(77deg);
+          transform: rotate(77deg);
 }
 
 .videoArea .importantCover .importantDot21 {
   position: absolute;
-  left: 50.74832%;
-  top: 6.67983%;
+  left: 52.75593%;
+  top: 24.82748%;
   -webkit-animation-delay: -4.2s;
           animation-delay: -4.2s;
-  width: 12px;
-  height: 8px;
-  -webkit-transform: rotate(48deg);
-          transform: rotate(48deg);
+  width: 13px;
+  height: 7px;
+  -webkit-transform: rotate(43deg);
+          transform: rotate(43deg);
 }
 
 .videoArea .importantCover .importantDot22 {
   position: absolute;
-  left: 61.03698%;
-  top: 37.57108%;
+  left: 45.33735%;
+  top: 95.9667%;
   -webkit-animation-delay: -4.4s;
           animation-delay: -4.4s;
-  width: 14px;
-  height: 7px;
-  -webkit-transform: rotate(68deg);
-          transform: rotate(68deg);
+  width: 9px;
+  height: 8px;
+  -webkit-transform: rotate(36deg);
+          transform: rotate(36deg);
 }
 
 .videoArea .importantCover .importantDot23 {
   position: absolute;
-  left: 87.1743%;
-  top: 78.75672%;
+  left: 80.94583%;
+  top: 52.38384%;
   -webkit-animation-delay: -4.6s;
           animation-delay: -4.6s;
-  width: 8px;
-  height: 7px;
-  -webkit-transform: rotate(19deg);
-          transform: rotate(19deg);
+  width: 10px;
+  height: 8px;
+  -webkit-transform: rotate(5deg);
+          transform: rotate(5deg);
 }
 
 .videoArea .importantCover .importantDot24 {
   position: absolute;
-  left: 13.68196%;
-  top: 83.59462%;
+  left: 88.85195%;
+  top: 75.70786%;
   -webkit-animation-delay: -4.8s;
           animation-delay: -4.8s;
-  width: 10px;
-  height: 12px;
-  -webkit-transform: rotate(29deg);
-          transform: rotate(29deg);
-}
-
-.videoArea .importantCover .importantDot25 {
-  position: absolute;
-  left: 9.42143%;
-  top: 24.5521%;
-  -webkit-animation-delay: -5s;
-          animation-delay: -5s;
-  width: 7px;
-  height: 15px;
-  -webkit-transform: rotate(70deg);
-          transform: rotate(70deg);
-}
-
-.videoArea .importantCover .importantDot26 {
-  position: absolute;
-  left: 39.62534%;
-  top: 60.50982%;
-  -webkit-animation-delay: -5.2s;
-          animation-delay: -5.2s;
-  width: 10px;
-  height: 6px;
-  -webkit-transform: rotate(48deg);
-          transform: rotate(48deg);
-}
-
-.videoArea .importantCover .importantDot27 {
-  position: absolute;
-  left: 54.22206%;
-  top: 37.10431%;
-  -webkit-animation-delay: -5.4s;
-          animation-delay: -5.4s;
-  width: 13px;
-  height: 13px;
+  width: 14px;
+  height: 14px;
   -webkit-transform: rotate(1deg);
           transform: rotate(1deg);
 }
 
+.videoArea .importantCover .importantDot25 {
+  position: absolute;
+  left: 43.20987%;
+  top: 5.94412%;
+  -webkit-animation-delay: -5s;
+          animation-delay: -5s;
+  width: 10px;
+  height: 15px;
+  -webkit-transform: rotate(88deg);
+          transform: rotate(88deg);
+}
+
+.videoArea .importantCover .importantDot26 {
+  position: absolute;
+  left: 39.24598%;
+  top: 68.07235%;
+  -webkit-animation-delay: -5.2s;
+          animation-delay: -5.2s;
+  width: 13px;
+  height: 9px;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.videoArea .importantCover .importantDot27 {
+  position: absolute;
+  left: 41.13091%;
+  top: 35.80387%;
+  -webkit-animation-delay: -5.4s;
+          animation-delay: -5.4s;
+  width: 11px;
+  height: 15px;
+  -webkit-transform: rotate(27deg);
+          transform: rotate(27deg);
+}
+
 .videoArea .importantCover .importantDot28 {
   position: absolute;
-  left: 1.59383%;
-  top: 61.98478%;
+  left: 17.15363%;
+  top: 91.09429%;
   -webkit-animation-delay: -5.6s;
           animation-delay: -5.6s;
   width: 8px;
-  height: 7px;
-  -webkit-transform: rotate(48deg);
-          transform: rotate(48deg);
+  height: 6px;
+  -webkit-transform: rotate(31deg);
+          transform: rotate(31deg);
 }
 
 .videoArea .importantCover .importantDot29 {
   position: absolute;
-  left: 67.48415%;
-  top: 45.51302%;
+  left: 67.46604%;
+  top: 92.96833%;
   -webkit-animation-delay: -5.8s;
           animation-delay: -5.8s;
-  width: 15px;
-  height: 14px;
-  -webkit-transform: rotate(85deg);
-          transform: rotate(85deg);
+  width: 14px;
+  height: 12px;
+  -webkit-transform: rotate(27deg);
+          transform: rotate(27deg);
 }
 
 .videoArea .importantCover .importantDot30 {
   position: absolute;
-  left: 98.47456%;
-  top: 24.97184%;
+  left: 89.32807%;
+  top: 52.17469%;
   -webkit-animation-delay: -6s;
           animation-delay: -6s;
   width: 15px;
+  height: 13px;
+  -webkit-transform: rotate(6deg);
+          transform: rotate(6deg);
+}
+
+.videoArea .importantCover .importantDot31 {
+  position: absolute;
+  left: 88.90359%;
+  top: 55.68281%;
+  -webkit-animation-delay: -6.2s;
+          animation-delay: -6.2s;
+  width: 7px;
+  height: 9px;
+  -webkit-transform: rotate(22deg);
+          transform: rotate(22deg);
+}
+
+.videoArea .importantCover .importantDot32 {
+  position: absolute;
+  left: 54.81154%;
+  top: 57.72116%;
+  -webkit-animation-delay: -6.4s;
+          animation-delay: -6.4s;
+  width: 8px;
   height: 9px;
   -webkit-transform: rotate(36deg);
           transform: rotate(36deg);
 }
 
-.videoArea .importantCover .importantDot31 {
-  position: absolute;
-  left: 17.49124%;
-  top: 60.619%;
-  -webkit-animation-delay: -6.2s;
-          animation-delay: -6.2s;
-  width: 8px;
-  height: 15px;
-  -webkit-transform: rotate(26deg);
-          transform: rotate(26deg);
-}
-
-.videoArea .importantCover .importantDot32 {
-  position: absolute;
-  left: 36.64806%;
-  top: 17.87113%;
-  -webkit-animation-delay: -6.4s;
-          animation-delay: -6.4s;
-  width: 6px;
-  height: 9px;
-  -webkit-transform: rotate(13deg);
-          transform: rotate(13deg);
-}
-
 .videoArea .importantCover .importantDot33 {
   position: absolute;
-  left: 94.34921%;
-  top: 15.77326%;
+  left: 80.40836%;
+  top: 79.98415%;
   -webkit-animation-delay: -6.6s;
           animation-delay: -6.6s;
-  width: 15px;
-  height: 8px;
-  -webkit-transform: rotate(29deg);
-          transform: rotate(29deg);
+  width: 9px;
+  height: 14px;
+  -webkit-transform: rotate(88deg);
+          transform: rotate(88deg);
 }
 
 .videoArea .importantCover .importantDot34 {
   position: absolute;
-  left: 24.62719%;
-  top: 57.8706%;
+  left: 52.41241%;
+  top: 37.49108%;
   -webkit-animation-delay: -6.8s;
           animation-delay: -6.8s;
-  width: 10px;
-  height: 10px;
-  -webkit-transform: rotate(83deg);
-          transform: rotate(83deg);
+  width: 6px;
+  height: 14px;
+  -webkit-transform: rotate(30deg);
+          transform: rotate(30deg);
 }
 
 .videoArea .importantCover .importantDot35 {
   position: absolute;
-  left: 47.49256%;
-  top: 87.91584%;
+  left: 67.2685%;
+  top: 8.65135%;
   -webkit-animation-delay: -7s;
           animation-delay: -7s;
-  width: 9px;
-  height: 13px;
-  -webkit-transform: rotate(15deg);
-          transform: rotate(15deg);
+  width: 8px;
+  height: 9px;
+  -webkit-transform: rotate(87deg);
+          transform: rotate(87deg);
 }
 
 .videoArea .importantCover .importantDot36 {
   position: absolute;
-  left: 32.7177%;
-  top: 64.01981%;
+  left: 93.35284%;
+  top: 15.76964%;
   -webkit-animation-delay: -7.2s;
           animation-delay: -7.2s;
-  width: 11px;
-  height: 9px;
-  -webkit-transform: rotate(72deg);
-          transform: rotate(72deg);
-}
-
-.videoArea .importantCover .importantDot37 {
-  position: absolute;
-  left: 42.87329%;
-  top: 61.10618%;
-  -webkit-animation-delay: -7.4s;
-          animation-delay: -7.4s;
   width: 10px;
-  height: 9px;
-  -webkit-transform: rotate(49deg);
-          transform: rotate(49deg);
-}
-
-.videoArea .importantCover .importantDot38 {
-  position: absolute;
-  left: 81.90639%;
-  top: 70.34639%;
-  -webkit-animation-delay: -7.6s;
-          animation-delay: -7.6s;
-  width: 14px;
-  height: 11px;
-  -webkit-transform: rotate(73deg);
-          transform: rotate(73deg);
-}
-
-.videoArea .importantCover .importantDot39 {
-  position: absolute;
-  left: 3.29953%;
-  top: 5.32244%;
-  -webkit-animation-delay: -7.8s;
-          animation-delay: -7.8s;
-  width: 11px;
-  height: 12px;
+  height: 14px;
   -webkit-transform: rotate(59deg);
           transform: rotate(59deg);
 }
 
+.videoArea .importantCover .importantDot37 {
+  position: absolute;
+  left: 2.57632%;
+  top: 21.0333%;
+  -webkit-animation-delay: -7.4s;
+          animation-delay: -7.4s;
+  width: 9px;
+  height: 10px;
+  -webkit-transform: rotate(41deg);
+          transform: rotate(41deg);
+}
+
+.videoArea .importantCover .importantDot38 {
+  position: absolute;
+  left: 69.10262%;
+  top: 5.21998%;
+  -webkit-animation-delay: -7.6s;
+          animation-delay: -7.6s;
+  width: 15px;
+  height: 8px;
+  -webkit-transform: rotate(58deg);
+          transform: rotate(58deg);
+}
+
+.videoArea .importantCover .importantDot39 {
+  position: absolute;
+  left: 65.36448%;
+  top: 10.50768%;
+  -webkit-animation-delay: -7.8s;
+          animation-delay: -7.8s;
+  width: 15px;
+  height: 12px;
+  -webkit-transform: rotate(70deg);
+          transform: rotate(70deg);
+}
+
 .videoArea .importantCover .importantDot40 {
   position: absolute;
-  left: 28.71695%;
-  top: 45.9142%;
+  left: 22.75101%;
+  top: 76.8616%;
   -webkit-animation-delay: -8s;
           animation-delay: -8s;
-  width: 6px;
-  height: 14px;
-  -webkit-transform: rotate(74deg);
-          transform: rotate(74deg);
-}
-
-.videoArea .importantCover .importantDot41 {
-  position: absolute;
-  left: 58.23583%;
-  top: 20.69826%;
-  -webkit-animation-delay: -8.2s;
-          animation-delay: -8.2s;
-  width: 7px;
-  height: 10px;
-  -webkit-transform: rotate(27deg);
-          transform: rotate(27deg);
-}
-
-.videoArea .importantCover .importantDot42 {
-  position: absolute;
-  left: 36.46827%;
-  top: 55.28064%;
-  -webkit-animation-delay: -8.4s;
-          animation-delay: -8.4s;
-  width: 10px;
-  height: 9px;
-  -webkit-transform: rotate(74deg);
-          transform: rotate(74deg);
-}
-
-.videoArea .importantCover .importantDot43 {
-  position: absolute;
-  left: 74.6985%;
-  top: 34.97975%;
-  -webkit-animation-delay: -8.6s;
-          animation-delay: -8.6s;
-  width: 6px;
+  width: 12px;
   height: 11px;
   -webkit-transform: rotate(19deg);
           transform: rotate(19deg);
 }
 
+.videoArea .importantCover .importantDot41 {
+  position: absolute;
+  left: 67.6013%;
+  top: 74.33381%;
+  -webkit-animation-delay: -8.2s;
+          animation-delay: -8.2s;
+  width: 15px;
+  height: 15px;
+  -webkit-transform: rotate(39deg);
+          transform: rotate(39deg);
+}
+
+.videoArea .importantCover .importantDot42 {
+  position: absolute;
+  left: 59.80733%;
+  top: 58.41184%;
+  -webkit-animation-delay: -8.4s;
+          animation-delay: -8.4s;
+  width: 11px;
+  height: 14px;
+  -webkit-transform: rotate(29deg);
+          transform: rotate(29deg);
+}
+
+.videoArea .importantCover .importantDot43 {
+  position: absolute;
+  left: 87.26871%;
+  top: 25.29653%;
+  -webkit-animation-delay: -8.6s;
+          animation-delay: -8.6s;
+  width: 10px;
+  height: 8px;
+  -webkit-transform: rotate(72deg);
+          transform: rotate(72deg);
+}
+
 .videoArea .importantCover .importantDot44 {
   position: absolute;
-  left: 78.58329%;
-  top: 42.33453%;
+  left: 19.47029%;
+  top: 6.94191%;
   -webkit-animation-delay: -8.8s;
           animation-delay: -8.8s;
-  width: 14px;
-  height: 11px;
-  -webkit-transform: rotate(58deg);
-          transform: rotate(58deg);
+  width: 8px;
+  height: 6px;
+  -webkit-transform: rotate(11deg);
+          transform: rotate(11deg);
 }
 
 .videoArea .importantCover .importantDot45 {
   position: absolute;
-  left: 70.2956%;
-  top: 41.23674%;
+  left: 91.92088%;
+  top: 3.84428%;
   -webkit-animation-delay: -9s;
           animation-delay: -9s;
-  width: 8px;
-  height: 7px;
-  -webkit-transform: rotate(79deg);
-          transform: rotate(79deg);
+  width: 13px;
+  height: 8px;
+  -webkit-transform: rotate(16deg);
+          transform: rotate(16deg);
 }
 
 .videoArea .importantCover .importantDot46 {
   position: absolute;
-  left: 67.23582%;
-  top: 0.37584%;
+  left: 4.90608%;
+  top: 54.80844%;
   -webkit-animation-delay: -9.2s;
           animation-delay: -9.2s;
-  width: 13px;
-  height: 11px;
-  -webkit-transform: rotate(77deg);
-          transform: rotate(77deg);
+  width: 10px;
+  height: 12px;
+  -webkit-transform: rotate(84deg);
+          transform: rotate(84deg);
 }
 
 .videoArea .importantCover .importantDot47 {
   position: absolute;
-  left: 13.46755%;
-  top: 57.30545%;
+  left: 32.33673%;
+  top: 48.25285%;
   -webkit-animation-delay: -9.4s;
           animation-delay: -9.4s;
-  width: 7px;
-  height: 10px;
-  -webkit-transform: rotate(73deg);
-          transform: rotate(73deg);
+  width: 10px;
+  height: 7px;
+  -webkit-transform: rotate(52deg);
+          transform: rotate(52deg);
 }
 
 .videoArea .importantCover .importantDot48 {
   position: absolute;
-  left: 92.77941%;
-  top: 73.75645%;
+  left: 2.06153%;
+  top: 73.76044%;
   -webkit-animation-delay: -9.6s;
           animation-delay: -9.6s;
-  width: 10px;
-  height: 11px;
-  -webkit-transform: rotate(90deg);
-          transform: rotate(90deg);
+  width: 6px;
+  height: 12px;
+  -webkit-transform: rotate(74deg);
+          transform: rotate(74deg);
 }
 
 .videoArea .importantCover .importantDot49 {
   position: absolute;
-  left: 97.89606%;
-  top: 35.95681%;
+  left: 49.59815%;
+  top: 60.97338%;
   -webkit-animation-delay: -9.8s;
           animation-delay: -9.8s;
-  width: 12px;
-  height: 13px;
-  -webkit-transform: rotate(87deg);
-          transform: rotate(87deg);
+  width: 11px;
+  height: 15px;
+  -webkit-transform: rotate(18deg);
+          transform: rotate(18deg);
 }
 
 .videoArea .importantCover .importantDot50 {
   position: absolute;
-  left: 38.44415%;
-  top: 90.75924%;
+  left: 31.54319%;
+  top: 66.00868%;
   -webkit-animation-delay: -10s;
           animation-delay: -10s;
-  width: 6px;
-  height: 15px;
-  -webkit-transform: rotate(2deg);
-          transform: rotate(2deg);
+  width: 13px;
+  height: 14px;
+  -webkit-transform: rotate(43deg);
+          transform: rotate(43deg);
 }
 
 .advantageArea {
@@ -6809,7 +6799,6 @@ body {
 @media only screen and (max-width: 767px) {
   .advantageArea .content {
     width: 90%;
-    font-size: 14px;
     margin-bottom: 50px;
   }
 }
@@ -7527,7 +7516,6 @@ body {
 @media only screen and (max-width: 767px) {
   .commendArea .container-fluid .content {
     width: 90%;
-    font-size: 14px;
   }
 }
 
