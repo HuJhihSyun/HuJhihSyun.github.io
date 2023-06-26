@@ -47,8 +47,8 @@ $(document).ready(function () {
     forwardNote
     .from(".envelop-photo1", {opacity:0, scale:2}, 'test')
     .from(".envelop-photo2", {opacity: 0, scale:2})
-    // .from(".forwardText", 2, {opacity:0, yPercent: -50}, 'test')
-    .staggerFrom(".char", 0.05, { opacity: 0 }, 0.05, 'test')
+    .from(".forwardText", 1.5, {opacity:0, yPercent: -50}, 'test')
+    // .staggerFrom(".char", 0.05, { opacity: 0 }, 0.05, 'test')
     
     ScrollTrigger.create({
         animation: forwardNote,
