@@ -101,6 +101,7 @@ $(document).ready(function () {
     const importantArea = gsap.timeline();
     importantArea
         .from("#introChart1", { opacity:0, yPercent: 100 })
+        // .to("#introTitle", { opacity:0, height: 0 })
         .to("#introContent", { opacity:0, height: 0 })
         .from("#introPhoto1", { opacity:0, scale: 2 }, 'effect1')
         .from("#introScope1", { opacity:0, x: -200 }, 'effect1')
@@ -144,13 +145,15 @@ $(document).ready(function () {
             roundProps: {value: 1},
             onUpdate: () => {num6.innerHTML = obj6.value;}
         }, 'statistic')
+        .to("#introScope2", { opacity: 0 })
+        .to("#introScope2", { scale: 0 })
         
     ScrollTrigger.create({
         animation: importantArea,
         trigger: ".importantArea",
         start: "top top",
-        end: "bottom bottom",
-        scrub: 2,
+        end: "+=2000",
+        scrub: 10,
         pin: true,
         anticipatePin: 1,
     });

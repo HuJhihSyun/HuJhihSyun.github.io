@@ -26,21 +26,19 @@ $(document).ready(function () {
         }
     });
 
-    // $((function() {
-    //     $.each(Array(4), (function(e) {
-    //         var t = $("#instrumentCard" + ++e);
-    //         $(t).click((function() {
-    //             // $("#modal-" + e).fadeIn()
-    //             // alert('test')
-    //             console.log('test');
-    //         }
-    //         ))
-    //     }
-    //     ))
-    // }
-    // ));
-    // $("#instrumentCard1").click(function(){
-    //     alert('test');
-    // })
+    $((function() {
+        console.log('test')
+        $.each(Array(6), (function(e) {
+        console.log('test', e)
+            var t = $("#card" + ++e);
+        console.log('test', t)
+            $(t).click((function() {
+                $("#card" + e).toggleClass('active');
+            }
+            ))
+        }
+        ))
+    }
+    ));
 
 });
