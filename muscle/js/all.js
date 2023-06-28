@@ -41,4 +41,8 @@ $(document).ready(function () {
     }
     ));
 
+    $('.click_event').addEventListener('click', function(event) {
+        event.stopPropagation(); // 停止事件冒泡
+    }, true);
+
 });
