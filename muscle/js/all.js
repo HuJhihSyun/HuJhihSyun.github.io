@@ -26,6 +26,7 @@ $(document).ready(function () {
         }
     });
 
+    // growArea
     $((function() {
         $.each(Array(6), (function(e) {
             var t = $("#card" + ++e);
