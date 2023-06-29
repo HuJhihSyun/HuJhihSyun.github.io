@@ -27,11 +27,8 @@ $(document).ready(function () {
     });
 
     $((function() {
-        console.log('test')
         $.each(Array(6), (function(e) {
-        console.log('test', e)
             var t = $("#card" + ++e);
-        console.log('test', t)
             $(t).click((function() {
                 $("#card" + e).toggleClass('active');
             }
@@ -41,8 +38,8 @@ $(document).ready(function () {
     }
     ));
 
-    $('.click_event').addEventListener('click', function(event) {
+    $('.click_event').click(function(event){
         event.stopPropagation(); // 停止事件冒泡
-    }, true);
+    });
 
 });

@@ -41,7 +41,6 @@ $(document).ready(function () {
 
     // forewordArea
     const quote = document.querySelectorAll('.quote');
-    console.log('quote', quote);
     quote.forEach(item => {item.innerHTML = `<span class="char">${item.innerHTML.split("").join('</span><span class="char">')}</span>`})
     const forwardNote = gsap.timeline();
     forwardNote
@@ -56,16 +55,6 @@ $(document).ready(function () {
         start: "top 30%",
         end:"bottom 60%",
         toggleActions: "restart none restart none",
-    });
-
-    // growArea
-    const growArea = TweenMax.staggerFrom(".growBar", 0.5, {opacity:0, yPercent:10,}, 0.5);
-    ScrollTrigger.create({
-        animation: growArea,
-        trigger: ".growArea",
-        start: "top 50%",
-        end:"bottom 50%",
-        toggleActions: "restart none restart none"
     });
 
     // introBar
