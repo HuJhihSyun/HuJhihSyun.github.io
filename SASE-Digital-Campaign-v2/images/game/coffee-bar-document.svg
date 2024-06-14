@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 25.3.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="圖層_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 30 15" style="enable-background:new 0 0 30 15;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill-rule:evenodd;clip-rule:evenodd;fill:#F2F6FC;}
+	.st1{fill-rule:evenodd;clip-rule:evenodd;fill:#7EA089;}
+	.st2{fill-rule:evenodd;clip-rule:evenodd;fill:#57DC4D;}
+	.st3{fill-rule:evenodd;clip-rule:evenodd;fill:#E2EBF3;}
+	.st4{fill-rule:evenodd;clip-rule:evenodd;fill:#57BCC3;}
+	.st5{fill-rule:evenodd;clip-rule:evenodd;fill:#F9EABE;}
+	.st6{fill-rule:evenodd;clip-rule:evenodd;fill:#F2D891;}
+	.st7{fill-rule:evenodd;clip-rule:evenodd;fill:#D3B8A1;}
+	.st8{fill-rule:evenodd;clip-rule:evenodd;fill:#7D90E5;}
+</style>
+<g>
+	<path class="st0" d="M4.9,13.4h24.6v1.4H4.9v-0.2c0.1-0.2,0.2-0.3,0.2-0.5S5,13.8,4.9,13.7V13.4z"/>
+	<polygon class="st1" points="4.3,13.3 29.2,13.3 30,13.3 30,13.7 30,14.6 30,15 29.2,15 4.3,15 4.3,14.6 29.2,14.6 29.2,13.7 
+		4.3,13.7 	"/>
+	<path class="st0" d="M27.5,11.7H3v1.4h24.6v-0.2c-0.1-0.2-0.2-0.3-0.2-0.5c0-0.2,0.1-0.4,0.2-0.5V11.7z"/>
+	<polygon class="st2" points="28.2,11.6 3.3,11.6 2.5,11.6 2.5,12 2.5,12.9 2.5,13.3 3.3,13.3 28.2,13.3 28.2,12.9 3.3,12.9 3.3,12 
+		28.2,12 	"/>
+	<path class="st0" d="M4,8.4H26c-0.2,0.5-0.3,0.9-0.3,1.5c0,0.6,0.1,1,0.3,1.5H4V8.4z"/>
+	<g>
+		<path class="st3" d="M25.9,8.7c0,0.1,0,0.1,0,0.2h-21V8.7H25.9z"/>
+		<path class="st3" d="M25.8,9.2c0,0.1,0,0.1,0,0.2H4.9V9.2H25.8z"/>
+		<path class="st3" d="M25.8,9.6c0,0.1,0,0.1,0,0.2H4.9V9.6H25.8z"/>
+		<path class="st3" d="M25.8,10.1c0,0.1,0,0.1,0,0.2H4.9v-0.2H25.8z"/>
+		<path class="st3" d="M25.8,10.7c0,0.1,0,0.1,0,0.2h-21v-0.2H25.8z"/>
+	</g>
+	<polygon class="st4" points="3.5,7.9 4.4,7.9 26.7,7.9 26.7,8.4 4.4,8.4 4.4,11.1 26.7,11.1 26.7,11.6 4.4,11.6 3.5,11.6 3.5,11.1 
+		3.5,8.4 	"/>
+	<rect x="1.8" y="6.7" class="st5" width="24.3" height="1.2"/>
+	<rect x="3.8" y="6.1" class="st6" width="24.3" height="0.6"/>
+	<rect x="2.5" y="4.6" class="st7" width="24.3" height="1.6"/>
+	<path class="st0" d="M0.9,3h24.3v1.4H0.9C1,4.2,1.1,3.9,1.1,3.6C1.1,3.4,1,3.2,0.9,3z"/>
+	<polygon class="st8" points="0,2.8 25.6,2.8 25.6,4.6 0,4.6 0,4.2 24.7,4.2 24.7,3.1 0,3.1 	"/>
+</g>
+</svg>
